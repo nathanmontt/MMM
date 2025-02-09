@@ -64,7 +64,7 @@ Para futuras <em>features</em>, alguns opções podem ser levadas em consideraç
 
 <h1 id="inspirations"> Inspirações </h1>
 
-O *design* pensado nesse projeto veio do ***Discord***, mais especificamente do canal da <a href="https://www.soujunior.tech/">SouJunior Labs<\a>. Inspirações futuras serão aqui adicionadas.
+O *design* pensado nesse projeto veio do ***Discord***, mais especificamente do canal da <a href="https://www.soujunior.tech/">SouJunior Labs</a>. Inspirações futuras serão aqui adicionadas.
 
 
 <h1 id="links"> Links Úteis </h1>
