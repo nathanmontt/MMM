@@ -18,16 +18,14 @@
 
 <h1 id="about">Sobre o Projeto</h1>
 
-É um *tracking* 
-
-<em>E³</em> foi pensando especificamente para o autor do projeto. Ele serve como um *tracking* para todos as ideias (sejam pessoais e/ou profissionais), estudos da faculdade, idealizações de projetos (seja na área *tech* ou não), entre outros. O projeto serve como um guia diário de estudo/trabalho pessoal
+É um *tracking* de estudos. <em>E³</em> foi pensando especificamente para o autor do projeto. Ele serve como um *tracking* para todos as ideias (sejam pessoais e/ou profissionais), estudos da faculdade, idealizações de projetos (seja na área *tech* ou não), entre outros. O projeto serve como um guia diário de estudo/trabalho pessoal.
 
 
 <h1 id="abilities"> Habilidades Necessárias </h1>
 
 Seguindo o "*template*" dos projetos anteriores, além das linguagens utilizadas mostradas abaixo, *links* para estudo foram usadaos. Todos eles serão colocados na aba <a href="#links"> Links Úteis </a>.
 
-- HTML, CSS JavaScript *Vanilla*
+- HTML, CSS (e seu pré-processador ***SCSS***, JavaScript *Vanilla*;
 
 
 <!--
