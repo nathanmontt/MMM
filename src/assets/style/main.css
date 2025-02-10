@@ -1,1 +1,51 @@
-/*# sourceMappingURL=main.css.map */
+/* ----- BASE ----- */
+/* ----- IMPORTS ----- */
+/* ----- FONTS ----- */
+/* -- type -- */
+/* -- size -- */
+/* -- weight -- */
+/* -- style -- */
+/* ----- COLORS ----- */
+/* -- main -- */
+/* ----- DEFAUTLT ARRANGEMENTS ----- */
+/* ----- SPECIFIC ARRANGEMENTS ----- */
+/* -- padding -- */
+/* -- margin -- */
+/* ----- OTHERS ----- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----- IMPORTS ----- */
+/* ----- FONTS ----- */
+/* -- type -- */
+/* -- size -- */
+/* -- weight -- */
+/* -- style -- */
+/* ----- COLORS ----- */
+/* -- main -- */
+/* ----- DEFAUTLT ARRANGEMENTS ----- */
+/* ----- SPECIFIC ARRANGEMENTS ----- */
+/* -- padding -- */
+/* -- margin -- */
+/* ----- OTHERS ----- */
+/* ----- LAYOUT ----- */
+/* ----- MODULES ----- */
+/* ----- STATE ----- */
+/* ----- THEME ----- *//*# sourceMappingURL=main.css.map */
