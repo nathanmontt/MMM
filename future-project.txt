@@ -98,3 +98,4 @@ __________________________________________________________________
 - 1° Push:
 	-> Correção do README.md;
 	-> Adição do esqueleto do index.html;
+	-> Adição dos arquivos necessários para estilização;
