@@ -19,7 +19,9 @@ header {
             }
 
             .menu-options-holder {
+                display: flex;
                 .options-holder {
+                    margin: $margin-small;
                     .links {}
                 }
             }

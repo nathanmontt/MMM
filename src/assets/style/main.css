@@ -212,6 +212,12 @@ header .container-navbar .logo {
   font-size: 1.4em;
   color: black;
 }
+header .container-navbar .container-menu-options .menu-options-holder {
+  display: flex;
+}
+header .container-navbar .container-menu-options .menu-options-holder .options-holder {
+  margin: 0.4em;
+}
 /* ----- MODULES ----- */
 /* ----- IMPORTS ----- */
 /* ----- FONTS ----- */
