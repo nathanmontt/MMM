@@ -1,5 +1,5 @@
-# *E³ - Eu, Euzinho e Eu Mesmo*
-***E³*** é um projeto mais que pessoal. É um guia diário nos seus estudos
+# *E³ - Eu, Eu Aqui e Eu Mesmo*
+***E³*** é um guia diário nos seus estudos (nesse caso, dos meus, por enquanto)
 
 ---
 
