@@ -85,9 +85,16 @@ __________________________________________________________________
 	-> Adição de variáveis;
 	-> Testes para deploy: no Vercel e Netlify, as background-image não aparecem. Por isso os testes;
 	-> Troca de nome de imagens;
-	-> ;
-	-> ;
-	-> ;
+__________________________________________________________________
 
+== Dias 08 e  09 de Fevereiro de 2025 ==
 
+- Pushs
+	-> Adição de um novo projeto e modificações no README e adição da licença;
+__________________________________________________________________
 
+== Dia 10/02/2025 ==
+
+- 1° Push:
+	-> Correção do README.md;
+	-> Adição do esqueleto do index.html;
