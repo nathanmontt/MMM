@@ -1,0 +1,28 @@
+@import '../base/variables';
+
+header {
+    .container-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: $padding-medium;
+        .logo {
+            font-style: $font-style;
+            font-size: $font-size-big;
+
+            color: $primary;
+        }
+
+        .container-menu-options {
+            .open-close-menu {
+            }
+
+            .menu-options-holder {
+                .options-holder {
+                    .links {}
+                }
+            }
+        }
+    }
+}

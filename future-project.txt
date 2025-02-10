@@ -99,3 +99,5 @@ __________________________________________________________________
 	-> Correção do README.md;
 	-> Adição do esqueleto do index.html;
 	-> Adição dos arquivos necessários para estilização;
+	-> Adição da estilização do header;
+	-> Pré-término da estilização do header. Ainda falta a funcionalidade;

@@ -1,0 +1,8 @@
+@import '../base/variables';
+
+.btn-primary {
+    background-color: $no-border-bg;
+    border: $no-border;
+
+    cursor: $cursor-mode;
+}

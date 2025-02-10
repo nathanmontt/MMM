@@ -7,6 +7,9 @@
 /* -- type -- */
 
 /* -- size -- */
+$font-size-small: .8em;
+$font-size-med: 1.1em;
+$font-size-big: 1.4em;
 
 /* -- weight -- */
 $font-weight-title: 500;
@@ -69,7 +72,7 @@ $margin-big-left: 2em;
 
 /* ----- OTHERS ----- */
 $no-border: none;
-$no-border-bg-color-btn: transparent;
+$no-border-bg: transparent;
 $cursor-mode: pointer;
 
 $border-size: 0.01em;
