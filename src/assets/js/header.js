@@ -1,43 +1,32 @@
 'use strict'
 
 // Primeiro, começamos criando o evento do scroll. Usamos window (eu acho que é pra isso) quando não sabemos qual elemento usar
+// Depois, criamos uma var que armazena o valor dos pixels na tela pela scrollPosY.
 
 window.addEventListener('scroll', function () {
-    const valuePx = 670;
-    const changeColorMenuOptions = document.querySelectorAll('.options-holder');
-    /* Criamos uma var que armazena o valor do scrollPosY. Como assim?
-     * scrollPosY armazena o valor atual dos pixels presentes na tela. Ou seja, para trocarmos as cores das opções do menu, precisamos saber qual posição vamos fazer essa troca
-    */
-
-    let xValue = 1;
+    const changeColorMenuOptions = document.querySelectorAll('.links');
+    const logoProject = document.querySelector('.logo');
+    const nav = document.querySelector('.container-navbar');
 
     const holderOfPosYValue = window.scrollY;
-    if (holderOfPosYValue > valuePx) {
-        document.body.style.backgroundColor = "red";
+
+    let val = 670;
+
+    // Logo do projeto
+    if (holderOfPosYValue > val) {
+        logoProject.style.color = "black";
     } else {
-        this.document.body.style.backgroundColor = "transparent"
+        logoProject.style.color = "white";
     }
 
-    // if (holderOfPosYValue > valuePx) {
-    //     changeColorMenuOptions.forEach (function (e) {
-    //         e.style.backgroundColor = "blue"
-    //     })
-    // } else {
-    //     console.log(xValue);
-    // }
-
-    // changeColorMenuOptions.forEach(function (el) {
-    //     if (holderOfPosYValue > valuePx) {
-    //         el.style.backgroundColor = "red";
-    //     }
-    // });
-    // changeColorMenuOptions.forEach(element => {
-    //     if (holderOfPosYValue > valuePx) {
-    //         element.style.color = "red";
-    //     } else {
-    //         console.log("ainda n");
-    //     }
-    // })
+    // Cada elemento do menu
+    changeColorMenuOptions.forEach(el => {
+        if (holderOfPosYValue > val) {
+            el.style.color = "black";
+        } else {
+            el.style.color = "white";
+        }
+    });
 });
 
 // const buttonMenu = document.querySelector('.menu-btn-cta');

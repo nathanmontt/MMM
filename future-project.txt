@@ -133,3 +133,17 @@ __________________________________________________________________
 	-> Não entendia do porque usava arrow function em forEach. Resolvi testar trocar para função normal. Não sabia como. Testei. Deu certo;
 	-> ;
 	-> ;
+
+- 7° Push:
+	-> Alterações no README;
+
+- 8° Push:
+	-> Tentativa de conserto de conflitos na parte de scroll. Um deles não havia testado, que é a troca de cor da logo, mas logo após testes, tudo OK;
+	-> Correção de conflito na parte do scroll;
+	-> Adição do content geral para debbug e para verificar se o scroll agora funciona;
+	-> Adição da file _content.scs;
+
+- 9° Push:
+	-> ;
+	-> ;
+

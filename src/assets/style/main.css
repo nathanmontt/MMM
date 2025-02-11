@@ -18,6 +18,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -209,7 +210,6 @@ html {
 /* -- margin -- */
 /* ----- OTHERS ----- */
 header {
-  border: 3px solid red;
   position: fixed;
   top: 0;
   left: 0;
@@ -289,6 +289,24 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 #hero-content .container-general .icon-holder .explore {
   color: white;
   font-family: "Cormorant Garamond", serif;
+}
+
+/* ----- IMPORTS ----- */
+/* ----- FONTS ----- */
+/* -- type -- */
+/* -- size -- */
+/* -- weight -- */
+/* -- style -- */
+/* ----- COLORS ----- */
+/* -- main -- */
+/* ----- DEFAUTLT ARRANGEMENTS ----- */
+/* ----- SPECIFIC ARRANGEMENTS ----- */
+/* -- padding -- */
+/* -- margin -- */
+/* ----- OTHERS ----- */
+#content {
+  min-height: 100vh;
+  border: 3px solid red;
 }
 
 /* ----- MODULES ----- */
