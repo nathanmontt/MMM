@@ -1,0 +1,34 @@
+@import '../base/variables';
+
+#hero-content {
+    border: 3px solid blue;
+    min-height: $second-height;
+    .container-texts {
+        // position: absolute;
+        top: 5em;
+        right: 0;
+        // bottom: 0;
+        left: 0;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        margin-top: $margin-big-top;
+        // text-align: center;
+
+        border: 3px solid red;
+        .name-project {}
+        .desc-project {}
+    }
+    
+    .icon-holder {
+        min-height: 50vh;
+        border: 3px solid green;
+        .link-to-content {
+            #icon {
+                width: 3em;
+            }
+        }
+
+        .explore {}
+    }
+}

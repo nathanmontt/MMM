@@ -218,6 +218,37 @@ header .container-navbar .container-menu-options .menu-options-holder {
 header .container-navbar .container-menu-options .menu-options-holder .options-holder {
   margin: 0.4em;
 }
+/* ----- IMPORTS ----- */
+/* ----- FONTS ----- */
+/* -- type -- */
+/* -- size -- */
+/* -- weight -- */
+/* -- style -- */
+/* ----- COLORS ----- */
+/* -- main -- */
+/* ----- DEFAUTLT ARRANGEMENTS ----- */
+/* ----- SPECIFIC ARRANGEMENTS ----- */
+/* -- padding -- */
+/* -- margin -- */
+/* ----- OTHERS ----- */
+#hero-content {
+  border: 3px solid blue;
+  min-height: 80vh;
+}
+#hero-content .container-texts {
+  top: 5em;
+  right: 0;
+  left: 0;
+  margin-top: 2em;
+  border: 3px solid red;
+}
+#hero-content .icon-holder {
+  min-height: 50vh;
+  border: 3px solid green;
+}
+#hero-content .icon-holder .link-to-content #icon {
+  width: 3em;
+}
 /* ----- MODULES ----- */
 /* ----- IMPORTS ----- */
 /* ----- FONTS ----- */

@@ -101,3 +101,13 @@ __________________________________________________________________
 	-> Adição dos arquivos necessários para estilização;
 	-> Adição da estilização do header;
 	-> Pré-término da estilização do header. Ainda falta a funcionalidade;
+__________________________________________________________________
+
+== Dia 11/02/2025 ==
+
+- 1° Push:
+	-> Início da formalização da hero-section;
+	-> Adição de estilo no hero-content;
+	-> ;
+	-> ;
+	-> ;
