@@ -8,12 +8,12 @@
 * [Sobre o Projeto](#about)
 * [Habilidades Necessárias](#abilities)
 * [Contribuindo](#contribuition)
+* [Correções Futuras](#fut-corr)
 * [*Features* Futuras](#fut-feats)
 * [Inspirações](#inspirations)
 * [Links Úteis](#links)
 * [Créditos](#credits)
 <!-- * [Como executar](#execute) -->
-<!-- * [Correções Futuras](#fut-corr) -->
 
 
 <h1 id="about">Sobre o Projeto</h1>
@@ -25,7 +25,7 @@
 
 Seguindo o "*template*" dos projetos anteriores, além das linguagens utilizadas mostradas abaixo, *links* para estudo foram usadaos. Todos eles serão colocados na aba <a href="#links"> Links Úteis </a>.
 
-- HTML, CSS (e seu pré-processador ***SCSS***, JavaScript *Vanilla*;
+- HTML, CSS (e seu pré-processador ***SCSS***), JavaScript *Vanilla*;
 
 
 <!--
@@ -40,15 +40,13 @@ Seguindo o "*template*" dos projetos anteriores, além das linguagens utilizadas
 No momento, não há contruibuições.
 
 
-<!--
 <h1 id="fut-corr"> Correções Futuras </h1>
 
-Para futuras correções, é sempre bom deixar documentado:
+Para futuras correções:
 
 Correção | Motivo
 :---------: | :------:
-**Header** | Ao invés de usar o _fetch_ como meio de trazer o cabeçalho, deixá-lo sempre fixo em  cada página. O erro no CORS ainda não foi consertado, então para fins de concluir o projeto, mudar a abordagem
--->
+**Header** | O *fetch* continua dando certos problemas (por exemplo, com a interação do menu). Tentar mudar a abordagem ou deixar essa parte de lado, já que é um conceito muito avançado
 
 
 <h1 id="fut-feats"> <em>Features</em> Futuras </h1>
@@ -57,7 +55,8 @@ Para futuras <em>features</em>, alguns opções podem ser levadas em consideraç
 
 *Feature* | Motivo
 :---------: | :------:
-**Uso** | Com o avanço dos meus estudos, será possível fornecer o projeto para uso próprio
+**Uso** | Com o avanço dos meus estudos, será possível disponibilizar o projeto para uso da própria pessoa
+**TODO List** | Fazer com que o *user* possa adicionar, excluir, editar tarefas como se fosse uma TODO List
 
 
 <h1 id="inspirations"> Inspirações </h1>
