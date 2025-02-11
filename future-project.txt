@@ -116,6 +116,13 @@ __________________________________________________________________
 	-> Adição da cor principal;
 
 - 3° Push:
+	-> Mudança em nome de variáveis e continuação na estilização;
+	-> Mudança no tipo da fonte, cores e adição de um link a mais no header. O link será usado para criar um DARK/LIGHT MODE;
+	-> Adição de ícone para funcionamento futuro do DARK/LIGHT MODE;
+	-> ;
+	-> ;
+
+- 4° Push:
 	-> ;
 	-> ;
 	-> ;

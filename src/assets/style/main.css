@@ -223,14 +223,26 @@ header .container-navbar {
 header .container-navbar .logo {
   font-style: italic;
   font-size: 1.4em;
-  color: black;
+  color: white;
 }
 header .container-navbar .container-menu-options .menu-options-holder {
   display: flex;
+  justify-content: center;
 }
 header .container-navbar .container-menu-options .menu-options-holder .options-holder {
   margin: 0.4em;
+  font-weight: 400;
+  font-family: "Cormorant Garamond", serif;
 }
+header .container-navbar .container-menu-options .menu-options-holder .options-holder .links {
+  color: white;
+  cursor: not-allowed;
+}
+header .container-navbar .container-menu-options .menu-options-holder .options-holder #icon {
+  width: 24px;
+  height: 24px;
+}
+
 /* ----- IMPORTS ----- */
 /* ----- FONTS ----- */
 /* -- type -- */
@@ -245,7 +257,6 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 /* -- margin -- */
 /* ----- OTHERS ----- */
 #hero-content .container-general {
-  border: 3px solid red;
   position: absolute;
   top: 0;
   right: 0;
@@ -260,8 +271,12 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
   justify-content: center;
   align-items: center;
 }
+#hero-content .container-general .container-main-texts .logo-name-project {
+  font-style: italic;
+  font-size: 10em;
+}
 #hero-content .container-general .container-main-texts .desc-project {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Roboto", serif;
 }
 #hero-content .container-general .icon-holder {
   position: absolute;
@@ -273,6 +288,10 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 #hero-content .container-general .icon-holder .link-to-content #icon {
   width: 1em;
 }
+#go p {
+  border: 3px solid red;
+}
+
 /* ----- MODULES ----- */
 /* ----- IMPORTS ----- */
 /* ----- FONTS ----- */

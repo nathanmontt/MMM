@@ -1,18 +1,19 @@
 /* ----- IMPORTS ----- */
-// Main Font
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-// Secondary Font
 
 
 /* ----- FONTS ----- */
 /* -- type -- */
 $main-font: 'Cormorant Garamond', serif;
+$secondary-font: "Roboto", serif;
 
 /* -- size -- */
 $font-size-small: .8em;
 $font-size-med: 1.1em;
 $font-size-big: 1.4em;
+
+$font-size-big-hero: 10em;
 
 /* -- weight -- */
 $font-weight-title: 500;
@@ -20,7 +21,7 @@ $font-weight-parag: 300;
 $font-weight-descs: 400;
 
 /* -- style -- */
-$font-style: italic;
+$font-style-italic: italic;
 
 
 /* ----- COLORS ----- */

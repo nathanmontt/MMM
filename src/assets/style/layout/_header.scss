@@ -6,7 +6,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    // bottom: 0;
+    
     .container-navbar {
         display: flex;
         justify-content: space-between;
@@ -14,21 +14,30 @@ header {
 
         margin: $margin-medium;
         .logo {
-            font-style: $font-style;
+            font-style: $font-style-italic;
             font-size: $font-size-big;
 
-            color: $primary;
+            color: $secondary;
         }
 
         .container-menu-options {
-            .open-close-menu {
-            }
-
             .menu-options-holder {
                 display: flex;
+                justify-content: center;
                 .options-holder {
                     margin: $margin-small;
-                    .links {}
+                    font-weight: $font-weight-descs;
+                    font-family: $main-font;
+                    .links {
+                        color: $secondary;
+                        cursor: not-allowed;
+                    }
+                    
+                    #icon {
+                        // border: 3px solid red;
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
             }
         }

@@ -1,15 +1,14 @@
 @import '../base/variables';
 
 #hero-content {
-    .container-general{
-        border: 3px solid red;
+    .container-general {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
 
-        background-color: #406ce7;
+        background-color: $tertiary;
         .container-main-texts {
             min-height: $second-height;
             display: flex;
@@ -17,9 +16,13 @@
             justify-content: center;
             align-items: center;
 
-            .name-project {}
+            .logo-name-project {
+                font-style: $font-style-italic;
+                font-size: $font-size-big-hero;
+            }
+
             .desc-project {
-                font-family: $main-font;
+                font-family: $secondary-font;
             }
         }
         
@@ -37,5 +40,11 @@
 
             .explore {}
         }
+    }
+}
+
+#go {
+    p {
+        border: 3px solid red;
     }
 }
