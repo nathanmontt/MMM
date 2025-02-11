@@ -1,10 +1,13 @@
 /* ----- IMPORTS ----- */
-// Secondary Font
 // Main Font
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Secondary Font
 
 
 /* ----- FONTS ----- */
 /* -- type -- */
+$main-font: 'Cormorant Garamond', serif;
 
 /* -- size -- */
 $font-size-small: .8em;
@@ -24,6 +27,7 @@ $font-style: italic;
 /* -- main -- */
 $primary: black;
 $secondary: white;
+$tertiary: #406ce7;
 
 
 /* ----- DEFAUTLT ARRANGEMENTS ----- */
@@ -79,4 +83,4 @@ $border-size: 0.01em;
 $border-second-size: 0.1em;
 
 $main-height: 100vh;
-$second-height: 80vh;
+$second-height: 82vh;

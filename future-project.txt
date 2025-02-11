@@ -108,6 +108,16 @@ __________________________________________________________________
 - 1° Push:
 	-> Início da formalização da hero-section;
 	-> Adição de estilo no hero-content;
+
+- 2° Push:
+	-> Mudança no README.md;
+	-> Correção de estilos em outras files;
+	-> Adição de fontes e testes;
+	-> Adição da cor principal;
+
+- 3° Push:
+	-> ;
+	-> ;
 	-> ;
 	-> ;
 	-> ;

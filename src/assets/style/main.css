@@ -1,5 +1,6 @@
 /* ----- BASE ----- */
 /* ----- IMPORTS ----- */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* ----- FONTS ----- */
 /* -- type -- */
 /* -- size -- */
@@ -12,6 +13,11 @@
 /* -- padding -- */
 /* -- margin -- */
 /* ----- OTHERS ----- */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -201,11 +207,18 @@ html {
 /* -- padding -- */
 /* -- margin -- */
 /* ----- OTHERS ----- */
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 header .container-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  margin: 1em;
 }
 header .container-navbar .logo {
   font-style: italic;
@@ -231,23 +244,34 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 /* -- padding -- */
 /* -- margin -- */
 /* ----- OTHERS ----- */
-#hero-content {
-  border: 3px solid blue;
-  min-height: 80vh;
-}
-#hero-content .container-texts {
-  top: 5em;
-  right: 0;
-  left: 0;
-  margin-top: 2em;
+#hero-content .container-general {
   border: 3px solid red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #406ce7;
 }
-#hero-content .icon-holder {
-  min-height: 50vh;
-  border: 3px solid green;
+#hero-content .container-general .container-main-texts {
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#hero-content .icon-holder .link-to-content #icon {
-  width: 3em;
+#hero-content .container-general .container-main-texts .desc-project {
+  font-family: "Cormorant Garamond", serif;
+}
+#hero-content .container-general .icon-holder {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+#hero-content .container-general .icon-holder .link-to-content #icon {
+  width: 1em;
 }
 /* ----- MODULES ----- */
 /* ----- IMPORTS ----- */

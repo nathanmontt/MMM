@@ -1,12 +1,18 @@
 @import '../base/variables';
 
 header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    // bottom: 0;
     .container-navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        padding: $padding-medium;
+        margin: $margin-medium;
         .logo {
             font-style: $font-style;
             font-size: $font-size-big;

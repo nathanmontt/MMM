@@ -1,34 +1,41 @@
 @import '../base/variables';
 
 #hero-content {
-    border: 3px solid blue;
-    min-height: $second-height;
-    .container-texts {
-        // position: absolute;
-        top: 5em;
-        right: 0;
-        // bottom: 0;
-        left: 0;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        margin-top: $margin-big-top;
-        // text-align: center;
-
+    .container-general{
         border: 3px solid red;
-        .name-project {}
-        .desc-project {}
-    }
-    
-    .icon-holder {
-        min-height: 50vh;
-        border: 3px solid green;
-        .link-to-content {
-            #icon {
-                width: 3em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-color: #406ce7;
+        .container-main-texts {
+            min-height: $second-height;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .name-project {}
+            .desc-project {
+                font-family: $main-font;
             }
         }
+        
+        .icon-holder {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            .link-to-content {
+                #icon {
+                    width: 1em;
+                }
+            }
 
-        .explore {}
+            .explore {}
+        }
     }
 }
