@@ -127,7 +127,9 @@ __________________________________________________________________
 
 - 5° Push:
 	-> Tentativa de fazer animações. Ainda muito cedo para isso. Ficar no básico e melhorar nele;
-	-> ;
-	-> ;
+
+- 6° Push:
+	-> Iniciando interação da cor do menu;
+	-> Não entendia do porque usava arrow function em forEach. Resolvi testar trocar para função normal. Não sabia como. Testei. Deu certo;
 	-> ;
 	-> ;
