@@ -46,3 +46,14 @@
 .br { border-right: $border-size solid $primary; }
 .bb { border-bottom: $border-size solid $primary; }
 .bl { border-left: $border-size solid $primary; }
+
+
+
+/* -- HOVER ANIMATIONS -- */
+// .animation-arrow-down {
+//     transform: translateY(-10px);
+//     transition: transform 0.5s;
+//     &:hover {
+//         transform: translateY(5px);
+//     }
+// }

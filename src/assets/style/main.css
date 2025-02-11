@@ -180,6 +180,7 @@ html {
   border-left: 0.01em solid black;
 }
 
+/* -- HOVER ANIMATIONS -- */
 /* ----- IMPORTS ----- */
 /* ----- FONTS ----- */
 /* -- type -- */
@@ -208,7 +209,7 @@ html {
 /* -- margin -- */
 /* ----- OTHERS ----- */
 header {
-  z-index: 1;
+  border: 3px solid red;
   position: fixed;
   top: 0;
   left: 0;
@@ -236,7 +237,6 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 }
 header .container-navbar .container-menu-options .menu-options-holder .options-holder .links {
   color: white;
-  cursor: not-allowed;
 }
 header .container-navbar .container-menu-options .menu-options-holder .options-holder #icon {
   width: 24px;
@@ -257,15 +257,11 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 /* -- margin -- */
 /* ----- OTHERS ----- */
 #hero-content .container-general {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  min-height: 100vh;
   background-color: #406ce7;
 }
 #hero-content .container-general .container-main-texts {
-  min-height: 82vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,20 +272,23 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
   font-size: 10em;
 }
 #hero-content .container-general .container-main-texts .desc-project {
-  font-family: "Roboto", serif;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2em;
+  color: white;
 }
 #hero-content .container-general .icon-holder {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 2em;
   left: 0;
   text-align: center;
 }
 #hero-content .container-general .icon-holder .link-to-content #icon {
   width: 1em;
 }
-#go p {
-  border: 3px solid red;
+#hero-content .container-general .icon-holder .explore {
+  color: white;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* ----- MODULES ----- */

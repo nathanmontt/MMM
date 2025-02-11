@@ -2,15 +2,16 @@
 
 #hero-content {
     .container-general {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        // bottom: 0;
+        // left: 0;
+        min-height: $main-height;
 
         background-color: $tertiary;
         .container-main-texts {
-            min-height: $second-height;
+            min-height: $main-height;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -20,31 +21,31 @@
                 font-style: $font-style-italic;
                 font-size: $font-size-big-hero;
             }
-
+            
             .desc-project {
-                font-family: $secondary-font;
+                font-family: $main-font;
+                font-size: 1.2em;
+                color: $secondary;
             }
         }
         
         .icon-holder {
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: 2em;
             left: 0;
             text-align: center;
+
             .link-to-content {
                 #icon {
                     width: 1em;
                 }
             }
 
-            .explore {}
+            .explore {
+                color: $secondary;
+                font-family: $main-font;
+            }
         }
-    }
-}
-
-#go {
-    p {
-        border: 3px solid red;
     }
 }

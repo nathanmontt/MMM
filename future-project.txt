@@ -120,10 +120,13 @@ __________________________________________________________________
 	-> Mudança no tipo da fonte, cores e adição de um link a mais no header. O link será usado para criar um DARK/LIGHT MODE;
 	-> Adição de ícone para funcionamento futuro do DARK/LIGHT MODE;
 	-> ;
-	-> ;
+	-> ; 
 
 - 4° Push:
-	-> ;
+	-> Alterações no README;
+
+- 5° Push:
+	-> Tentativa de fazer animações. Ainda muito cedo para isso. Ficar no básico e melhorar nele;
 	-> ;
 	-> ;
 	-> ;
