@@ -27,14 +27,27 @@ header {
                     margin: $margin-small;
                     font-weight: $font-weight-descs;
                     font-family: $main-font;
+
                     .links {
                         color: $secondary;
                     }
-                    
-                    #icon {
-                        width: 24px;
-                        height: 24px;
+
+                    .holder-menu {
+                        border: 3px solid red;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        #icon {
+                            cursor: $cursor-mode-pointer;
+                        }
+                        #modes {}
                     }
+                    
+                    // #icon {
+                    //     width: 24px;
+                    //     height: 24px;
+                    // }
                 }
             }
         }

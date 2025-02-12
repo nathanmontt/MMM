@@ -144,6 +144,11 @@ __________________________________________________________________
 	-> Adição da file _content.scs;
 
 - 9° Push:
-	-> ;
-	-> ;
+	-> Alterações no README;
+
+- 10° Push:
+	-> Linkando as opções do menu para dentro do projeto;
+	-> Mexendo nas funcionalidades do svg arrow down:
+		-- Primeiro: configurando o JS do svg para ativar a funcionalidade com o scrollY;
+		-- Segundo: início da funcionalidade de menu dropdown e modes (dark/light)
 

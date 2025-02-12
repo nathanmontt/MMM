@@ -4,24 +4,32 @@
 // Depois, criamos uma var que armazena o valor dos pixels na tela pela scrollPosY.
 
 window.addEventListener('scroll', function () {
-    const changeColorMenuOptions = document.querySelectorAll('.links');
+    let varVal = 670;
+
+    // const nav = document.querySelector('.container-navbar');
     const logoProject = document.querySelector('.logo');
-    const nav = document.querySelector('.container-navbar');
+    const iconDropDown = this.document.getElementById('icon');
+    const changeColorMenuOptions = document.querySelectorAll('.links');
 
     const holderOfPosYValue = window.scrollY;
 
-    let val = 670;
-
     // Logo do projeto
-    if (holderOfPosYValue > val) {
+    if (holderOfPosYValue > varVal) {
         logoProject.style.color = "black";
     } else {
         logoProject.style.color = "white";
     }
 
+    // Ícone do menu (dropdown)
+    if (holderOfPosYValue > varVal) {
+        iconDropDown.setAttribute("fill", "#000000");
+    } else {
+        iconDropDown.setAttribute("fill", "#FFFFFF");
+    }
+
     // Cada elemento do menu
     changeColorMenuOptions.forEach(el => {
-        if (holderOfPosYValue > val) {
+        if (holderOfPosYValue > varVal) {
             el.style.color = "black";
         } else {
             el.style.color = "white";

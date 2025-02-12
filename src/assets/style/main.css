@@ -238,11 +238,15 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 header .container-navbar .container-menu-options .menu-options-holder .options-holder .links {
   color: white;
 }
-header .container-navbar .container-menu-options .menu-options-holder .options-holder #icon {
-  width: 24px;
-  height: 24px;
+header .container-navbar .container-menu-options .menu-options-holder .options-holder .holder-menu {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+header .container-navbar .container-menu-options .menu-options-holder .options-holder .holder-menu #icon {
+  cursor: pointer;
+}
 /* ----- IMPORTS ----- */
 /* ----- FONTS ----- */
 /* -- type -- */
