@@ -118,9 +118,7 @@ __________________________________________________________________
 - 3° Push:
 	-> Mudança em nome de variáveis e continuação na estilização;
 	-> Mudança no tipo da fonte, cores e adição de um link a mais no header. O link será usado para criar um DARK/LIGHT MODE;
-	-> Adição de ícone para funcionamento futuro do DARK/LIGHT MODE;
-	-> ;
-	-> ; 
+	-> Adição de ícone para funcionamento futuro do DARK/LIGHT MODE; 
 
 - 4° Push:
 	-> Alterações no README;
@@ -151,4 +149,112 @@ __________________________________________________________________
 	-> Mexendo nas funcionalidades do svg arrow down:
 		-- Primeiro: configurando o JS do svg para ativar a funcionalidade com o scrollY;
 		-- Segundo: início da funcionalidade de menu dropdown e modes (dark/light)
+__________________________________________________________________
 
+== Dia 12/02/2025 ==
+
+- 1° Push:
+	-> Alterações no README;
+
+- 2° Push:
+	-> Organização do arquivo .txt até colocá-lo dentro do projeto como conteúdo;
+	-> Continuação de testes na funcionalidade do DARK/LIGHT MODE;
+	-> ;
+	-> ;
+__________________________________________________________________
+
+== Dia 13/02/2025 ==
+
+- 1° Push:
+	-> ;
+	-> ;
+	-> ;
+	-> ;
+
+- 2° Push:
+	-> Alterações no README;
+__________________________________________________________________
+
+== Dia 14/02/2025 ==
+
+- 1° Push:
+	-> ;
+	-> ;
+	-> ;
+	-> ;
+
+- 2° Push:
+	-> Alterações no README;
+__________________________________________________________________
+
+== Dia 15/02/2025 ==
+
+- 1° Push:
+	-> ;
+	-> ;
+	-> ;
+	-> ;
+
+- 2° Push:
+	-> Alterações no README;
+__________________________________________________________________
+
+== Dia 16/02/2025 ==
+
+- 1° Push:
+	-> ;
+	-> ;
+	-> ;
+	-> ;
+
+- 2° Push:
+	-> Alterações no README;
+__________________________________________________________________
+
+== Dia 17/02/2025 ==
+
+- 1° Push:
+	-> ;
+	-> ;
+	-> ;
+	-> ;
+
+- 2° Push:
+	-> Alterações no README;
+__________________________________________________________________
+
+== Dia 18/02/2025 ==
+
+- 1° Push:
+	-> ;
+	-> ;
+	-> ;
+	-> ;
+
+- 2° Push:
+	-> Alterações no README;
+__________________________________________________________________
+
+== Dia 19/02/2025 ==
+
+- 1° Push:
+	-> ;
+	-> ;
+	-> ;
+	-> ;
+
+- 2° Push:
+	-> Alterações no README;
+__________________________________________________________________
+
+== Dia 20/02/2025 ==
+
+- 1° Push:
+	-> ;
+	-> ;
+	-> ;
+	-> ;
+
+- 2° Push:
+	-> Alterações no README;
+__________________________________________________________________
