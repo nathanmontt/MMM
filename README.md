@@ -53,11 +53,11 @@ Correção | Motivo
 
 Para futuras <em>features</em>, alguns opções podem ser levadas em consideração:
 
-*Feature* | Motivo
+*Feature* | Motivo/Explicação
 :---------: | :------:
 **Uso** | Com o avanço dos meus estudos, será possível disponibilizar o projeto para uso da própria pessoa
 **TODO List** | Fazer com que o *user* possa adicionar, excluir, editar tarefas como se fosse uma TODO List
-**Modes** | Fazer um DARK/LIGHT MODE
+**Modes** | Fazer um DARK/LIGHT MODE (**EM PROGRESSO**)
 
 
 <h1 id="inspirations"> Inspirações </h1>
@@ -73,7 +73,7 @@ A seção abaixo foi adicionada para caso queira verificar algum conteúdo de es
 *Tipo do Estudo* | Nome do Artigo
 :---------: | :------:
 **fetch** | <a href="https://bobbyhadz.com/blog/a-listener-indicated-asynchronous-response-by-returning-true">Forgetting to return <strong>true</strong> when fetching data from cross-origin URLs</a> <br> <a href="https://www.freecodecamp.org/portuguese/news/fetch-api-como-fazer-solicitacoes-get-e-post-em-javascript/">Fetch API – como fazer solicitações GET e POST em JavaScript</a> <br> <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document/DOMContentLoaded_event">DOMContentLoaded</a> <br> <a href="https://www.alura.com.br/artigos/como-resolver-erro-de-cross-origin-resource-sharing"> O que é CORS e como resolver um erro de Cross-Origin Resource Sharing (CORS)?</a> <br> <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors">CORS errors</a>
-**JS** | <a href="https://bobbyhadz.com/blog/change-background-color-on-scroll-using-javascript">Change the Background Color on Scroll using JavaScript</a> <br> <a href="https://github.com/bobbyhadz/change-background-color-on-scroll-using-javascript">The repository for the previous article</a>
+**JS** | <a href="https://bobbyhadz.com/blog/change-background-color-on-scroll-using-javascript">Change the Background Color on Scroll using JavaScript</a> <br> <a href="https://github.com/bobbyhadz/change-background-color-on-scroll-using-javascript">The repository for the previous article</a> <br> <a href="https://www.w3schools.com/graphics/svg_scripting.asp">SVG Scripting</a>
 **CSS** | <a href="https://medium.com/@themaheshvaishnav/how-to-change-font-color-in-css-while-scrolling-9066d24b787c">How to Change Font Color in CSS While Scrolling</a>
 
 OBS.: os conteúdos de *fetch* ainda serão mantidos em algums projetos futuros também.
