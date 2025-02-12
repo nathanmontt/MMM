@@ -2,5 +2,20 @@
 
 #content {
     min-height: $main-height;
-    border: 3px solid red;
+
+    #about-one {
+        .container-mediaQuery {
+            .container-texts {
+                .title-about-one {}
+                .sub-title-about-one {}
+                .desc-about-one {}
+                
+                .container-link-see-more {
+                    .view-more-link {}
+                    #icon-see-more {}
+                }
+            }
+            .container-image {}
+        }
+    }
 }

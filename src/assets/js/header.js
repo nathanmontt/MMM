@@ -41,61 +41,6 @@ window.addEventListener('scroll', function changeFontMenuOptionsColor () {
     }
 });
 
-let optionsHolder = document.querySelectorAll('.options-holder');
-document.addEventListener('DOMContentLoaded', function () {
-    // console.log(optionsHolder)
-});
-let icon = document.getElementById("icon");
-
-
-
-// const dropDownIcon = document.querySelector('.btn-cta');
-// const btnChangeModes = document.getElementById('modes');
-
-
-
-// document.addEventListener('click', function openMenu() {
-//     // Função para abrir o menu de DARK/LIGHT MODE
-//     const btnChangeModes = document.getElementById('modes');
-//     // const changeColorMenuOptions = document.querySelectorAll('.links');
-
-//     iconDropDown.onclick
-    
-//     iconDropDown.addEventListener('click', function () {
-//         console.log(dropDownIcon);
-//         if (btnChangeModes.classList.contains('hidden')) {
-//             console.log(dropDownIcon);
-//             btnChangeModes.classList.remove('hidden');
-//         } else {
-//             console.log(dropDownIcon);
-//             btnChangeModes.classList.add('hidden');
-//         }
-//         console.log("teste: " + iconDropDown);
-//     });
-// });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     iconDropDown.addEventListener('click', function () {
-//         if (btnChangeModes.classList.contains('hidden')) {
-//             btnChangeModes.classList.remove('hidden');
-//         } else {
-//             btnChangeModes.classList.add('hidden');
-//         }
-//         console.log("teste: " + iconDropDown);
-//     });
-// })
-
-// dropDownIcon.addEventListener('click', function openModes() {
-//     changeColorMenuOptions.forEach(el => {
-//         if (btnChangeModes.classList.contains('hidden')) {
-//             btnChangeModes.classList.remove('hidden');
-//         } else {
-//             btnChangeModes.classList.add('hidden');
-//         }
-//         console.log("teste: " + dropDownIcon);
-//     })
-// })
-
 // const buttonMenu = document.querySelector('.menu-btn-cta');
 // const optionsLinks = document.querySelectorAll('.options-holder');
 

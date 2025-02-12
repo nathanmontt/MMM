@@ -159,8 +159,10 @@ __________________________________________________________________
 - 2° Push:
 	-> Organização do arquivo .txt até colocá-lo dentro do projeto como conteúdo;
 	-> Continuação de testes na funcionalidade do DARK/LIGHT MODE;
-	-> ;
-	-> ;
+
+- 3° Push:
+	-> Início da seção About, mas a menor. A maior terá uma página dedicada;
+	-> Colocação do esqueleto do estilo do about-one;
 __________________________________________________________________
 
 == Dia 13/02/2025 ==
