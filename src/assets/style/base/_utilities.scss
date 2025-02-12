@@ -47,7 +47,15 @@
 .bb { border-bottom: $border-size solid $primary; }
 .bl { border-left: $border-size solid $primary; }
 
-
+/* -- SEPARATORS -- */
+.ls {
+    display: grid;
+    place-self: center;
+    width: 100%;
+    height: $border-second-size;
+    background-color: $gray;
+    margin-top: $margin-medium-top;
+}
 
 /* -- HOVER ANIMATIONS -- */
 // .animation-arrow-down {

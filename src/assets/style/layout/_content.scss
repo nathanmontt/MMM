@@ -3,18 +3,34 @@
 #content {
     min-height: $main-height;
 
+    margin: $margin-medium;
     #about-one {
         .container-mediaQuery {
             .container-texts {
-                .title-about-one {}
-                .sub-title-about-one {}
+                font-family: $main-font;
+                .title-about-one {
+                    font-size: $font-size-about;
+                }
+                
+                .sub-title-about-one {
+                    margin: 0 0 $margin-medium-bottom 0;
+                }
                 .desc-about-one {}
                 
                 .container-link-see-more {
-                    .view-more-link {}
-                    #icon-see-more {}
+                    display: flex;
+                    align-items: center;
+                    margin-top: $margin-medium-top;
+                    .view-more-link {
+                        color: $tertiary;
+                    }
+                    #icon-see-more {
+                        margin-left: .4em;
+                        width: 1em;
+                    }
                 }
             }
+
             .container-image {}
         }
     }

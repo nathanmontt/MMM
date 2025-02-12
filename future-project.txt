@@ -163,6 +163,10 @@ __________________________________________________________________
 - 3° Push:
 	-> Início da seção About, mas a menor. A maior terá uma página dedicada;
 	-> Colocação do esqueleto do estilo do about-one;
+
+- 4° Push:
+	-> Mudança no nome do about-one para about. Será a página de estilos dedicada à seção Sobre;
+	-> Utilização de variáveis de outros projetos para o atual;
 __________________________________________________________________
 
 == Dia 13/02/2025 ==
