@@ -13,7 +13,6 @@ window.addEventListener('scroll', function changeFontMenuOptionsColor () {
     // Na hora de fazer a verificação, eu poderia colocar o window.scrollY, porém é mais simples armazená-lo em uma variável;
     // Lembrando que o scrollY é do tipo number, ou seja, ele nos retorna um valor;
     const holderOfPosYValue = window.scrollY;
-    console.log(iconDropDown);
     
     // Usamos esse valor para verificar com a varVal que definimos anteriormente;
     // Logo do projeto
@@ -42,25 +41,38 @@ window.addEventListener('scroll', function changeFontMenuOptionsColor () {
     }
 });
 
-const iconDropDown = document.getElementById('icon');
-
+let optionsHolder = document.querySelectorAll('.options-holder');
 document.addEventListener('DOMContentLoaded', function () {
-    // Função para abrir o menu de DARK/LIGHT MODE
-    const btnChangeModes = document.getElementById('modes');
-    // const changeColorMenuOptions = document.querySelectorAll('.links');
-    
-    iconDropDown.addEventListener('click', function () {
-        console.log(dropDownIcon);
-        if (btnChangeModes.classList.contains('hidden')) {
-            console.log(dropDownIcon);
-            btnChangeModes.classList.remove('hidden');
-        } else {
-            console.log(dropDownIcon);
-            btnChangeModes.classList.add('hidden');
-        }
-        console.log("teste: " + iconDropDown);
-    });
+    // console.log(optionsHolder)
 });
+let icon = document.getElementById("icon");
+
+
+
+// const dropDownIcon = document.querySelector('.btn-cta');
+// const btnChangeModes = document.getElementById('modes');
+
+
+
+// document.addEventListener('click', function openMenu() {
+//     // Função para abrir o menu de DARK/LIGHT MODE
+//     const btnChangeModes = document.getElementById('modes');
+//     // const changeColorMenuOptions = document.querySelectorAll('.links');
+
+//     iconDropDown.onclick
+    
+//     iconDropDown.addEventListener('click', function () {
+//         console.log(dropDownIcon);
+//         if (btnChangeModes.classList.contains('hidden')) {
+//             console.log(dropDownIcon);
+//             btnChangeModes.classList.remove('hidden');
+//         } else {
+//             console.log(dropDownIcon);
+//             btnChangeModes.classList.add('hidden');
+//         }
+//         console.log("teste: " + iconDropDown);
+//     });
+// });
 
 // document.addEventListener('DOMContentLoaded', function () {
 //     iconDropDown.addEventListener('click', function () {
