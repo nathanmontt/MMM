@@ -1,5 +1,5 @@
 # *E³ - Eu, Eu Aqui e Eu Mesmo*
-***E³*** é um guia diário nos seus estudos (nesse caso, dos meus, por enquanto)
+***E³***: um guia diário nos seus estudos (pelo menos nos meus, por enquanto)
 
 ---
 
@@ -7,18 +7,18 @@
 
 * [Sobre o Projeto](#about)
 * [Habilidades Necessárias](#abilities)
+* [Como executar](#execute)
 * [Contribuindo](#contribuition)
 * [Correções Futuras](#fut-corr)
 * [*Features* Futuras](#fut-feats)
 * [Inspirações](#inspirations)
 * [Links Úteis](#links)
 * [Créditos](#credits)
-<!-- * [Como executar](#execute) -->
 
 
 <h1 id="about">Sobre o Projeto</h1>
 
-É um *tracking* de estudos. <em>E³</em> foi pensando especificamente para o autor do projeto. Ele serve como um *tracking* para todos as ideias (sejam pessoais e/ou profissionais), estudos da faculdade, idealizações de projetos (seja na área *tech* ou não), entre outros. O projeto serve como um guia diário de estudo/trabalho pessoal.
+É como um *tracking*. <em>E³</em> foi pensando especificamente para o autor do projeto. Ele serve como um rastreador para todos as ideias (sejam pessoais e/ou profissionais), estudos da faculdade, idealizações de projetos (seja na área *tech* ou não), entre outros. O projeto serve especificamente como um guia diário de estudo/trabalho pessoal. Além disso, haverão dias em que não será possível a conclusão ou idealização de algum projeto, alguma ideia. Pensando nisso, para sempre manter o Github ativo (e a mente com os estudos também), ***E³*** foi idealizado para isso.
 
 
 <h1 id="abilities"> Habilidades Necessárias </h1>
@@ -26,13 +26,12 @@
 Seguindo o "*template*" dos projetos anteriores, além das linguagens utilizadas mostradas abaixo, *links* para estudo foram usadaos. Todos eles serão colocados na aba <a href="#links"> Links Úteis </a>.
 
 - HTML, CSS (e seu pré-processador ***SCSS***), JavaScript *Vanilla*;
+- De início, foi pensando em utilizar ***Tailwind CSS***, mas por enquanto deixarei de lado
 
 
-<!--
 <h1 id="execute"> Como executar </h1>
 
-É possível entrar no site acessando <a href="https://flashcostore.vercel.app/" target="_blank">esse link</a>, pelo <strong>Vercel</strong> ou <a href="https://flashcostore.netlify.app" target="_blank">esse link</a>, usando a <strong>Netlify</strong>.
--->
+No momento, esse foi um dos primeiros projetos que não veio com a ideia de *deploy*. É possível que ocorra isso, porém um pouco mais a frente.
 
 
 <h1 id="contribuition"> Contribuindo </h1>
@@ -47,6 +46,7 @@ Para futuras correções:
 Correção | Motivo
 :---------: | :------:
 **Header** | O *fetch* continua dando certos problemas (por exemplo, com a interação do menu). Tentar mudar a abordagem ou deixar essa parte de lado, já que é um conceito muito avançado
+**Uncaught** | *Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')*. Tentar resolver esse erro, pois já recebi essa mensagem no log diversas vezes e só foi resolvida com **document.addEventListener('DOMContentLoaded', function(){ ... })**
 
 
 <h1 id="fut-feats"> <em>Features</em> Futuras </h1>
