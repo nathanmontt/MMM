@@ -172,13 +172,18 @@ __________________________________________________________________
 == Dia 13/02/2025 ==
 
 - 1° Push:
-	-> ;
-	-> ;
-	-> ;
-	-> ;
+	-> Alterações no README;
 
 - 2° Push:
-	-> Alterações no README;
+	-> Alterações no README (colocação de sites e artigos para resolição dos conflitos);
+
+- 3° Push:
+	-> Continuação do about-small;
+	-> Criação de um novo arquivo, hover.js, para a adição de "animações" em JS (como o prórpio nome já diz, hover). Nela, vou tentar armazenar apenas essas interações com o user através do mouse;
+	-> Troca de posição das tags de script para dentro da head. Era uma tentativa de resolver o problema já citado no repositório do projeto;
+	-> Mudanças na posiçao do "explorar", além de adicionar animações no mesmo;
+	-> Correção por parte do tipo de display do "botão" "explorar";
+	-> ;
 __________________________________________________________________
 
 == Dia 14/02/2025 ==

@@ -298,16 +298,20 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 #hero-content .container-general .icon-holder {
   position: absolute;
   right: 0;
-  bottom: 2em;
+  bottom: 1.5em;
   left: 0;
-  text-align: center;
-}
-#hero-content .container-general .icon-holder .link-to-content #icon {
-  width: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #hero-content .container-general .icon-holder .explore {
   color: white;
   font-family: "Cormorant Garamond", serif;
+}
+#hero-content .container-general .icon-holder #icon {
+  transform: translateY(0.5em);
+  width: 1.1em;
 }
 
 /* ----- IMPORTS ----- */
