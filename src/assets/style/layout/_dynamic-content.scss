@@ -1,12 +1,24 @@
 @import '../base/variables';
 
 #dynamic-content {
-    .container-accordion {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-
-        .indicator-text {}
-        .open-close-accordion {}
+    #university, #carrer, #hobby {
+        // border: 3px solid red;
+        .container-accordion {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: $cursor-mode-pointer;
+            // width: 100%;
+            
+            .indicator-text {
+                font-family: $main-font;
+                font-weight: $font-weight-title;
+                font-size: $font-size-med;
+                padding: $padding-medium-top 0 $padding-medium-bottom 0;
+            }
+            .open-close-accordion {
+                font-size: $font-size-big;
+            }
+        }
     }
 }

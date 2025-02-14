@@ -258,6 +258,15 @@ __________________________________________________________________
 	-> Adição de estilo no HTML (diretamente nele);
 
 - 4° Push:
+	-> Organização e começo da funcionalidade para o acordeão;
+	-> Finalização da organização estática;
+	-> Início da criação do mecanismo de acordeão;
+	-> Finalização do mecanismo de acordeão;
+
+- 5° Push:
+	-> ;
+
+- 6° Push:
 	-> Alterações no README;
 __________________________________________________________________
 

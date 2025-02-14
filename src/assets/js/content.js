@@ -123,17 +123,17 @@ function renderHobbyDay(hobbyDay) {
 }
 
 // Função responsável por adicionar os containers dentro dos seus devidos containers
-function renderAllDays() {
-    const containerUni = document.getElementById('uni-container-info');
-    const containerCarrer = document.getElementById('carrer-container-info');
-    const containerHobby = document.getElementById('hobby-container-info');
-    
+const containerUni = document.getElementById('uni-container-info');
+const containerCarrer = document.getElementById('carrer-container-info');
+const containerHobby = document.getElementById('hobby-container-info');
+
+function renderAllDays() {    
     // Limpa qualquer conteúdo anterior
     // containerUni.innerHTML = '';
     // containerCarrer.innerHTML = '';
     // containerHobby.innerHTML = '';
   
-    // Percorre o array 'days' e renderiza cada dia
+    // Percorre todos os arrays e renderiza cada dia
     university.forEach(uniDay => {
         const dayUniElem = renderUniDay(uniDay);
         containerUni.appendChild(dayUniElem);
@@ -154,3 +154,21 @@ function renderAllDays() {
 document.addEventListener('DOMContentLoaded', () => {
     renderAllDays();
 });
+
+// Evento para abrir os acordeões
+const stAccordion = document.querySelector('.one-a');
+const ndAccordion = document.querySelector('.two-a');
+const rdAccordion = document.querySelector('.three-a');
+
+stAccordion.addEventListener('click', function () {
+    containerUni.classList.toggle('hidden');
+});
+
+ndAccordion.addEventListener('click', function () {
+    containerCarrer.classList.toggle('hidden');
+});
+
+rdAccordion.addEventListener('click', function () {
+    containerHobby.classList.toggle('hidden');
+});
+
