@@ -370,6 +370,10 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 /* -- padding -- */
 /* -- margin -- */
 /* ----- OTHERS ----- */
+#dynamic-content {
+  border: 3px solid red;
+}
+
 /* ----- MODULES ----- */
 /* ----- IMPORTS ----- */
 /* ----- FONTS ----- */
