@@ -57,6 +57,15 @@
     margin-top: $margin-medium-top;
 }
 
+.ls-accordion {
+    display: grid;
+    place-self: center;
+    width: 100%;
+    height: $border-second-size;
+    background-color: $gray;
+    margin-top: .4em;
+}
+
 /* -- JUST FOR MAIN -- */
 .main-content {
     min-height: $main-height;

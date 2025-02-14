@@ -1,5 +1,12 @@
 @import '../base/variables';
 
 #dynamic-content {
-    // border: 3px solid red;
+    .container-accordion {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .indicator-text {}
+        .open-close-accordion {}
+    }
 }

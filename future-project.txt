@@ -252,7 +252,10 @@ __________________________________________________________________
 	-> Adição de elementos no HTML para confecção do acordeão;
 
 - 3° Push:
-	-> ;
+	-> Processo da lógica para o acordeão;
+	-> Adição de uma nova variável no _utilities;
+	-> Início da estilização do conteúdo dinâmico;
+	-> Adição de estilo no HTML (diretamente nele);
 
 - 4° Push:
 	-> Alterações no README;

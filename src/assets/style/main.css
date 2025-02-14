@@ -194,6 +194,15 @@ html {
   margin-top: 1.1em;
 }
 
+.ls-accordion {
+  display: grid;
+  place-self: center;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgba(156, 156, 156, 0.5725490196);
+  margin-top: 0.4em;
+}
+
 /* -- JUST FOR MAIN -- */
 .main-content {
   min-height: 100vh;
@@ -370,6 +379,11 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 /* -- padding -- */
 /* -- margin -- */
 /* ----- OTHERS ----- */
+#dynamic-content .container-accordion {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 /* ----- MODULES ----- */
 /* ----- IMPORTS ----- */
 /* ----- FONTS ----- */
