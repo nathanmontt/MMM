@@ -30,89 +30,126 @@ const carrer = [
 const hobby = [
     {
         date: 'DD/MM/AAAA',
+        subject: 'Game, Beatmaking, Content, etc...',
         study: [
             `Fiz isso, isso, isso e mais isso`,
+            `Fiz isso, isso, isso e mais issofghf vkjkj`,
+            `Fiz isso, isso, isso e mais issoeee`,
         ]
     },
 ];
 
-/* Função que cria as tags */
-function renderUniDay(day) {
+/* Função que cria as tags pra UNI */
+function renderUniDay(uniDay) {
     /* Cria um container para a Uni, Carreira e Hobby.
     Dentro desse container, é aonde vai entrar o conteúdo que queremos mostrar*/
     const uniContainer = document.createElement('div');
 
     /* Criamos e adicionamos classes às divs de cima */
     uniContainer.classList.add('uni-day-block');
-  
+    
     // Criam-se tags que armazenam algumas infos. inciais
     const textMainTitle = document.createElement('h2');
     const subjectOfTheDay = document.createElement('p');
-
-    textMainTitle.textContent = `Dia ${day.date}`;
-    subjectOfTheDay.textContent = `${day.subject}`;
+    
+    textMainTitle.textContent = `Dia ${uniDay.date}`;
+    subjectOfTheDay.textContent = `${uniDay.subject}`;
     
     uniContainer.appendChild(textMainTitle);
     uniContainer.appendChild(subjectOfTheDay);
     // textMainTitle.style.fontFamily = 'Cormorant Garamond, serif';
-  
+    
     // Cria a tag <ul> para as atividades
     const ulHolderItemStudy = document.createElement('ul');
-    day.study.forEach(activity => {
+    uniDay.study.forEach(activity => {
         const liItemStudy = document.createElement('li');
         liItemStudy.textContent = activity;
         ulHolderItemStudy.appendChild(liItemStudy);
     });
-  
+    
     uniContainer.appendChild(ulHolderItemStudy);
-  
+    
     return uniContainer;
 }
 
-function renderCarrearDay(day) {
-    /* Cria um container para a Uni, Carreira e Hobby.
-    Dentro desse container, é aonde vai entrar o conteúdo que queremos mostrar*/
+/* Função que cria as tags pra CARRER */
+function renderCarrerDay(carrerDay) {
     const carrerContainer = document.createElement('div');
-
-    /* Criamos e adicionamos classes às divs de cima */
     carrerContainer.classList.add('carrer-day-block');
-  
-    // Criam-se tags que armazenam algumas infos. inciais
+    
     const textMainTitle = document.createElement('h2');
     const gitPushOfTheDay = document.createElement('p');
 
-    textMainTitle.textContent = `Dia ${day.date}`;
-    subjectOfTheDay.textContent = `${day.subject}`;
+    textMainTitle.textContent = `Dia ${carrerDay.date}`;
+    gitPushOfTheDay.textContent = `${carrerDay.gitPushCount}`;
     
-    uniContainer.appendChild(textMainTitle);
-    uniContainer.appendChild(subjectOfTheDay);
-    // textMainTitle.style.fontFamily = 'Cormorant Garamond, serif';
+    carrerContainer.appendChild(textMainTitle);
+    carrerContainer.appendChild(gitPushOfTheDay);
   
-    // Cria a tag <ul> para as atividades
     const ulHolderItemStudy = document.createElement('ul');
-    day.study.forEach(activity => {
+    carrerDay.study.forEach(activity => {
         const liItemStudy = document.createElement('li');
         liItemStudy.textContent = activity;
         ulHolderItemStudy.appendChild(liItemStudy);
     });
   
-    uniContainer.appendChild(ulHolderItemStudy);
+    carrerContainer.appendChild(ulHolderItemStudy);
   
-    return uniContainer;
+    return carrerContainer;
 }
 
-// Função responsável por adicionar os containers dentro do container principal
+/* Função que cria as tags pra HOBBY */
+function renderHobbyDay(hobbyDay) {
+    const hobbyContainer = document.createElement('div');
+    hobbyContainer.classList.add('hobby-day-block');
+    
+    const textMainTitle = document.createElement('h2');
+    const hobbySubjectOfTheDay = document.createElement('p');
+    
+    textMainTitle.textContent = `Dia ${hobbyDay.date}`;
+    hobbySubjectOfTheDay.textContent = `${hobbyDay.subject}`;
+    
+    hobbyContainer.appendChild(textMainTitle);
+    hobbyContainer.appendChild(hobbySubjectOfTheDay);
+    
+    const ulHolderItemStudy = document.createElement('ul');
+    hobbyDay.study.forEach(activity => {
+        const liItemStudy = document.createElement('li');
+        liItemStudy.textContent = activity;
+        ulHolderItemStudy.appendChild(liItemStudy);
+    });
+    
+    hobbyContainer.appendChild(ulHolderItemStudy);
+    
+    return hobbyContainer;
+}
+
+// Função responsável por adicionar os containers dentro dos seus devidos containers
 function renderAllDays() {
-    const container = document.getElementById('days-container');
+    const containerUni = document.getElementById('uni-container-info');
+    const containerCarrer = document.getElementById('carrer-container-info');
+    const containerHobby = document.getElementById('hobby-container-info');
     
     // Limpa qualquer conteúdo anterior
-    container.innerHTML = '';
+    containerUni.innerHTML = '';
+    containerCarrer.innerHTML = '';
+    containerHobby.innerHTML = '';
   
     // Percorre o array 'days' e renderiza cada dia
-    university.forEach(day => {
-        const dayElement = renderUniDay(day);
-        container.appendChild(dayElement);
+    university.forEach(uniDay => {
+        const dayUniElement = renderUniDay(uniDay);
+        containerUni.appendChild(dayUniElement);
     });
+
+    carrer.forEach(function renderAllCarrerDays (carrerDay) {
+        const dayCarrerElement = renderCarrerDay(carrerDay);
+        containerCarrer.appendChild(dayCarrerElement);
+    });
+
+    hobby.forEach(function renderAllHobbyDays (hobbyDay) {
+        const dayHobbyEl = renderAllHobbyDays(hobbyDay);
+        containerHobby.appendChild(dayHobbyEl);
+    })
 }
 
 // Antes de tudo, carregamos o container principal com os conteúdos dentro
