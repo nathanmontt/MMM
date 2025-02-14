@@ -33,8 +33,6 @@ const hobby = [
         subject: 'Game, Beatmaking, Content, etc...',
         study: [
             `Fiz isso, isso, isso e mais isso`,
-            `Fiz isso, isso, isso e mais issofghf vkjkj`,
-            `Fiz isso, isso, isso e mais issoeee`,
         ]
     },
 ];
@@ -131,14 +129,14 @@ function renderAllDays() {
     const containerHobby = document.getElementById('hobby-container-info');
     
     // Limpa qualquer conteúdo anterior
-    containerUni.innerHTML = '';
-    containerCarrer.innerHTML = '';
-    containerHobby.innerHTML = '';
+    // containerUni.innerHTML = '';
+    // containerCarrer.innerHTML = '';
+    // containerHobby.innerHTML = '';
   
     // Percorre o array 'days' e renderiza cada dia
     university.forEach(uniDay => {
-        const dayUniElement = renderUniDay(uniDay);
-        containerUni.appendChild(dayUniElement);
+        const dayUniElem = renderUniDay(uniDay);
+        containerUni.appendChild(dayUniElem);
     });
 
     carrer.forEach(function renderAllCarrerDays (carrerDay) {
@@ -147,7 +145,7 @@ function renderAllDays() {
     });
 
     hobby.forEach(function renderAllHobbyDays (hobbyDay) {
-        const dayHobbyEl = renderAllHobbyDays(hobbyDay);
+        const dayHobbyEl = renderHobbyDay(hobbyDay);
         containerHobby.appendChild(dayHobbyEl);
     })
 }

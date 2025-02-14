@@ -248,10 +248,13 @@ __________________________________________________________________
 	-> Adiciona mais objetos e mais separações no HTML para organizar os estudos em seção;
 
 - 2° Push:
-	-> Tentando finalizar a parte dinâmica do conteúdo diário;
-	-> ;
+	-> Finalização da parte dinâmica do conteúdo diário;
+	-> Adição de elementos no HTML para confecção do acordeão;
 
 - 3° Push:
+	-> ;
+
+- 4° Push:
 	-> Alterações no README;
 __________________________________________________________________
 
