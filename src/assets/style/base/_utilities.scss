@@ -57,11 +57,8 @@
     margin-top: $margin-medium-top;
 }
 
-/* -- HOVER ANIMATIONS -- */
-// .animation-arrow-down {
-//     transform: translateY(-10px);
-//     transition: transform 0.5s;
-//     &:hover {
-//         transform: translateY(5px);
-//     }
-// }
+/* -- JUST FOR MAIN -- */
+.main-content {
+    min-height: $main-height;
+    margin: $margin-medium;
+}

@@ -183,13 +183,67 @@ __________________________________________________________________
 	-> Troca de posição das tags de script para dentro da head. Era uma tentativa de resolver o problema já citado no repositório do projeto;
 	-> Mudanças na posiçao do "explorar", além de adicionar animações no mesmo;
 	-> Correção por parte do tipo de display do "botão" "explorar";
-	-> ;
+	
+- 4° Push:
+	-> Início do primeiro curso de Responsive Web Design da freeCodeCamp.org. Conteúdo do dia:
+		-- Opening/closing tags: servem para, entre elas, adicionar o conteúdo que aparece visivelmente (em alguns casos) para o usuário;
+		
+		-- Headings. Os cabeçalhos são usados para indicar a importância do conteúdo abaixo deles;
+
+		-- Paragraphs. Os parágrafos são usados para colocar textos no site (o mesmo para os headings [h1, h2, ..., h6], mas não com a mesma ênfase);
+
+		-- Coments. Comentários são usados para não interefir no código e dar explicação do que foi feito. Comentários são bons na maioria das vezes, porém o excesso do mesmo dificulta a leitura;
+
+		-- SEO (Search Engine Optimization). Existem tags que servem para guiar o browser "diretamente" ao seu site. Essas tags (algumas delas <main></main>, <header></header> e <footer></footer>, por exemplo) são usadas para isso, além da melhorar na acessibilidade. 
+
+		-- Nesting. No geral, é uma forma melhor de se visualizar o código. Até porque tudo seguindo a mesma coluna ficaria muito estranho;
+
+		-- Void Elements. São elementos nos quais possuem apenas opening tags e não closing tags, como <img src="" alt="">, <br> (blank row) ou <hr> (horizontal row)
+
+		-- Attributes. As tags apenas por si só funcionam, mas algumas precisam de atributos, como por exemplo a da imagem. Como saberemos qual imagem utilizar se colocarmos apenas a tag <img>? Para isso, fazemos como no texto acima: <img src="" alt="">. O atributo "src" é usado para colocar a imagem que queremos, sendo ela vindo local ou remotamente, e o atributo "alt" é usado para colocar o texto que aparece quando a imagem não é carregada;
+
+		-- Figure. A primeira tag aprendida foi a figcaption, que coloca como se fosse uma legenda na imagem, logo abaixo dela, indicando o que a imagem acima dela representa;
+
+		-- Forms. Primeiro, na linha do forms.
+			- Temos um atributo chamado "action", que indica para onde o formulário deve ser enviado;
+
+			- Depois, inputs. Eles servem para que a gente envie os dados para o link colocado na action. Mas não é tão simples assim. Para que isso funcione, precisamos de um outro atributo, o "name", ou seja, precisamos dar um tipo de nome para que o action saiba QUAL TIPO DE DADO ESTAMOS ENVIANDO (um nome, um número, uma checkbox);
+
+			- Depois, botões. Fora dos formulários, eles não "servemp para muita coisa". Mas dentro de um forms, mesmo sem indicar para onde o que vai aonde, ele segue o caminho do atributo "action";
+
+			- Depois, label. Normalmente, ajuda leitores de tela na questão de acessibilidade, além de indicar o que aquele input precisa, tem. Envolvendo um input, por exemplo, de radio, checkbox, clicando no nome, ele já é marcado. Caso ele fique fora indicando outra outra coisa, ao clicar no nome do radio/checkbox que quero marcar, nada acontece;
+
+			---- OBS.: RADIO BUTTONS! Normalmente, sem configuração nem nada, os radio buttons podem ser marcados aos montes. Para que isso não ocorra, O ATRIBUTO NAME, EM TODOS ELES, PRECISA TER O MESMO NOME;
+
+			- Depois, values. Sempre lembrar de colocar todos esses atributos dentro de um "input". Lembrar que, por conveniência, usar o mesmo valor do id;
+
+			- Depois, fieldset. Ele agrupa inputs e labels dentro "de um forms" e forma um "grupo" visísvel (é um border montado ali, visível de se ver). Junto com ele, como podemos ter diversos inputs, labels e botões, o elemento legend funciona como uma legenda para o fieldset, indicando o que ele representa;
+
+			---- Outra forma de utilizar o label é usando o atributo for dentro dele. Isso serve para que o label possa ser usado como uma legenda para o input, mesmo que ele não esteja diretamente ao lado dele. Usamos o mesmo valor do id do input para isso;
+
+			---- Um ponto legal a se lembrar é que, caso já queiramos que o radio/checkbox esteja marcado, podemos usar o atributo checked, mas apenas dentro do input;
+
+		-> De 71 aulas do LEARN HTML BY BUILDING A CAT PHOTO APP, foram feitas 71;
+
+	-> Mudança em nome de files, organização de alguns arquivos de estilo e (quase) finalização da lógica por trás da colocação do conteúdo diário de forma dinâmica;
+
+	-> Criação de um novo arquivo para estilização dos conteúdos diários;
+
+	-> 
 __________________________________________________________________
 
 == Dia 14/02/2025 ==
 
 - 1° Push:
-	-> ;
+	-> Início do segundo curso de Responsive Web Design da freeCodeCamp.org. Conteúdo do dia:
+	
+			-- 
+
+			-- 
+
+			-- 
+
+		-> De 91 aulas do LEARN CSS BY BUILDING A CAFE MENU, foram feitas X;
 	-> ;
 	-> ;
 	-> ;
