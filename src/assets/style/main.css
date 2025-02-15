@@ -393,6 +393,27 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 #dynamic-content #university .container-accordion .open-close-accordion, #dynamic-content #carrer .container-accordion .open-close-accordion, #dynamic-content #hobby .container-accordion .open-close-accordion {
   font-size: 1.4em;
 }
+#dynamic-content #university .container-see-more-overlay .overlay-btn-cta-one,
+#dynamic-content #university .container-see-more-overlay .overlay-btn-cta-two,
+#dynamic-content #university .container-see-more-overlay .overlay-btn-cta-three, #dynamic-content #carrer .container-see-more-overlay .overlay-btn-cta-one,
+#dynamic-content #carrer .container-see-more-overlay .overlay-btn-cta-two,
+#dynamic-content #carrer .container-see-more-overlay .overlay-btn-cta-three, #dynamic-content #hobby .container-see-more-overlay .overlay-btn-cta-one,
+#dynamic-content #hobby .container-see-more-overlay .overlay-btn-cta-two,
+#dynamic-content #hobby .container-see-more-overlay .overlay-btn-cta-three {
+  margin-bottom: 1.1em;
+}
+#dynamic-content #university .container-see-more-overlay #uni-container-info,
+#dynamic-content #university .container-see-more-overlay #carrer-container-info,
+#dynamic-content #university .container-see-more-overlay #hobby-container-info, #dynamic-content #carrer .container-see-more-overlay #uni-container-info,
+#dynamic-content #carrer .container-see-more-overlay #carrer-container-info,
+#dynamic-content #carrer .container-see-more-overlay #hobby-container-info, #dynamic-content #hobby .container-see-more-overlay #uni-container-info,
+#dynamic-content #hobby .container-see-more-overlay #carrer-container-info,
+#dynamic-content #hobby .container-see-more-overlay #hobby-container-info {
+  height: 15em;
+  margin-bottom: 0.5em;
+  background: linear-gradient(180deg, rgba(108, 108, 108, 0) 60%, #2f2f2f 100%);
+  overflow-y: hidden;
+}
 
 /* ----- MODULES ----- */
 /* ----- IMPORTS ----- */
@@ -413,6 +434,20 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.btn-cta-access-study {
+  padding: 0.5em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  background-color: transparent;
+  border: 0.01em solid black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+.btn-cta-access-study:hover {
+  background-color: #406ce7;
+  color: white;
 }
 
 /* ----- STATE ----- */

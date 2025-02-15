@@ -262,23 +262,22 @@ __________________________________________________________________
 	-> Finalização da organização estática;
 	-> Início da criação do mecanismo de acordeão;
 	-> Finalização do mecanismo de acordeão;
-
-- 5° Push:
-	-> ;
-
-- 6° Push:
-	-> Alterações no README;
 __________________________________________________________________
 
 == Dia 15/02/2025 ==
 
 - 1° Push:
-	-> ;
-	-> ;
-	-> ;
-	-> ;
+	-> Continuação nas modificações do JS e suas interatividades;
+	-> Idealização da ideia da modal window. Veio do pretexto de não deixar tudo em um local apenas e fazer com que ficasse mais organizado, não tudo acumulado;
+	-> Exclusão da ideia da página de SOBRE, levando apenas a possibilidade de fazer o Sobre na primeira página (como se fosse uma landing page);
+	-> Adição de mais estilos na parte do conteúdo dinâmico;
+	-> Adição, dentro do module, de uma nova classe para botão. Mais especificamente, um botão para acessar todo o conteúdo;
+	-> Término da adição do acordeão;
 
 - 2° Push:
+	-> ;
+
+- 3° Push:
 	-> Alterações no README;
 __________________________________________________________________
 

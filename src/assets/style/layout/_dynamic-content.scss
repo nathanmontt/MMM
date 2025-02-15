@@ -2,7 +2,6 @@
 
 #dynamic-content {
     #university, #carrer, #hobby {
-        // border: 3px solid red;
         .container-accordion {
             display: flex;
             align-items: center;
@@ -18,6 +17,22 @@
             }
             .open-close-accordion {
                 font-size: $font-size-big;
+            }
+        }
+        
+        .container-see-more-overlay{
+            .overlay-btn-cta-one,
+            .overlay-btn-cta-two,
+            .overlay-btn-cta-three{
+                margin-bottom: $margin-medium-bottom;
+            }
+            #uni-container-info,
+            #carrer-container-info,
+            #hobby-container-info {
+                height: 15em;
+                margin-bottom: .5em;
+                background: linear-gradient(180deg, #6c6c6c00 60%, #2f2f2f 100%);
+                overflow-y: hidden;
             }
         }
     }

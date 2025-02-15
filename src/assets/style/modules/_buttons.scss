@@ -6,3 +6,19 @@
 
     cursor: $cursor-mode-pointer;
 }
+
+.btn-cta-access-study {
+    padding: .5em;
+    font-family: $main-font;
+    font-weight: $font-weight-title;
+    background-color: transparent;
+    border: $border-size solid $primary;
+    cursor: $cursor-mode-pointer;
+    
+    transition: background-color .3s, color .3s, border .3s;
+    &:hover {
+        background-color: $tertiary;
+        color: $secondary;
+        // border: $border-size solid $secondary;
+    }
+}

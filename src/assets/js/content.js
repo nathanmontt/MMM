@@ -13,6 +13,69 @@ const university = [
             `Estudei redes   4`,
         ]
     },
+    {
+        date: 'DD/MM/AAAA',
+        subject: 'Redes',
+        study: [
+            `Estudei redes`,
+            `Estudei redes2 `,
+            `Estudei redes   4`,
+        ]
+    },
+    {
+        date: 'DD/MM/AAAA',
+        subject: 'Redes',
+        study: [
+            `Estudei redes`,
+            `Estudei redes2 `,
+            `Estudei redes   4`,
+        ]
+    },
+    {
+        date: 'DD/MM/AAAA',
+        subject: 'Redes',
+        study: [
+            `Estudei redes`,
+            `Estudei redes2 `,
+            `Estudei redes   4`,
+        ]
+    },
+    {
+        date: 'DD/MM/AAAA',
+        subject: 'Redes',
+        study: [
+            `Estudei redes`,
+            `Estudei redes2 `,
+            `Estudei redes   4`,
+        ]
+    },
+    {
+        date: 'DD/MM/AAAA',
+        subject: 'Redes',
+        study: [
+            `Estudei redes`,
+            `Estudei redes2 `,
+            `Estudei redes   4`,
+        ]
+    },
+    {
+        date: 'DD/MM/AAAA',
+        subject: 'Redes',
+        study: [
+            `Estudei redes`,
+            `Estudei redes2 `,
+            `Estudei redes   4`,
+        ]
+    },
+    {
+        date: 'DD/MM/AAAA',
+        subject: 'Redes',
+        study: [
+            `Estudei redes`,
+            `Estudei redes2 `,
+            `Estudei redes   4`,
+        ]
+    },
 ];
 
 /* Carreira */
@@ -160,15 +223,37 @@ const stAccordion = document.querySelector('.one-a');
 const ndAccordion = document.querySelector('.two-a');
 const rdAccordion = document.querySelector('.three-a');
 
+const seeMoreStudyOne = document.querySelector('.overlay-btn-cta-one');
+const seeMoreStudyTwo = document.querySelector('.overlay-btn-cta-two');
+const seeMoreStudyThree = document.querySelector('.overlay-btn-cta-three');
+
 stAccordion.addEventListener('click', function () {
     containerUni.classList.toggle('hidden');
+
+    if (containerUni.classList.contains('hidden')) {
+        seeMoreStudyOne.classList.add('hidden');
+    } else {
+        seeMoreStudyOne.classList.remove('hidden');
+    }
 });
 
 ndAccordion.addEventListener('click', function () {
     containerCarrer.classList.toggle('hidden');
+
+    if (containerCarrer.classList.contains('hidden')) {
+        seeMoreStudyTwo.classList.add('hidden');
+    } else {
+        seeMoreStudyTwo.classList.remove('hidden');
+    }
 });
 
 rdAccordion.addEventListener('click', function () {
     containerHobby.classList.toggle('hidden');
+
+    if (containerHobby.classList.contains('hidden')) {
+        seeMoreStudyThree.classList.add('hidden');
+    } else {
+        seeMoreStudyThree.classList.remove('hidden');
+    }
 });
 
