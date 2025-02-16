@@ -271,9 +271,12 @@ __________________________________________________________________
 	-> Adição de um arquivo apenas para o modal;
 	-> CURIOSIDADE: vi que o dev tools ativou um erro de duplicação de variável. Fui verificar e notei que essa duplicação estava em OUTRO arquivo. Ou seja, const, mesmo que em arquivos diferentes, ainda precisam ser constantes, não mutáveis;
 	-> Modificar o nome das variáveis da seção de ABOUT, pois estão com variáveis ainda referenciando um SOBRE pequeno (já foi decidido que isso vai mudar), modificar o nome da variável onde o MAIS (+) está;
-	-> ;
 
 - 2° Push:
+	-> Concretização da ideia da modal window. Falta implantar o conteúdo dentro dela. O problema é o id, e como farei para que eu consiga encaixar o mesmo conteúdo dentro de outro container;
+	-> Retirada da modal window. Tornou-se um pouco complicado da forma da execução. E falta conhecimento sobre como injetar o conteúdo dinamicamente dentro da modal;
+
+- X° Push:
 	-> Alterações no README;
 __________________________________________________________________
 
