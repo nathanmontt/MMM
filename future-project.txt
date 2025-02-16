@@ -228,22 +228,11 @@ __________________________________________________________________
 	-> Mudança em nome de files, organização de alguns arquivos de estilo e (quase) finalização da lógica por trás da colocação do conteúdo diário de forma dinâmica;
 
 	-> Criação de um novo arquivo para estilização dos conteúdos diários;
-
-	-> 
 __________________________________________________________________
 
 == Dia 14/02/2025 ==
 
 - 1° Push:
-	-> Início do segundo curso de Responsive Web Design da freeCodeCamp.org. Conteúdo do dia:
-	
-			-- 
-
-			-- 
-
-			-- 
-
-		-> De 91 aulas do LEARN CSS BY BUILDING A CAFE MENU, foram feitas X;
 	-> Continua da edição dos objetos do JS;
 	-> Adiciona mais objetos e mais separações no HTML para organizar os estudos em seção;
 
@@ -273,20 +262,15 @@ __________________________________________________________________
 	-> Adição de mais estilos na parte do conteúdo dinâmico;
 	-> Adição, dentro do module, de uma nova classe para botão. Mais especificamente, um botão para acessar todo o conteúdo;
 	-> Término da adição do acordeão;
-
-- 2° Push:
-	-> ;
-
-- 3° Push:
-	-> Alterações no README;
 __________________________________________________________________
 
 == Dia 16/02/2025 ==
 
 - 1° Push:
-	-> ;
-	-> ;
-	-> ;
+	-> Início da ideia de modal window. O autor não sabe como fazer, mas antes de procurar uma resposta, vai achar uma solução;
+	-> Adição de um arquivo apenas para o modal;
+	-> CURIOSIDADE: vi que o dev tools ativou um erro de duplicação de variável. Fui verificar e notei que essa duplicação estava em OUTRO arquivo. Ou seja, const, mesmo que em arquivos diferentes, ainda precisam ser constantes, não mutáveis;
+	-> Modificar o nome das variáveis da seção de ABOUT, pois estão com variáveis ainda referenciando um SOBRE pequeno (já foi decidido que isso vai mudar), modificar o nome da variável onde o MAIS (+) está;
 	-> ;
 
 - 2° Push:

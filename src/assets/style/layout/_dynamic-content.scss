@@ -19,6 +19,29 @@
                 font-size: $font-size-big;
             }
         }
+
+        .container-modal {
+            .overlay {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                
+                // border: 3px solid red;
+
+                background-color: #000000ad;
+                .close-modal {
+                    color: $secondary;
+                    margin: 1em;
+                }
+                .container-modal-content {
+                    min-height: 90vh;
+                    border: 3px solid black;
+                    #uni-container-info {}
+                }
+            }
+        }
         
         .container-see-more-overlay{
             .overlay-btn-cta-one,
@@ -26,6 +49,7 @@
             .overlay-btn-cta-three{
                 margin-bottom: $margin-medium-bottom;
             }
+
             #uni-container-info,
             #carrer-container-info,
             #hobby-container-info {
