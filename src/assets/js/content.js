@@ -98,6 +98,13 @@ const hobby = [
             `Fiz isso, isso, isso e mais isso`,
         ]
     },
+    {
+        date: 'DD/MM/AAAA',
+        subject: 'Game, Beatmaking, Content, etc...',
+        study: [
+            `Fiz isso, isso, isso e mais isso`,
+        ]
+    },
 ];
 
 /* Função que cria as tags pra UNI */
@@ -217,21 +224,3 @@ function renderAllDays() {
 document.addEventListener('DOMContentLoaded', () => {
     renderAllDays();
 });
-
-// Evento para abrir os acordeões
-// const stAccordion = document.querySelector('.one-a');
-// const ndAccordion = document.querySelector('.two-a');
-// const rdAccordion = document.querySelector('.three-a');
-
-// stAccordion.addEventListener('click', function () {
-//     // containerUni.classList.toggle('hidden');
-// });
-
-// ndAccordion.addEventListener('click', function () {
-//     // containerCarrer.classList.toggle('hidden');
-// });
-
-// rdAccordion.addEventListener('click', function () {
-//     // containerHobby.classList.toggle('hidden');
-// });
-

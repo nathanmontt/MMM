@@ -21,8 +21,12 @@
             }
         }
 
-        .container-see-more-overlay {
-            .overlay {
+        .container-see-more-overlay-uni, 
+        .container-see-more-overlay-carrer, 
+        .container-see-more-overlay-hobby {
+            .overlay-uni,
+            .overlay-carrer,
+            .overlay-uni-hobby {
                 position: fixed;
                 top: 0;
                 bottom: 0;
@@ -34,45 +38,21 @@
                 
                 overflow-y: scroll;
 
-                .close-modal-one {
+                .close-modal-one,
+                .close-modal-two,
+                .close-modal-three {
                     margin: $margin-medium 0 $margin-medium $margin-medium;
                     color: $secondary;
                 }
 
-                #uni-container-info {
+                #uni-container-info, 
+                #carrer-container-info, 
+                #hobby-container-info {
                     margin: 1em;
                     background-color: $secondary;
-                    // border: 3px solid blue;
-                    // scroll-snap-type: proximity;
                 }
             }
         }
-
-        // .container-modal {
-        //     .overlay {
-        //         position: fixed;
-        //         top: 0;
-        //         bottom: 0;
-        //         right: 0;
-        //         left: 0;
-                
-        //         // border: 3px solid red;
-
-        //         background-color: #000000cd;
-        //         .close-modal {
-        //             color: $secondary;
-        //             margin: 1em;
-        //         }
-        //         .container-modal-content {
-        //             min-height: 90vh;
-        //             border: 3px solid #000000;
-        //             #uni-container-info {
-        //                 border: 3px solid red;
-        //                 min-height: 90vh;
-        //             }
-        //         }
-        //     }
-        // }
         
         .container-see-more-overlay{
             .overlay-btn-cta-one,
