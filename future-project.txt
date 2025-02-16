@@ -285,7 +285,7 @@ __________________________________________________________________
 	-> Tentativa em testes, pois o útltimo container não está abrindo em uma modal window;
 
 - 5° Push:
-	-> 
+	-> Término (oficial) da lógica da modal window;
 
 - X° Push:
 	-> Alterações no README;

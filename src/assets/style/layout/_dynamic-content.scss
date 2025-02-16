@@ -7,7 +7,6 @@
             align-items: center;
             justify-content: space-between;
             cursor: $cursor-mode-pointer;
-            // width: 100%;
             
             .indicator-text {
                 font-family: $main-font;
@@ -26,7 +25,7 @@
         .container-see-more-overlay-hobby {
             .overlay-uni,
             .overlay-carrer,
-            .overlay-uni-hobby {
+            .overlay-hobby {
                 position: fixed;
                 top: 0;
                 bottom: 0;
