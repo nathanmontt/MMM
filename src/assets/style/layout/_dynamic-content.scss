@@ -15,8 +15,36 @@
                 font-size: $font-size-med;
                 padding: $padding-medium-top 0 $padding-medium-bottom 0;
             }
+
             .open-close-accordion {
                 font-size: $font-size-big;
+            }
+        }
+
+        .container-see-more-overlay {
+            .overlay {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+
+                background-color: #000000c6;
+                // border: 3px solid red;
+                
+                overflow-y: scroll;
+
+                .close-modal-one {
+                    margin: $margin-medium 0 $margin-medium $margin-medium;
+                    color: $secondary;
+                }
+
+                #uni-container-info {
+                    margin: 1em;
+                    background-color: $secondary;
+                    // border: 3px solid blue;
+                    // scroll-snap-type: proximity;
+                }
             }
         }
 

@@ -1,31 +1,24 @@
-// 'use strict'
+'use strict'
 
-// /* Construção da modal window */
-// const openModalMoreStudyOne = document.querySelector('.overlay-btn-cta-one');
-// const openModalMoreStudyTwo = document.querySelector('.overlay-btn-cta-two');
-// const openModalMoreStudyThree = document.querySelector('.overlay-btn-cta-three');
-// const modalContainer = document.querySelector('.container-modal');
-// const closeModal = document.querySelector('.close-modal');
+/* Construção da modal window */
+const stAccordion = document.querySelector('.one-a');
+const ndAccordion = document.querySelector('.two-a');
+const rdAccordion = document.querySelector('.three-a');
 
-// // Testes para verificar o valor armazenado em cada botão
-// // console.log(seeMoreStudyOne);
+const overlay = document.querySelector('.overlay');
+const overlayContainer = document.querySelector('.container-see-more-overlay');
+const closeModalWindowOne = document.querySelector('.close-modal-one');
 
-// openModalMoreStudyOne.addEventListener('click', function () {
-//     if (modalContainer.classList.contains('hidden')) {
-//         modalContainer.classList.remove('hidden');
-//     }
-// });
+const html = document.querySelector('html');
 
-// closeModal.addEventListener('click', function () {
-//     modalContainer.classList.add('hidden');
-    
-//     console.log(closeModal)
-// })
+stAccordion.addEventListener('click', function () {
+    if (overlayContainer.classList.contains('hidden')) {
+        overlayContainer.classList.remove('hidden');
+        html.style.position = 'sticky';
+    }
+});
 
-// // function closeModalFunc () {
-// //     closeModal.addEventListener('click', function () {
-// //         if (modalContainer.classList.contains('hidden')) {
-// //             modalContainer.classList.add('hidden');
-// //         }
-// //     });
-// // }
+closeModalWindowOne.addEventListener('click', function () {
+    overlayContainer.classList.add('hidden');
+    html.style.position = 'relative';
+})

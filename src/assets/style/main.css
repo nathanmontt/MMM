@@ -393,6 +393,23 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 #dynamic-content #university .container-accordion .open-close-accordion, #dynamic-content #carrer .container-accordion .open-close-accordion, #dynamic-content #hobby .container-accordion .open-close-accordion {
   font-size: 1.4em;
 }
+#dynamic-content #university .container-see-more-overlay .overlay, #dynamic-content #carrer .container-see-more-overlay .overlay, #dynamic-content #hobby .container-see-more-overlay .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7764705882);
+  overflow-y: scroll;
+}
+#dynamic-content #university .container-see-more-overlay .overlay .close-modal-one, #dynamic-content #carrer .container-see-more-overlay .overlay .close-modal-one, #dynamic-content #hobby .container-see-more-overlay .overlay .close-modal-one {
+  margin: 1em 0 1em 1em;
+  color: white;
+}
+#dynamic-content #university .container-see-more-overlay .overlay #uni-container-info, #dynamic-content #carrer .container-see-more-overlay .overlay #uni-container-info, #dynamic-content #hobby .container-see-more-overlay .overlay #uni-container-info {
+  margin: 1em;
+  background-color: white;
+}
 #dynamic-content #university .container-see-more-overlay .overlay-btn-cta-one,
 #dynamic-content #university .container-see-more-overlay .overlay-btn-cta-two,
 #dynamic-content #university .container-see-more-overlay .overlay-btn-cta-three, #dynamic-content #carrer .container-see-more-overlay .overlay-btn-cta-one,

@@ -276,6 +276,13 @@ __________________________________________________________________
 	-> Concretização da ideia da modal window. Falta implantar o conteúdo dentro dela. O problema é o id, e como farei para que eu consiga encaixar o mesmo conteúdo dentro de outro container;
 	-> Retirada da modal window. Tornou-se um pouco complicado da forma da execução. E falta conhecimento sobre como injetar o conteúdo dinamicamente dentro da modal;
 
+- 3° Push:
+	-> Persistência na ideia da modal window, mas de outra forma. Utilizar os "botões" já existentes para, assim que clicarmos, abrir uma modal windown;
+	-> Finalização da modal window (pelo menos, apenas para a parte dos conteúdos de faculdade);
+
+- 4° Push:
+	-> 
+
 - X° Push:
 	-> Alterações no README;
 __________________________________________________________________
