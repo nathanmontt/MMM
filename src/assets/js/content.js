@@ -7,7 +7,7 @@ const university = [
         date: '17/02/2025',
         subject: 'Redes',
         study: [
-            `Início dos estudos`
+            `Para início de estudos, organizei os livros que vão ser usados para estudo: KUROSE, James - Redes de Computadores e a Internet: Uma abordagem top-down.Pearson (2013) e Redes de Computadores - Tanenbaum`,
         ]
     },
 ];
