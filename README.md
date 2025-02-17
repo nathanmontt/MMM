@@ -31,7 +31,7 @@ Seguindo o "*template*" dos projetos anteriores, além das linguagens utilizadas
 
 <h1 id="execute"> Como executar </h1>
 
-No momento, esse foi um dos primeiros projetos que não veio com a ideia de *deploy*. É possível que ocorra isso, porém um pouco mais a frente.
+O link referente ao projeto se encontra ao lado. Fique à vontade para visitá-lo.
 
 
 <h1 id="contribuition"> Contribuindo </h1>
