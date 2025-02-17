@@ -1,7 +1,6 @@
 'use strict'
 
 // Criação de objeto com infos sobre os estudos diários
-
 /* Universidade */
 const university = [
     {
@@ -16,23 +15,96 @@ const university = [
 /* Carreira */
 const carrer = [
     {
-        date: 'DD/MM/AAAA',
-        gitPushCount: '1° Push',
+        date: '04/02/2025',
+        gitPushCount: 'Quantidade de Push: 2',
         study: [
-            `Fiz isso, isso e isso`,
-            `Fiz isso, isso e isso`,
-            `Fiz isso, isso e isso`,
-            `Fiz isso, isso e isso`,
+            `1° Push:`,
+            `Adição de um arquivo .txt para dar início à ideia de um projeto de 'tracking' futuro;`,
+            `Início à estilização do menu (navbar);`,
+            
+            `2° Push:`,
+            `Ajustado o display do menu;`,
+            `Adição de interações a partir de pseudo-classes;`,
+        ],
+    },
+    {
+        date: '05/02/2025',
+        gitPushCount: 'Quantidade de Push: 3',
+        study: [
+            `1° Push:`,
+            `Alterações do dia anterior foram usadas. Reinício do arquivo _hero.scss para a nova parte do projeto;`,
+            `Adição de variável em _utilities.scss;`,
+            
+            `2° Push:`,
+            `Estruturação do esqueleto do _hero.scss;`,
+            `Adição de uma div para armazenas imagem de fundo;`,
+            
+            `3° Push:`,
+            `Troca de nomes de algumas variáveis, e adição de outras;`,
+            `Adição do slogan no index.html, na área do hero;`,
+            `Mudança do estilo no nome da marca;`,
+            `Retirada do slogan;`,
+            `Mudança no valor de variáveis;`,
+            `Adição de variáveis de margin;`,
+            `Adição de ícones para o hero;`,
+            `Adição de interações a partir de pseudo-classes;`,
+            `ESTUDO:`,
+            `git add -u: faz o mesmo que o git add . (para adicionar todas as stages files), porém NÃO adiciona as files novas, com o símbolo de U (o símbolo é de acordo com o que aparece no VSCode);`
         ]
     },
     {
-        date: 'DD/MM/AAAA',
-        gitPushCount: '1° Push',
+        date: '06/02/2025',
+        gitPushCount: 'Quantidade de Push: 4',
         study: [
-            `Fiz isso, isso e isso`,
-            `Fiz isso, isso e isso`,
-            `Fiz isso, isso e isso`,
-            `Fiz isso, isso e isso`,
+            `1° Push:`,
+            `Alterações no esqueleto do HTML. Retirada do conteúdo antigo;`,
+            `Adição do product-content, onde os produtos vendidos na loja aparecerão para o usuários;`,
+            `Correção dos estilos do _hero.scss e em outros;`,
+            `Exclusão de comentários desnecessários;`,
+            `Adição de uma nova fonte;`,
+            `Adição de uma classe contendo uma pseudo-classe para o hover em certas divs;`,
+            
+            `2° Push:`,
+            `Início do main-content;`,
+            `Adição do product-content, onde os produtos vendidos na loja aparecerão para o usuários;`,
+            `Adição do esqueleto dos containers dentro do main-content;`,
+            
+            `3° Push:`,
+            `Começo da estruturação do esqueleto do HTML do main-content;`,
+            `Estruturação do esqueleto do main-content no SCSS;`,
+            
+            `4° Push:`,
+            `Ajeitando o esqueleto do content-new-arrivals;`,
+        ]
+    },
+    {
+        date: '07/02/2025',
+        gitPushCount: 'Quantidade de Push: 3',
+        study: [
+            `1° Push:`,
+            `Push das alterações que não foram ao push ontem;`,
+            `Exlusão de imagens;`,
+            `Modificação da forma como os produtos se encaixam;`,
+            
+            `2° Push:`,
+            `Modificações no READ.ME do projeto;`,
+            `Modificação no esqueleto do HTML principal;`,
+            `Modificação no esqueleto do SCSS de _main-content;`,
+            `Adição de estilo para as modificações acima;`,
+            
+            `3° Push:`,
+            `Início da estruturação nos arquivos SCSS;`,
+            `Adição de variáveis;`,
+            `Testes para deploy: no Vercel e Netlify, as background-image não aparecem. Por isso os testes;`,
+            `Troca de nome de imagens;`,
+        ]
+    },
+    {
+        date: '08/02/2025 e 09/02/2025',
+        gitPushCount: 'Quantidade de Push: 1',
+        study: [
+            `1° Push:`,
+            `Adição de um novo projeto e modificações no README e adição da licença;`,
         ]
     },
 ];
