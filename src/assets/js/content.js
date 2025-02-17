@@ -302,8 +302,11 @@ const carrer = [
             `6° Push:`,
             `Correção de bug para deploy;`,
             
-            `8° Push:`,
+            `8° e 9° Push:`,
             `Correção de bug. Ainda faltam alguns para correção;`,
+            
+            `10° Push:`,
+            `Alterações no README;`,
         ]
     },
 ];
