@@ -25,3 +25,4 @@ function loadComponent(url, containerId) {
 }
 
 loadComponent("components/header.html", "header-content");
+loadComponent("components/footer.html", "footer-content");

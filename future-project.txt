@@ -296,6 +296,11 @@ __________________________________________________________________
 	-> Mudança de textContent para innerHTML, pois é melhor. Como o projeto é algo local, não preciso me preocupar com ataques em XSS (Cross Site-Scripting);
 	-> Adição de alguns conteúdos dentro do 'conteúdo';
 
+- 8° Push:
+	-> Correção de bugs;
+	-> Criação do componente footer e seu estilo;
+	-> Começo da responsividade;
+
 - X° Push:
 	-> Alterações no README;
 __________________________________________________________________
