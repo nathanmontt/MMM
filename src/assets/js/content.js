@@ -8,6 +8,8 @@ const university = [
         subject: 'Redes',
         study: [
             `Para início de estudos, organizei os livros que vão ser usados para estudo: KUROSE, James - Redes de Computadores e a Internet: Uma abordagem top-down.Pearson (2013) e Redes de Computadores - Tanenbaum`,
+
+            `Iniciei com a seção 1.1. Não terminei, mas pelo menos, comecei. Foi melhor do que ficar parado. Amanhã, continuarei!`,
         ]
     },
 ];
