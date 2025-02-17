@@ -1,7 +1,7 @@
 @import '../base/variables';
 
 #dynamic-content {
-    #university, #carrer, #hobby {
+    #university, #carrer, #hobby, #course {
         .container-accordion {
             display: flex;
             align-items: center;
@@ -22,10 +22,12 @@
 
         .container-see-more-overlay-uni, 
         .container-see-more-overlay-carrer, 
-        .container-see-more-overlay-hobby {
+        .container-see-more-overlay-hobby,
+        .container-see-more-overlay-course {
             .overlay-uni,
             .overlay-carrer,
-            .overlay-hobby {
+            .overlay-hobby,
+            .overlay-course {
                 @media screen and (min-width: 768px) {
                     display: flex;
                     flex-direction: column;
@@ -43,14 +45,16 @@
 
                 .close-modal-one,
                 .close-modal-two,
-                .close-modal-three {
+                .close-modal-three,
+                .close-modal-four {
                     margin: $margin-medium 0 $margin-medium $margin-medium;
                     color: $secondary;
                 }
 
                 #uni-container-info, 
                 #carrer-container-info, 
-                #hobby-container-info {
+                #hobby-container-info,
+                #course-container-info {
                     margin: 1em;
                     background-color: $secondary;
 

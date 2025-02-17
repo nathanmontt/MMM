@@ -315,6 +315,15 @@ const hobby = [
     },
 ];
 
+/* Cursos */
+const course = [
+    {
+        date: '17/02/2025',
+        course: 'Curso Tal',
+        study: [
+        ]
+    },
+];
 /* Função que cria as tags pra UNI */
 function renderUniDay(uniDay) {
     /* Cria um container para a Uni, Carreira e Hobby.
@@ -355,14 +364,8 @@ function renderUniDay(uniDay) {
 /* Função de estilo para o conteúdo da UNIVERSIDADE */
 let mainFont = "Cormorant Garamond, serif";
 function uniStyles () {
-    // MEASURES
     containerUni.style.padding = '1em';
-    
-    // FONTS
     containerUni.style.fontFamily = `${mainFont}`;
-    
-    // OTHERS
-    
 }
 
 /* Função que cria as tags pra CARRER */
@@ -396,14 +399,8 @@ function renderCarrerDay(carrerDay) {
 }
 
 function carrerStyles () {
-    // MEASURES
     containerCarrer.style.padding = '1em';
-    
-    // FONTS
     containerCarrer.style.fontFamily = `${mainFont}`;
-    
-    // OTHERS
-    
 }
 
 /* Função que cria as tags pra HOBBY */
@@ -438,27 +435,53 @@ function renderHobbyDay(hobbyDay) {
 }
 
 function hobbyStyles () {
-    // MEASURES
     containerHobby.style.padding = '1em';
-    
-    // FONTS
     containerHobby.style.fontFamily = `${mainFont}`;
+}
+
+/* Função que cria as tags pra COURSE */
+function renderCourseDay(courseDay) {
+    const courseContainer = document.createElement('div');
+    courseContainer.classList.add('course-day-block');
     
-    // OTHERS
+    const textMainTitle = document.createElement('h2');
+    const courseOfTheDay = document.createElement('p');
     
+    textMainTitle.innerHTML = `Dia ${courseDay.date}`;
+    courseOfTheDay.innerHTML = `<strong>${courseDay.course}</strong>`;
+    
+    courseContainer.appendChild(textMainTitle);
+    courseContainer.appendChild(courseOfTheDay);
+    
+    const ulHolderItemStudy = document.createElement('ul');
+    courseDay.study.forEach(activity => {
+        const liItemStudy = document.createElement('li');
+        liItemStudy.innerHTML = activity;
+        ulHolderItemStudy.appendChild(liItemStudy);
+        liItemStudy.style.marginBottom = '.2em';
+    });
+    
+    courseContainer.appendChild(ulHolderItemStudy);
+
+    // Estilos que não serão colocados na outra função por motivos de serem locais
+    ulHolderItemStudy.style.textIndent = '1em';
+
+    courseStyles();
+    return courseContainer;
+}
+
+function courseStyles () {
+    containerCourse.style.padding = '1em';
+    containerCourse.style.fontFamily = `${mainFont}`;
 }
 
 // Função responsável por adicionar os containers dentro dos seus devidos containers
 const containerUni = document.getElementById('uni-container-info');
 const containerCarrer = document.getElementById('carrer-container-info');
 const containerHobby = document.getElementById('hobby-container-info');
+const containerCourse = document.getElementById('course-container-info');
 
-function renderAllDays() {    
-    // Limpa qualquer conteúdo anterior
-    // containerUni.innerHTML = '';
-    // containerCarrer.innerHTML = '';
-    // containerHobby.innerHTML = '';
-  
+function renderAllDays() {  
     // Percorre todos os arrays e renderiza cada dia
     university.forEach(uniDay => {
         const dayUniElem = renderUniDay(uniDay);
@@ -473,7 +496,12 @@ function renderAllDays() {
     hobby.forEach(function renderAllHobbyDays (hobbyDay) {
         const dayHobbyEl = renderHobbyDay(hobbyDay);
         containerHobby.appendChild(dayHobbyEl);
-    })
+    });
+
+    course.forEach(function renderAllCourseDays (courseDay) {
+        const dayCourseEl = renderCourseDay(courseDay);
+        containerCourse.appendChild(dayCourseEl);
+    });
 }
 
 // Antes de tudo, carregamos o container principal com os conteúdos dentro
