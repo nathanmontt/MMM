@@ -77,6 +77,7 @@ A seção abaixo foi adicionada para caso queira verificar algum conteúdo de es
 **JS: "Events"** | <a href="https://bobbyhadz.com/blog/change-background-color-on-scroll-using-javascript">Change the Background Color on Scroll using JavaScript</a> (<a href="https://github.com/bobbyhadz/change-background-color-on-scroll-using-javascript">the repository to the article</a>) <br> <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener">Element.addEventListener()</a> <br> <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document/DOMContentLoaded_event">DOMContentLoaded</a> <br> <a href="https://www.w3schools.com/jsref/met_document_addeventlistener.asp"> HTML DOM Document addEventListener()</a>
 **JS: Attributes** | <a href="https://www.w3schools.com/graphics/svg_scripting.asp">SVG Scripting</a>
 **CSS** | <a href="https://medium.com/@themaheshvaishnav/how-to-change-font-color-in-css-while-scrolling-9066d24b787c">How to Change Font Color in CSS While Scrolling</a>
+**a (anchor)** | <a href="https://www.timospecht.de/pt-br/o-que-e/rel-noopener-noreferrer/">Glossário de SEO: rel="noopener noreferrer"</a>
 
 OBS.: os conteúdos de *fetch* ainda serão mantidos em algums projetos futuros também.
 
