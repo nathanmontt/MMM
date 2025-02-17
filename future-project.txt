@@ -287,6 +287,10 @@ __________________________________________________________________
 - 5° Push:
 	-> Término (oficial) da lógica da modal window;
 
+- 6° Push:
+	-> Correção de bugs por parte do hover.js;
+	-> Adição do SOBRE em index.html;
+
 - X° Push:
 	-> Alterações no README;
 __________________________________________________________________
