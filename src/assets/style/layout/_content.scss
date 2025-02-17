@@ -26,6 +26,11 @@
             .overlay-uni,
             .overlay-carrer,
             .overlay-hobby {
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 position: fixed;
                 top: 0;
                 bottom: 0;
@@ -33,7 +38,6 @@
                 left: 0;
 
                 background-color: #000000c6;
-                // border: 3px solid red;
                 
                 overflow-y: scroll;
 
@@ -49,24 +53,13 @@
                 #hobby-container-info {
                     margin: 1em;
                     background-color: $secondary;
-                }
-            }
-        }
-        
-        .container-see-more-overlay{
-            .overlay-btn-cta-one,
-            .overlay-btn-cta-two,
-            .overlay-btn-cta-three{
-                margin-bottom: $margin-medium-bottom;
-            }
 
-            #uni-container-info,
-            #carrer-container-info,
-            #hobby-container-info {
-                // height: 15em;
-                margin-bottom: .5em;
-                // background: linear-gradient(180deg, #6c6c6c00 60%, #2f2f2f 100%);
-                // overflow-y: hidden;
+                    @media screen and (min-width: 768px) {
+                        display: grid;
+                        place-self: center;
+                        width: 40em;
+                    }
+                }
             }
         }
     }

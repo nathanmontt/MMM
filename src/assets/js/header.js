@@ -4,7 +4,7 @@
 window.addEventListener('scroll', function changeFontMenuOptionsColor () {
     // Variável local da função para armazenar o valor do scroll;
     let varVal = 670;
-
+    
     // Declaração dos elementos que serão usados no processo;
     const logoProject = document.querySelector('.logo');
     const iconDropDown = document.getElementById('icon');

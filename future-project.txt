@@ -299,10 +299,18 @@ __________________________________________________________________
 - 8° Push:
 	-> Correção de bugs;
 	-> Criação do componente footer e seu estilo;
-	-> Começo da responsividade;
 
-- X° Push:
+- 9° Push:
 	-> Alterações no README;
+
+- 10° Push:
+	-> Mudança do nome de arquivos;
+	-> Começo da responsividade. Començando pelos conteúdos;
+	-> Término da resposividade;
+	-> Término do footer e sua responsividade;
+
+- 11° Push:
+	-> Adição do conteúdo daqui na aplicação;
 __________________________________________________________________
 
 == Dia 17/02/2025 ==

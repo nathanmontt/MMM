@@ -21,6 +21,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -342,6 +343,12 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 /* -- padding -- */
 /* -- margin -- */
 /* ----- OTHERS ----- */
+@media screen and (min-width: 1024px) {
+  #about-one .container-mediaQuery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 #about-one .container-mediaQuery .container-texts {
   font-family: "Cormorant Garamond", serif;
 }
@@ -362,6 +369,16 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
 #about-one .container-mediaQuery .container-texts .container-link-see-more #icon-see-more {
   margin-left: 0.4em;
   width: 1em;
+}
+@media screen and (min-width: 1024px) {
+  #about-one .container-mediaQuery .container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about-one .container-mediaQuery .container-image #img {
+    width: 30em;
+  }
 }
 
 /* ----- IMPORTS ----- */
@@ -425,6 +442,36 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
   left: 0;
   background-color: rgba(0, 0, 0, 0.7764705882);
   overflow-y: scroll;
+}
+@media screen and (min-width: 768px) {
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-uni,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-carrer,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-hobby,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-uni,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-carrer,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-hobby,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-uni,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-carrer,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-hobby, #dynamic-content #carrer .container-see-more-overlay-uni .overlay-uni,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-carrer,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-hobby,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-uni,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-carrer,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-hobby,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-uni,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-carrer,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-hobby, #dynamic-content #hobby .container-see-more-overlay-uni .overlay-uni,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-carrer,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-hobby,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-uni,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-carrer,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-hobby,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-uni,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-carrer,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-hobby {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #dynamic-content #university .container-see-more-overlay-uni .overlay-uni .close-modal-one,
 #dynamic-content #university .container-see-more-overlay-uni .overlay-uni .close-modal-two,
@@ -590,23 +637,134 @@ header .container-navbar .container-menu-options .menu-options-holder .options-h
   margin: 1em;
   background-color: white;
 }
-#dynamic-content #university .container-see-more-overlay .overlay-btn-cta-one,
-#dynamic-content #university .container-see-more-overlay .overlay-btn-cta-two,
-#dynamic-content #university .container-see-more-overlay .overlay-btn-cta-three, #dynamic-content #carrer .container-see-more-overlay .overlay-btn-cta-one,
-#dynamic-content #carrer .container-see-more-overlay .overlay-btn-cta-two,
-#dynamic-content #carrer .container-see-more-overlay .overlay-btn-cta-three, #dynamic-content #hobby .container-see-more-overlay .overlay-btn-cta-one,
-#dynamic-content #hobby .container-see-more-overlay .overlay-btn-cta-two,
-#dynamic-content #hobby .container-see-more-overlay .overlay-btn-cta-three {
-  margin-bottom: 1.1em;
+@media screen and (min-width: 768px) {
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-uni #uni-container-info,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-uni #carrer-container-info,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-uni #hobby-container-info,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-carrer #uni-container-info,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-carrer #carrer-container-info,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-carrer #hobby-container-info,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-hobby #uni-container-info,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-hobby #carrer-container-info,
+  #dynamic-content #university .container-see-more-overlay-uni .overlay-hobby #hobby-container-info,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-uni #uni-container-info,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-uni #carrer-container-info,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-uni #hobby-container-info,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-carrer #uni-container-info,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-carrer #carrer-container-info,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-carrer #hobby-container-info,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-hobby #uni-container-info,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-hobby #carrer-container-info,
+  #dynamic-content #university .container-see-more-overlay-carrer .overlay-hobby #hobby-container-info,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-uni #uni-container-info,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-uni #carrer-container-info,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-uni #hobby-container-info,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-carrer #uni-container-info,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-carrer #carrer-container-info,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-carrer #hobby-container-info,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-hobby #uni-container-info,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-hobby #carrer-container-info,
+  #dynamic-content #university .container-see-more-overlay-hobby .overlay-hobby #hobby-container-info, #dynamic-content #carrer .container-see-more-overlay-uni .overlay-uni #uni-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-uni #carrer-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-uni #hobby-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-carrer #uni-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-carrer #carrer-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-carrer #hobby-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-hobby #uni-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-hobby #carrer-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-uni .overlay-hobby #hobby-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-uni #uni-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-uni #carrer-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-uni #hobby-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-carrer #uni-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-carrer #carrer-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-carrer #hobby-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-hobby #uni-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-hobby #carrer-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-carrer .overlay-hobby #hobby-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-uni #uni-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-uni #carrer-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-uni #hobby-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-carrer #uni-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-carrer #carrer-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-carrer #hobby-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-hobby #uni-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-hobby #carrer-container-info,
+  #dynamic-content #carrer .container-see-more-overlay-hobby .overlay-hobby #hobby-container-info, #dynamic-content #hobby .container-see-more-overlay-uni .overlay-uni #uni-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-uni #carrer-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-uni #hobby-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-carrer #uni-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-carrer #carrer-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-carrer #hobby-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-hobby #uni-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-hobby #carrer-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-uni .overlay-hobby #hobby-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-uni #uni-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-uni #carrer-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-uni #hobby-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-carrer #uni-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-carrer #carrer-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-carrer #hobby-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-hobby #uni-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-hobby #carrer-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-carrer .overlay-hobby #hobby-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-uni #uni-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-uni #carrer-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-uni #hobby-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-carrer #uni-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-carrer #carrer-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-carrer #hobby-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-hobby #uni-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-hobby #carrer-container-info,
+  #dynamic-content #hobby .container-see-more-overlay-hobby .overlay-hobby #hobby-container-info {
+    display: grid;
+    place-self: center;
+    width: 40em;
+  }
 }
-#dynamic-content #university .container-see-more-overlay #uni-container-info,
-#dynamic-content #university .container-see-more-overlay #carrer-container-info,
-#dynamic-content #university .container-see-more-overlay #hobby-container-info, #dynamic-content #carrer .container-see-more-overlay #uni-container-info,
-#dynamic-content #carrer .container-see-more-overlay #carrer-container-info,
-#dynamic-content #carrer .container-see-more-overlay #hobby-container-info, #dynamic-content #hobby .container-see-more-overlay #uni-container-info,
-#dynamic-content #hobby .container-see-more-overlay #carrer-container-info,
-#dynamic-content #hobby .container-see-more-overlay #hobby-container-info {
-  margin-bottom: 0.5em;
+
+/* ----- IMPORTS ----- */
+/* ----- FONTS ----- */
+/* -- type -- */
+/* -- size -- */
+/* -- weight -- */
+/* -- style -- */
+/* ----- COLORS ----- */
+/* -- main -- */
+/* -- others -- */
+/* ----- DEFAUTLT ARRANGEMENTS ----- */
+/* ----- SPECIFIC ARRANGEMENTS ----- */
+/* -- padding -- */
+/* -- margin -- */
+/* ----- OTHERS ----- */
+footer {
+  background-color: #406ce7;
+  font-family: "Cormorant Garamond", serif;
+}
+footer .container-general-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+@media screen and (min-width: 768px) {
+  footer .container-general-footer .container-creator-links .menu-creator-links {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .container-general-footer .container-creator-links .menu-creator-links li {
+    margin-left: 0.5em;
+  }
+}
+footer .container-general-footer .container-creator-links .menu-creator-links li .creator-links {
+  color: white;
+}
+footer .container-general-footer .container-creator-name {
+  text-align: right;
+}
+footer .container-general-footer .container-creator-name .desc a {
+  color: white;
 }
 
 /* ----- MODULES ----- */

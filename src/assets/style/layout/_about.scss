@@ -2,6 +2,10 @@
 
 #about-one {
     .container-mediaQuery {
+        @media screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
         .container-texts {
             font-family: $main-font;
             .title-about-one {
@@ -11,7 +15,7 @@
             .sub-title-about-one {
                 margin: 0 0 $margin-medium-bottom 0;
             }
-            .desc-about-one {}
+            // .desc-about-one {}
             
             .container-link-see-more {
                 display: flex;
@@ -26,7 +30,16 @@
                 }
             }
         }
-
-        // .container-image {}
+        
+        @media screen and (min-width: 1024px) {
+            .container-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #img {
+                    width: 30em;
+                }
+            }
+        }
     }
 }
