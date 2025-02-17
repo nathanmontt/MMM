@@ -107,6 +107,199 @@ const carrer = [
             `Adição de um novo projeto e modificações no README e adição da licença;`,
         ]
     },
+    {
+        date: '10/02/2025',
+        gitPushCount: 'Quantidade de Push: 1',
+        study: [
+            `1° Push:`,
+            `Correção do README.md;`,
+            `Adição do esqueleto do index.html;`,
+            `Adição dos arquivos necessários para estilização;`,
+            `Adição da estilização do header;`,
+            `Pré-término da estilização do header. Ainda falta a funcionalidade;`,
+        ]
+    },
+    {
+        date: '11/02/2025',
+        gitPushCount: 'Quantidade de Push: 10',
+        study: [
+            `1° Push:`,
+            `Início da formalização da hero-section;`,
+            `Adição de estilo no hero-content;`,
+
+            `2° Push:`,
+            `Mudança no README.md;`,
+            `Correção de estilos em outras files;`,
+            `Adição de fontes e testes;`,
+            `Adição da cor principal;`,
+            
+            `3° Push:`,
+            `Mudança em nome de variáveis e continuação na estilização;`,
+            `Mudança no tipo da fonte, cores e adição de um link a mais no header. O link será usado para criar um DARK/LIGHT MODE;`,
+            `Adição de ícone para funcionamento futuro do DARK/LIGHT MODE;`,
+            
+            `4° Push:`,
+            `Alterações no README;`,
+            
+            `5° Push:`,
+            `Tentativa de fazer animações. Ainda muito cedo para isso. Ficar no básico e melhorar nele;`,
+            
+            `6° Push:`,
+            `Iniciando interação da cor do menu;`,
+            `Não entendia do porque usava arrow function em forEach. Resolvi testar trocar para função normal. Não sabia como. Testei. Deu certo;`,
+            
+            `7° Push:`,
+            `Alterações no README;`,
+            
+            `8° Push:`,
+            `Tentativa de conserto de conflitos na parte de scroll. Um deles não havia testado, que é a troca de cor da logo, mas logo após testes, tudo OK;`,
+            `Correção de conflito na parte do scroll;`,
+            `Adição do content geral para debbug e para verificar se o scroll agora funciona;`,
+            `Adição da file _content.scs;`,
+            
+            `9° Push:`,
+            `Alterações no README;`,
+            
+            `10° Push:`,
+            `Linkando as opções do menu para dentro do projeto;`,
+            `Mexendo nas funcionalidades do svg arrow down;`,
+            
+        ]
+    },
+    {
+        date: '12/02/2025',
+        gitPushCount: 'Quantidade de Push: 4',
+        study: [
+            `1° Push:`,
+            `Alterações no README;`,
+            
+            `2° Push:`,
+            `Organização do arquivo .txt até colocá-lo dentro do projeto como conteúdo;`,
+            `Continuação de testes na funcionalidade do DARK/LIGHT MODE;`,
+            
+            `3° Push:`,
+            `Início da seção About, mas a menor. A maior terá uma página dedicada;`,
+            `Colocação do esqueleto do estilo do about-one;`,
+            
+            `4° Push:`,
+            `Mudança no nome do about-one para about. Será a página de estilos dedicada à seção Sobre;`,
+            `Utilização de variáveis de outros projetos para o atual;`,
+        ]
+    },
+    {
+        date: '13/02/2025',
+        gitPushCount: 'Quantidade de Push: 3',
+        study: [
+            `1° Push:`,
+            `Alterações no README (colocação de sites e artigos para resolição dos conflitos);`,
+            
+            `2° Push:`,
+            `Continuação do about-small;`,
+            `Criação de um novo arquivo, hover.js, para a adição de "animações" em JS (como o prórpio nome já diz, hover). Nela, vou tentar armazenar apenas essas interações com o user através do mouse;`,
+            `Troca de posição das tags de script para dentro da head. Era uma tentativa de resolver o problema já citado no repositório do projeto;`,
+            `Mudanças na posiçao do "explorar", além de adicionar animações no mesmo;`,
+            `Correção por parte do tipo de display do "botão" "explorar";`,
+            
+            `3° Push:`,
+            `Início do primeiro curso de Responsive Web Design da freeCodeCamp.org. De 71 aulas do LEARN HTML BY BUILDING A CAT PHOTO APP, foram feitas 71;`,
+            `Mudança em nome de files, organização de alguns arquivos de estilo e (quase) finalização da lógica por trás da colocação do conteúdo diário de forma dinâmica;`,
+            `Criação de um novo arquivo para estilização dos conteúdos diários;`,
+        ]
+    },
+    {
+        date: '14/02/2025',
+        gitPushCount: 'Quantidade de Push: 4',
+        study: [
+            `1° Push:`,
+            `Continua da edição dos objetos do JS;`,
+            `Adiciona mais objetos e mais separações no HTML para organizar os estudos em seção;`,
+            
+            `2° Push:`,
+            `Finalização da parte dinâmica do conteúdo diário;`,
+            `Adição de elementos no HTML para confecção do acordeão;`,
+            
+            `3° Push:`,
+            `Processo da lógica para o acordeão;`,
+            `Adição de uma nova variável no _utilities;`,
+            `Início da estilização do conteúdo dinâmico;`,
+            `Adição de estilo no HTML (diretamente nele);`,
+            
+            `4° Push:`,
+            `Organização e começo da funcionalidade para o acordeão;`,
+            `Finalização da organização estática;`,
+            `Início da criação do mecanismo de acordeão;`,
+            `Finalização do mecanismo de acordeão;`,
+        ]
+    },
+    {
+        date: '15/02/2025',
+        gitPushCount: 'Quantidade de Push: 1',
+        study: [
+            `1° Push:`,
+            `Continuação nas modificações do JS e suas interatividades;`,
+            `Idealização da ideia da modal window. Veio do pretexto de não deixar tudo em um local apenas e fazer com que ficasse mais organizado, não tudo acumulado;`,
+            `Exclusão da ideia da página de SOBRE, levando apenas a possibilidade de fazer o Sobre na primeira página (como se fosse uma landing page);`,
+            `Adição de mais estilos na parte do conteúdo dinâmico;`,
+            `Adição, dentro do module, de uma nova classe para botão. Mais especificamente, um botão para acessar todo o conteúdo;`,
+            `Término da adição do acordeão;`,
+        ]
+    },
+    {
+        date: '16/02/2025',
+        gitPushCount: 'Quantidade de Push: 10',
+        study: [
+            `1° Push:`,
+            `Início da ideia de modal window. O autor não sabe como fazer, mas antes de procurar uma resposta, vai achar uma solução;`,
+            `Adição de um arquivo apenas para o modal;`,
+            `Modificar o nome das variáveis da seção de ABOUT, pois estão com variáveis ainda referenciando um SOBRE pequeno (já foi decidido que isso vai mudar), modificar o nome da variável onde o MAIS (+) está;`,
+            
+            `2° Push:`,
+            `Concretização da ideia da modal window. Falta implantar o conteúdo dentro dela. O problema é o id, e como farei para que eu consiga encaixar o mesmo conteúdo dentro de outro container;`,
+            `Retirada da modal window. Tornou-se um pouco complicado da forma da execução. E falta conhecimento sobre como injetar o conteúdo dinamicamente dentro da modal;`,
+
+
+            `3° Push:`,
+            `Persistência na ideia da modal window, mas de outra forma. Utilizar os "botões" já existentes para, assim que clicarmos, abrir uma modal windown;`,
+            `Finalização da modal window (pelo menos, apenas para a parte dos conteúdos de faculdade);`,
+            
+            `4° Push:`,
+            `Adição da lógica para todos os outros containers;`,
+            `Tentativa em testes, pois o útltimo container não está abrindo em uma modal window;`,
+            
+            `5° Push:`,
+            `Término (oficial) da lógica da modal window;`,
+            
+            `6° Push:`,
+            `Correção de bugs por parte do hover.js;`,
+            `Adição do SOBRE em index.html;`,
+            
+            `7° Push:`,
+            `Inicialização da estilização por JS;`,
+            `Mudança de textContent para innerHTML, pois é melhor. Como o projeto é algo local, não preciso me preocupar com ataques em XSS (Cross Site-Scripting);`,
+            `Adição de alguns conteúdos dentro do 'conteúdo';`,
+            
+            `8° Push:`,
+            `Correção de bugs;`,
+            `Criação do componente footer e seu estilo;`,
+            
+            `9° Push:`,
+            `Alterações no README;`,
+            
+            `10° Push:`,
+            `Mudança do nome de arquivos;`,
+            `Começo da responsividade. Començando pelos conteúdos;`,
+            `Término da resposividade;`,
+            `Término do footer e sua responsividade;`,
+        ]
+    },
+    {
+        date: '17/02/2025',
+        gitPushCount: 'Quantidade de Push: X',
+        study: [
+            `X° Push:`,
+            `Introdução dos conteúdos tirados do .txt inicial;`,
+        ]
+    },
 ];
 
 /* Hobby */
