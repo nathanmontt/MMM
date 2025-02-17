@@ -301,6 +301,9 @@ const carrer = [
             
             `6° Push:`,
             `Correção de bug para deploy;`,
+            
+            `8° Push:`,
+            `Correção de bug. Ainda faltam alguns para correção;`,
         ]
     },
 ];
@@ -324,6 +327,7 @@ const course = [
         ]
     },
 ];
+
 /* Função que cria as tags pra UNI */
 function renderUniDay(uniDay) {
     /* Cria um container para a Uni, Carreira e Hobby.
