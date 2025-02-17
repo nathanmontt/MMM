@@ -291,6 +291,11 @@ __________________________________________________________________
 	-> Correção de bugs por parte do hover.js;
 	-> Adição do SOBRE em index.html;
 
+- 7° Push:
+	-> Inicialização da estilização por JS;
+	-> Mudança de textContent para innerHTML, pois é melhor. Como o projeto é algo local, não preciso me preocupar com ataques em XSS (Cross Site-Scripting);
+	-> Adição de alguns conteúdos dentro do 'conteúdo';
+
 - X° Push:
 	-> Alterações no README;
 __________________________________________________________________

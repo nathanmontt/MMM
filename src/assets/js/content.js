@@ -5,75 +5,10 @@
 /* Universidade */
 const university = [
     {
-        date: 'DD/MM/AAAA',
+        date: '17/02/2025',
         subject: 'Redes',
         study: [
-            `Estudei redes`,
-            `Estudei redes2 `,
-            `Estudei redes   4`,
-        ]
-    },
-    {
-        date: 'DD/MM/AAAA',
-        subject: 'Redes',
-        study: [
-            `Estudei redes`,
-            `Estudei redes2 `,
-            `Estudei redes   4`,
-        ]
-    },
-    {
-        date: 'DD/MM/AAAA',
-        subject: 'Redes',
-        study: [
-            `Estudei redes`,
-            `Estudei redes2 `,
-            `Estudei redes   4`,
-        ]
-    },
-    {
-        date: 'DD/MM/AAAA',
-        subject: 'Redes',
-        study: [
-            `Estudei redes`,
-            `Estudei redes2 `,
-            `Estudei redes   4`,
-        ]
-    },
-    {
-        date: 'DD/MM/AAAA',
-        subject: 'Redes',
-        study: [
-            `Estudei redes`,
-            `Estudei redes2 `,
-            `Estudei redes   4`,
-        ]
-    },
-    {
-        date: 'DD/MM/AAAA',
-        subject: 'Redes',
-        study: [
-            `Estudei redes`,
-            `Estudei redes2 `,
-            `Estudei redes   4`,
-        ]
-    },
-    {
-        date: 'DD/MM/AAAA',
-        subject: 'Redes',
-        study: [
-            `Estudei redes`,
-            `Estudei redes2 `,
-            `Estudei redes   4`,
-        ]
-    },
-    {
-        date: 'DD/MM/AAAA',
-        subject: 'Redes',
-        study: [
-            `Estudei redes`,
-            `Estudei redes2 `,
-            `Estudei redes   4`,
+            `Início dos estudos`
         ]
     },
 ];
@@ -85,6 +20,19 @@ const carrer = [
         gitPushCount: '1° Push',
         study: [
             `Fiz isso, isso e isso`,
+            `Fiz isso, isso e isso`,
+            `Fiz isso, isso e isso`,
+            `Fiz isso, isso e isso`,
+        ]
+    },
+    {
+        date: 'DD/MM/AAAA',
+        gitPushCount: '1° Push',
+        study: [
+            `Fiz isso, isso e isso`,
+            `Fiz isso, isso e isso`,
+            `Fiz isso, isso e isso`,
+            `Fiz isso, isso e isso`,
         ]
     },
 ];
@@ -93,16 +41,8 @@ const carrer = [
 const hobby = [
     {
         date: 'DD/MM/AAAA',
-        subject: 'Game, Beatmaking, Content, etc...',
+        subject: 'Ainda nada foi feito',
         study: [
-            `Fiz isso, isso, isso e mais isso`,
-        ]
-    },
-    {
-        date: 'DD/MM/AAAA',
-        subject: 'Game, Beatmaking, Content, etc...',
-        study: [
-            `Fiz isso, isso, isso e mais isso`,
         ]
     },
 ];
@@ -120,24 +60,41 @@ function renderUniDay(uniDay) {
     const textMainTitle = document.createElement('h2');
     const subjectOfTheDay = document.createElement('p');
     
-    textMainTitle.textContent = `Dia ${uniDay.date}`;
-    subjectOfTheDay.textContent = `${uniDay.subject}`;
+    textMainTitle.innerHTML = `Dia ${uniDay.date}`;
+    subjectOfTheDay.innerHTML = `<strong>${uniDay.subject}</strong>`;
     
     uniContainer.appendChild(textMainTitle);
     uniContainer.appendChild(subjectOfTheDay);
-    // textMainTitle.style.fontFamily = 'Cormorant Garamond, serif';
     
     // Cria a tag <ul> para as atividades
     const ulHolderItemStudy = document.createElement('ul');
     uniDay.study.forEach(activity => {
         const liItemStudy = document.createElement('li');
-        liItemStudy.textContent = activity;
+        liItemStudy.innerHTML = activity;
         ulHolderItemStudy.appendChild(liItemStudy);
+        liItemStudy.style.marginBottom = '.2em';
     });
     
     uniContainer.appendChild(ulHolderItemStudy);
     
+    uniStyles();
+    // Estilos que não serão colocados na outra função por motivos de serem locais
+    ulHolderItemStudy.style.textIndent = '1em';
+    
     return uniContainer;
+}
+
+/* Função de estilo para o conteúdo da UNIVERSIDADE */
+let mainFont = "Cormorant Garamond, serif";
+function uniStyles () {
+    // MEASURES
+    containerUni.style.padding = '1em';
+    
+    // FONTS
+    containerUni.style.fontFamily = `${mainFont}`;
+    
+    // OTHERS
+    
 }
 
 /* Função que cria as tags pra CARRER */
@@ -148,8 +105,8 @@ function renderCarrerDay(carrerDay) {
     const textMainTitle = document.createElement('h2');
     const gitPushOfTheDay = document.createElement('p');
 
-    textMainTitle.textContent = `Dia ${carrerDay.date}`;
-    gitPushOfTheDay.textContent = `${carrerDay.gitPushCount}`;
+    textMainTitle.innerHTML = `Dia ${carrerDay.date}`;
+    gitPushOfTheDay.innerHTML = `<strong>${carrerDay.gitPushCount}</strong>`;
     
     carrerContainer.appendChild(textMainTitle);
     carrerContainer.appendChild(gitPushOfTheDay);
@@ -157,13 +114,28 @@ function renderCarrerDay(carrerDay) {
     const ulHolderItemStudy = document.createElement('ul');
     carrerDay.study.forEach(activity => {
         const liItemStudy = document.createElement('li');
-        liItemStudy.textContent = activity;
+        liItemStudy.innerHTML = activity;
         ulHolderItemStudy.appendChild(liItemStudy);
+        liItemStudy.style.marginBottom = '.2em';
     });
   
     carrerContainer.appendChild(ulHolderItemStudy);
-  
+
+    carrerStyles()
+    // Estilos que não serão colocados na outra função por motivos de serem locais
+    ulHolderItemStudy.style.textIndent = '1em';
     return carrerContainer;
+}
+
+function carrerStyles () {
+    // MEASURES
+    containerCarrer.style.padding = '1em';
+    
+    // FONTS
+    containerCarrer.style.fontFamily = `${mainFont}`;
+    
+    // OTHERS
+    
 }
 
 /* Função que cria as tags pra HOBBY */
@@ -174,8 +146,8 @@ function renderHobbyDay(hobbyDay) {
     const textMainTitle = document.createElement('h2');
     const hobbySubjectOfTheDay = document.createElement('p');
     
-    textMainTitle.textContent = `Dia ${hobbyDay.date}`;
-    hobbySubjectOfTheDay.textContent = `${hobbyDay.subject}`;
+    textMainTitle.innerHTML = `Dia ${hobbyDay.date}`;
+    hobbySubjectOfTheDay.innerHTML = `<strong>${hobbyDay.subject}</strong>`;
     
     hobbyContainer.appendChild(textMainTitle);
     hobbyContainer.appendChild(hobbySubjectOfTheDay);
@@ -183,13 +155,29 @@ function renderHobbyDay(hobbyDay) {
     const ulHolderItemStudy = document.createElement('ul');
     hobbyDay.study.forEach(activity => {
         const liItemStudy = document.createElement('li');
-        liItemStudy.textContent = activity;
+        liItemStudy.innerHTML = activity;
         ulHolderItemStudy.appendChild(liItemStudy);
+        liItemStudy.style.marginBottom = '.2em';
     });
     
     hobbyContainer.appendChild(ulHolderItemStudy);
-    
+
+    // Estilos que não serão colocados na outra função por motivos de serem locais
+    ulHolderItemStudy.style.textIndent = '1em';
+
+    hobbyStyles();
     return hobbyContainer;
+}
+
+function hobbyStyles () {
+    // MEASURES
+    containerHobby.style.padding = '1em';
+    
+    // FONTS
+    containerHobby.style.fontFamily = `${mainFont}`;
+    
+    // OTHERS
+    
 }
 
 // Função responsável por adicionar os containers dentro dos seus devidos containers
