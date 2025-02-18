@@ -326,9 +326,10 @@ const hobby = [
 /* Cursos */
 const course = [
     {
-        date: '17/02/2025',
-        course: 'Curso Tal',
+        date: '18/02/2025',
+        course: 'Curso Crie um site simples usando HTML, CSS e JavaScript',
         study: [
+            `Finalizei o curso apresentado no título. Ele tem duração de aproximadamente 2 horas, além de ser um curso introdutório e para iniciante;`,
         ]
     },
 ];
