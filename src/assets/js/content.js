@@ -315,9 +315,17 @@ const carrer = [
 
     {
         date: '19/02/2025',
-    gitPushCount: 'Quantidade de Push: 2',
-    study: [
-        `Início de diversos projetos. Criação de um novo reposítório vindo do site ${roadmapSite}. Os projetos, de forma completa, vem da aba de Frontend. O intuito de começar eles é pelo motivo de me sentir estagnado. Então estou me (re)forçando a fazer e, mesmo que me sinta desconfortável, continuar até conseguir minha primeira oportunidade de emprego;`,
+        gitPushCount: 'Quantidade de Push: 3',
+        study: [
+            `1° Push:`,
+            `Início de diversos projetos. Criação de um novo reposítório vindo do site ${roadmapSite}. Os projetos, de forma completa, vem da aba de Frontend. O intuito de começar eles é pelo motivo de me sentir estagnado. Então estou me (re)forçando a fazer e, mesmo que me sinta desconfortável, continuar até conseguir minha primeira oportunidade de emprego;`,
+
+            `2° Push:`,
+            `Alterações no projeto E³;`,
+
+            `3° e 4° Push:`,
+            `Início do projeto Single-Page CV e esqueleto do mesmo;`
+            `Alterações no projeto E³ (correções no HTML);`
     ]
     },
 ];
