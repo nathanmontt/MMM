@@ -315,7 +315,7 @@ const carrer = [
 
     {
         date: '19/02/2025',
-        gitPushCount: 'Quantidade de Push: 3',
+        gitPushCount: 'Quantidade de Push: 8',
         study: [
             `1° Push:`,
             `Início de diversos projetos. Criação de um novo reposítório vindo do site ${roadmapSite}. Os projetos, de forma completa, vem da aba de Frontend. O intuito de começar eles é pelo motivo de me sentir estagnado. Então estou me (re)forçando a fazer e, mesmo que me sinta desconfortável, continuar até conseguir minha primeira oportunidade de emprego;`,
@@ -324,9 +324,32 @@ const carrer = [
             `Alterações no projeto E³;`,
 
             `3° e 4° Push:`,
-            `Início do projeto Single-Page CV e esqueleto do mesmo;`
-            `Alterações no projeto E³ (correções no HTML);`
-    ]
+            `Início do projeto Single-Page CV e esqueleto do mesmo;`,
+            `Alterações no projeto E³ (correções no HTML);`,
+
+            `5° Push:`,
+            `Término do projeto e criação do README.md;`,
+
+            `6° Push:`,
+            `Adição da licença MIT License;`,
+
+            `7° Push:`,
+            `Adição de um arquivo CSS (nada de SCSS, SASS. Apenas CSS Vanila);`,
+            `Organização de arquivos;`,
+            `Correção do HTML (falta de atenção, na verdade. Não vai acontecer novamente)`,
+            
+            `8° Push:`,
+            `Início de um novo projeto. Criação de um novo reposítório vindo do site ${roadmapSite}. Apenas o esqueleto HTML foi requerido;`,
+        ]
+    },
+    {
+        date: '20/02/2025',
+        gitPushCount: 'Quantidade de Push: 6',
+        study:
+        [
+            `1° Push:`,
+            `Adição do REAME.md, LICENSE e um arquivo HTML (apenas com o básico) ao novo projeto. Provável que o esqueleto não dará (mais devido ao horário mesmo[00:41hr]);`,
+        ]
     },
 ];
 
