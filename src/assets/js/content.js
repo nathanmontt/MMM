@@ -2,6 +2,7 @@
 
 // Criação de objeto com infos sobre os estudos diários
 /* Universidade */
+const roadmapSite = '<a href="https://roadmap.sh/" target: "_blank">roadmap.sh</a>';
 const university = [
     {
         date: '17/02/2025',
@@ -310,6 +311,14 @@ const carrer = [
             `10° Push:`,
             `Alterações no README;`,
         ]
+    },
+
+    {
+        date: '19/02/2025',
+    gitPushCount: 'Quantidade de Push: 2',
+    study: [
+        `Início de diversos projetos. Criação de um novo reposítório vindo do site ${roadmapSite}. Os projetos, de forma completa, vem da aba de Frontend. O intuito de começar eles é pelo motivo de me sentir estagnado. Então estou me (re)forçando a fazer e, mesmo que me sinta desconfortável, continuar até conseguir minha primeira oportunidade de emprego;`,
+    ]
     },
 ];
 
