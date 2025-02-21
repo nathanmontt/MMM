@@ -2,7 +2,7 @@
 
 // Criação de objeto com infos sobre os estudos diários
 /* Universidade */
-const roadmapSite = '<a href="https://roadmap.sh/" target: "_blank">roadmap.sh</a>';
+const roadmapSite = '<a href="https://roadmap.sh/"  target="_blank">roadmap.sh</a>';
 const university = [
     {
         date: '17/02/2025',
@@ -348,7 +348,49 @@ const carrer = [
         study:
         [
             `1° Push:`,
-            `Adição do REAME.md, LICENSE e um arquivo HTML (apenas com o básico) ao novo projeto. Provável que o esqueleto não dará (mais devido ao horário mesmo[00:41hr]);`,
+            `Adição do REAME.md, LICENSE e um arquivo HTML (apenas com o básico) ao novo projeto. Provável que o esqueleto não dará (mais devido ao horário mesmo [00:41hr]);`,
+            
+            `2° Push:`,
+            `Alterações no README;`,
+
+            `3° Push:`,
+            `Adição do esqueleto HTML;`,
+
+            `4° Push:`,
+            `Alterações no README;`,
+            
+            `5° Push:`,
+            `Continuação do projeto. Ou seja, estilização;`,
+            
+            `6° Push:`,
+            `Alterações no README;`,
+        ]
+    },
+    {
+        date: '21/02/2025',
+        gitPushCount: 'Quantidade de Push: 9',
+        study:
+        [
+            `1° Push:`,
+            `Término do projeto pela parte de MOBILE FIRST;`,
+
+            `2° Push:`,
+            `Alterações no README;`,
+            
+            `3° Push:`,
+            `Término completo do projeto;`,
+            
+            `4° Push:`,
+            `Início do projeto de Changelog;`,
+            
+            `5° Push:`,
+            `Adição da Licença;`,
+            
+            `6° Push:`,
+            `Adição e alteração no README;`,
+
+            `7° Push:`,
+            `Adição do esqueleto do projeto de Changelog Component;`,
         ]
     },
 ];
