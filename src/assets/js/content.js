@@ -399,13 +399,13 @@ const carrer = [
         study:
         [
             `1° Push:`,
-            `Adição, no projeto, da posição do changelog component ser sempre central`,
+            `Adição, no projeto, da posição do changelog component ser sempre central;`,
             
             `2° Push:`,
-            `Aplicando testes para a lógica do changelog`,
+            `Aplicando testes para a lógica do changelog;`,
             
             `3° Push:`,
-            `Modificando as cores da line do changelog antes de partir para os "tópicos" (as bolinhas no meio)`,
+            `Modificando as cores da line do changelog antes de partir para os "tópicos" (as bolinhas no meio);`,
 
             `4° Push:`,
             `Alterações no README;`,
@@ -413,14 +413,32 @@ const carrer = [
     },
     {
         date: '23/02/2025',
-        gitPushCount: 'Quantidade de Push: 3',
+        gitPushCount: 'Quantidade de Push: 9',
         study:
         [
             `1° Push:`,
-            `Modificação no botão`,
+            `Modificação no botão;`,
             
             `2° Push:`,
-            `Término do projeto`,
+            `Término do projeto;`,
+            
+            `3° Push:`,
+            `Alterações no README do projeto de Changelog Component;`,
+            
+            `4° Push:`,
+            `Criação do projeto Testimonial Cards;`,
+            
+            `5° Push:`,
+            `Inserção de arquivos para o projeto;`,
+            
+            `6° Push:`,
+            `Alterações no projeto anterior ao Testimonial no arquivo de CSS;`,
+
+            `7° Push:`,
+            `Criação do README;`,
+            
+            `8° Push:`,
+            `Criação da LICENSE;`,
         ]
     },
 ];
