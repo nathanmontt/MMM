@@ -393,6 +393,21 @@ const carrer = [
             `Adição do esqueleto do projeto de Changelog Component;`,
         ]
     },
+    {
+        date: '22/02/2025',
+        gitPushCount: 'Quantidade de Push: 4',
+        study:
+        [
+            `1° Push:`,
+            `Adição, no projeto, da posição do changelog component ser sempre central`,
+            
+            `2° Push:`,
+            `Aplicando testes para a lógica do changelog`,
+            
+            `3° Push:`,
+            `Modificando as cores da line do changelog antes de partir para os "tópicos" (as bolinhas no meio)`,
+        ]
+    },
 ];
 
 /* Hobby */
