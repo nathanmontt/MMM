@@ -413,11 +413,14 @@ const carrer = [
     },
     {
         date: '23/02/2025',
-        gitPushCount: 'Quantidade de Push: 2',
+        gitPushCount: 'Quantidade de Push: 3',
         study:
         [
             `1° Push:`,
             `Modificação no botão`,
+            
+            `2° Push:`,
+            `Término do projeto`,
         ]
     },
 ];
