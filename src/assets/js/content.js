@@ -16,7 +16,7 @@ const university = [
 ];
 
 /* Carreira */
-const carrer = [
+const career = [
     {
         date: '04/02/2025',
         gitPushCount: 'Quantidade de Push: 2',
@@ -439,6 +439,12 @@ const carrer = [
             
             `8° Push:`,
             `Criação da LICENSE;`,
+            
+            `9° Push:`,
+            `Adição do CSS reset no projeto de Testimonial Cards;`,
+            
+            `10° Push:`,
+            `Adição do esqueleto em HTML, adição de imagens para as profile pictures, correção da palavra career, e não carrer, e adição da pasta de icons;`,
         ]
     },
 ];
@@ -509,38 +515,38 @@ function uniStyles () {
 }
 
 /* Função que cria as tags pra CARRER */
-function renderCarrerDay(carrerDay) {
-    const carrerContainer = document.createElement('div');
-    carrerContainer.classList.add('carrer-day-block');
+function renderCareerDay(careerDay) {
+    const careerContainer = document.createElement('div');
+    careerContainer.classList.add('carrer-day-block');
     
     const textMainTitle = document.createElement('h2');
     const gitPushOfTheDay = document.createElement('p');
 
-    textMainTitle.innerHTML = `Dia ${carrerDay.date}`;
-    gitPushOfTheDay.innerHTML = `<strong>${carrerDay.gitPushCount}</strong>`;
+    textMainTitle.innerHTML = `Dia ${careerDay.date}`;
+    gitPushOfTheDay.innerHTML = `<strong>${careerDay.gitPushCount}</strong>`;
     
-    carrerContainer.appendChild(textMainTitle);
-    carrerContainer.appendChild(gitPushOfTheDay);
+    careerContainer.appendChild(textMainTitle);
+    careerContainer.appendChild(gitPushOfTheDay);
   
     const ulHolderItemStudy = document.createElement('ul');
-    carrerDay.study.forEach(activity => {
+    careerDay.study.forEach(activity => {
         const liItemStudy = document.createElement('li');
         liItemStudy.innerHTML = activity;
         ulHolderItemStudy.appendChild(liItemStudy);
         liItemStudy.style.marginBottom = '.2em';
     });
   
-    carrerContainer.appendChild(ulHolderItemStudy);
+    careerContainer.appendChild(ulHolderItemStudy);
 
     carrerStyles()
     // Estilos que não serão colocados na outra função por motivos de serem locais
     ulHolderItemStudy.style.textIndent = '1em';
-    return carrerContainer;
+    return careerContainer;
 }
 
 function carrerStyles () {
-    containerCarrer.style.padding = '1em';
-    containerCarrer.style.fontFamily = `${mainFont}`;
+    containerCareer.style.padding = '1em';
+    containerCareer.style.fontFamily = `${mainFont}`;
 }
 
 /* Função que cria as tags pra HOBBY */
@@ -617,7 +623,7 @@ function courseStyles () {
 
 // Função responsável por adicionar os containers dentro dos seus devidos containers
 const containerUni = document.getElementById('uni-container-info');
-const containerCarrer = document.getElementById('carrer-container-info');
+const containerCareer = document.getElementById('carrer-container-info');
 const containerHobby = document.getElementById('hobby-container-info');
 const containerCourse = document.getElementById('course-container-info');
 
@@ -628,9 +634,9 @@ function renderAllDays() {
         containerUni.appendChild(dayUniElem);
     });
 
-    carrer.forEach(function renderAllCarrerDays (carrerDay) {
-        const dayCarrerElement = renderCarrerDay(carrerDay);
-        containerCarrer.appendChild(dayCarrerElement);
+    career.forEach(function renderAllCareerDays (careerDay) {
+        const dayCareerElement = renderCareerDay(careerDay);
+        containerCareer.appendChild(dayCareerElement);
     });
 
     hobby.forEach(function renderAllHobbyDays (hobbyDay) {
