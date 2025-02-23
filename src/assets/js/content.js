@@ -395,7 +395,7 @@ const carrer = [
     },
     {
         date: '22/02/2025',
-        gitPushCount: 'Quantidade de Push: 4',
+        gitPushCount: 'Quantidade de Push: 5',
         study:
         [
             `1° Push:`,
@@ -406,6 +406,18 @@ const carrer = [
             
             `3° Push:`,
             `Modificando as cores da line do changelog antes de partir para os "tópicos" (as bolinhas no meio)`,
+
+            `4° Push:`,
+            `Alterações no README;`,
+        ]
+    },
+    {
+        date: '23/02/2025',
+        gitPushCount: 'Quantidade de Push: 2',
+        study:
+        [
+            `1° Push:`,
+            `Modificação no botão`,
         ]
     },
 ];
