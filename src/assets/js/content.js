@@ -1,8 +1,11 @@
 'use strict'
 
+// Adição de variáveis úteis para pesquisar caso seja necessário
+const roadmapSite = '<a href="https://roadmap.sh/"  target="_blank">roadmap.sh</a>';
+const gridGuide = `<strong><a href="https://css-tricks.com/snippets/css/complete-guide-grid/"  target="_blank">Complete Guide to Grid</a></strong>`;
+
 // Criação de objeto com infos sobre os estudos diários
 /* Universidade */
-const roadmapSite = '<a href="https://roadmap.sh/"  target="_blank">roadmap.sh</a>';
 const university = [
     {
         date: '17/02/2025',
@@ -413,7 +416,7 @@ const career = [
     },
     {
         date: '23/02/2025',
-        gitPushCount: 'Quantidade de Push: 12',
+        gitPushCount: 'Quantidade de Push: 15',
         study:
         [
             `1° Push:`,
@@ -448,6 +451,24 @@ const career = [
 
             `11° Push:`,
             `Alterações no README;`,
+            
+            `12° Push:`,
+            `Alterações no README: adição de links úteis para pesquisa e que me ajudaram no processo de estudo (e ajudam até hoje);`,
+            
+            `13° Push:`,
+            `Adição de uma licença ao projeto;`,
+
+            `14° Push:`,
+            `Testes na forma de como o layout vai funcionar. A princípio, a ideia era utilizar o Grid Layout, porém ficou mais simples quando o display: flex; se mostrou mais eficiente (ainda sim, em Links Úteis, o ${gridGuide} vai continuar como um artigo muito útil);`,
+        ]
+    },
+    {
+        date: '24/02/2025',
+        gitPushCount: 'Quantidade de Push: ?',
+        study:
+        [
+            `1° Push:`,
+            `;`,
         ]
     },
 ];
