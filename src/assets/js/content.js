@@ -477,6 +477,24 @@ const career = [
             `Término do terceiro card;`,
         ]
     },
+    {
+        date: '25/02/2025',
+        gitPushCount: 'Quantidade de Push: 5',
+        study:
+        [
+            `1° Push:`,
+            `Início de um novo repositório. O projeto em questão é um ${dataPicker}, e nesse caso será feito apenas em HTML e CSS. No futuro, de acordo com o projeto, poderá ser implementado o Javascript;`,
+            
+            `2° Push:`,
+            `Adição e organização das pastas;`,
+            
+            `3° Push:`,
+            `Criação de um README.md`,
+            
+            `4° Push:`,
+            `Criação de uma LICENSE`,
+        ]
+    },
 ];
 
 /* Hobby */
