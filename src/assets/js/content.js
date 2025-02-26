@@ -509,7 +509,7 @@ const career = [
     },
     {
         date: '26/02/2025',
-        gitPushCount: 'Quantidade de Push: 4',
+        gitPushCount: 'Quantidade de Push: 5',
         study:
         [
             `1° Push:`,
@@ -520,6 +520,9 @@ const career = [
 
             `3° Push:`,
             `Reestruturação do esqueleto do HTML do Datepicker;`,
+            
+            `4° Push:`,
+            `Reestruturação do esqueleto do CSS para o projeto;`,
         ]
     },
 ];
