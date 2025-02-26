@@ -502,6 +502,24 @@ const career = [
             
             `7° Push:`,
             `Término do projeto;`,
+            
+            `8° Push:`,
+            `Projeto NÃO terminado. Entendi o enunciado errado e terei de refazer;`,
+        ]
+    },
+    {
+        date: '26/02/2025',
+        gitPushCount: 'Quantidade de Push: 4',
+        study:
+        [
+            `1° Push:`,
+            `Nome do projeto ficou errado. Correção do mesmo;`,
+
+            `2° Push:`,
+            `Alterações no README;`,
+
+            `3° Push:`,
+            `Reestruturação do esqueleto do HTML do Datepicker;`,
         ]
     },
 ];
