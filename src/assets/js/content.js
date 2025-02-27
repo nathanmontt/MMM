@@ -525,6 +525,15 @@ const career = [
             `Reestruturação do esqueleto do CSS para o projeto;`,
         ]
     },
+    {
+        date: '27/02/2025',
+        gitPushCount: 'Quantidade de Push: 2',
+        study:
+        [
+            `1° Push:`,
+            `Término do projeto;`,
+        ]
+    },
 ];
 
 /* Hobby */
