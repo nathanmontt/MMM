@@ -532,6 +532,18 @@ const career = [
         [
             `1° Push:`,
             `Término do projeto;`,
+            
+            `2° Push:`,
+            `Criação de um novo projeto;`,
+
+            `3° Push:`,
+            `Alocação de arquvivos/diretório para o projeto`,
+            
+            `4° Push:`,
+            `Criação de um README.md`,
+            
+            `5° Push:`,
+            `Criação de uma LICENSE`,
         ]
     },
 ];
