@@ -548,7 +548,7 @@ const career = [
     },
     {
         date: '28/02/2025',
-        gitPushCount: 'Quantidade de Push: 5',
+        gitPushCount: 'Quantidade de Push: 10',
         study:
         [
             `1° Push:`,
@@ -571,6 +571,12 @@ const career = [
             
             `7° Push:`,
             `Finalização do projeto (1° parte);`,
+            
+            `8° Push:`,
+            `Adição de ARIA;`,
+            
+            `9° Push:`,
+            `Finalização do projeto (completo);`,
         ]
     },
 ];
