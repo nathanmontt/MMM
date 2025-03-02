@@ -579,6 +579,15 @@ const career = [
             `Finalização do projeto (completo);`,
         ]
     },
+    {
+        date: '01/03/2025',
+        gitPushCount: 'Quantidade de Push: 2',
+        study:
+        [
+            `1° Push:`,
+            `Criação de um novo projeto;`,
+        ]
+    },
 ];
 
 /* Hobby */
