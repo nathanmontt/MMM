@@ -592,6 +592,9 @@ const career = [
 
             `3° Push:`,
             `Adição de um README;`,
+            
+            `4° Push:`,
+            `Adição de pasta e imagens para o projeto;`,
         ]
     },
 ];
