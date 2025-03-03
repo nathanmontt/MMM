@@ -598,6 +598,9 @@ const career = [
 
             `5° Push:`,
             `Alterações no README;`,
+            
+            `6° Push:`,
+            `Estudo do grid para entender como colocar as imagens no layout pedido;`,
         ]
     },
 ];
