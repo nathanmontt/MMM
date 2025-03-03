@@ -48,6 +48,8 @@ Correção | Motivo
 **Header** | O *fetch* continua dando certos problemas (por exemplo, com a interação do menu). Tentar mudar a abordagem ou deixar essa parte de lado, já que é um conceito muito avançado
 **Uncaught** (1) | *Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')*. Tentar resolver esse erro, pois já recebi essa mensagem no log diversas vezes e só foi resolvida com **document.addEventListener('DOMContentLoaded', function(){ ... })**
 **Uncaught** (2) | *Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received*. Outro erro que precisa de resolução. Ele não bloqueia nada na minha aplicação, não me impede de seguir com ela, mas ainda sim, é um bug. E se é um bug, há necessidade de resolver (pelo menos, às vezes)
+**Modals** | O conteúdo adicionado diariamente **não** está sendo mostrado na tela. Procurar o _bug_ depois
+**Explorar** | O botão inicial que facilita a exploração do usurário na aplicação, ao clicar, está sendo direcionado para o _footer_. Procurar o porquê disso
 
 
 <h1 id="fut-feats"> <em>Features</em> Futuras </h1>
