@@ -592,15 +592,48 @@ const career = [
 
             `3° Push:`,
             `Adição de um README;`,
-            
-            `4° Push:`,
+        ]
+    },
+    {
+        date: '02/03/2025',
+        gitPushCount: 'Quantidade de Push: 4',
+        study:
+        [            
+            `1° Push:`,
             `Adição de pasta e imagens para o projeto;`,
 
-            `5° Push:`,
+            `2° Push:`,
             `Alterações no README;`,
             
-            `6° Push:`,
+            `3° Push:`,
             `Estudo do grid para entender como colocar as imagens no layout pedido;`,
+        ]
+    },
+    {
+        date: '03/03/2025',
+        gitPushCount: 'Quantidade de Push: 3',
+        study:
+        [            
+            `1° Push:`,
+            `Alterações no README (E³);`,
+
+            `2° Push:`,
+            `Alterações no README (Image-Grid-Layout);`,
+        ]
+    },
+    {
+        date: '04/03/2025',
+        gitPushCount: 'Quantidade de Push: 4',
+        study:
+        [            
+            `1° Push:`,
+            `Entendimento da lógica por trás do grid layout. Já foi resolvido o problema de como fazer. Agora falta "encaixar";`,
+
+            `2° Push:`,
+            `Término do projeto;`,
+
+            `3° Push:`,
+            `Alterações no README;`,
         ]
     },
 ];
