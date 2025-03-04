@@ -636,16 +636,28 @@ const career = [
             `Alterações no README;`,
             
             `4° Push:`,
-            `Criação de um novo projeto;`,
+            `Criação de um novo projeto (Tooltip UI);`,
             
             `5° Push:`,
             `Adição de uma LICENSE;`,
-
+            
             `6° Push:`,
             `Adição de um README;`,
             
             `7° Push:`,
             `Término do projeto;`,
+            
+            `8° Push:`,
+            `Alterações no README;`,
+            
+            `9° Push:`,
+            `Criação de um novo projeto ();`,
+            
+            `10° Push:`,
+            `Adição de uma LICENSE;`,
+            
+            `11° Push:`,
+            `Adição de um README;`,
         ]
     },
 ];
