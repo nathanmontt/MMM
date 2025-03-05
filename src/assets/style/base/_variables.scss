@@ -1,37 +1,25 @@
-/* ----- IMPORTS ----- */
-// Fonts
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+// FONTS
+$main-font: 'Fira Sans', sans-serif;
 
-/* ----- FONTS ----- */
-/* -- type -- */
-$main-font: 'Cormorant Garamond', serif;
-$secondary-font: "Roboto", serif;
-
-/* -- size -- */
 $font-size-small: .8em;
 $font-size-med: 1.1em;
 $font-size-big: 1.4em;
-
 $font-size-big-hero: 10em;
 $font-size-about: 2.5em;
 
-/* -- weight -- */
 $font-weight-title: 500;
 $font-weight-parag: 300;
 $font-weight-descs: 400;
 
-/* -- style -- */
-$font-style-italic: italic;
+$font-italic: italic;
 
-
-/* ----- COLORS ----- */
-/* -- main -- */
+// COLORS
 $primary: black;
 $secondary: white;
 $tertiary: #406ce7;
 
-/* -- others -- */
 $gray: #9c9c9c92;
 
 

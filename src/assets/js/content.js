@@ -483,7 +483,7 @@ const career = [
         study:
         [
             `1° Push:`,
-            `Início de um novo repositório. O projeto em questão é um ${dataPicker}, e nesse caso será feito apenas em HTML e CSS. No futuro, de acordo com o projeto, poderá ser implementado o Javascript;`,
+            `Início de um novo repositório. O projeto em questão é um Date Picker, e nesse caso será feito apenas em HTML e CSS. No futuro, de acordo com o projeto, poderá ser implementado o Javascript;`,
             
             `2° Push:`,
             `Adição e organização das pastas;`,
