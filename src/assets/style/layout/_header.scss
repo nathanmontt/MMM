@@ -1,50 +1,49 @@
-@import '../base/variables';
+// @import '../base/variables';
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+// header {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
     
-    .container-navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+//     .container-navbar {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
 
-        margin: $margin-medium;
-        .logo {
-            // font-style: $font-style-italic;
-            font-size: $font-size-big;
+//         margin: $margin-medium;
+//         .logo {
+//             font-size: $font-size-big;
 
-            color: $secondary;
-        }
+//             color: $secondary;
+//         }
 
-        .container-menu-options {
-            .menu-options-holder {
-                display: flex;
-                justify-content: center;
-                .options-holder {
-                    margin: $margin-small;
-                    font-weight: $font-weight-descs;
-                    font-family: $main-font;
+//         .container-menu-options {
+//             .menu-options-holder {
+//                 display: flex;
+//                 justify-content: center;
+//                 .options-holder {
+//                     margin: $margin-small;
+//                     font-weight: $font-weight-descs;
+//                     font-family: $main-font;
 
-                    .links {
-                        color: $secondary;
-                    }
+//                     .links {
+//                         color: $secondary;
+//                     }
 
-                    .holder-menu {
-                        border: 3px solid red;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
+//                     .holder-menu {
+//                         border: 3px solid red;
+//                         display: flex;
+//                         flex-direction: column;
+//                         align-items: center;
 
-                        #icon {
-                            cursor: $cursor-mode-pointer;
-                        }
-                        #modes {}
-                    }
-                }
-            }
-        }
-    }
-}
+//                         #icon {
+//                             cursor: $cursor-mode-pointer;
+//                         }
+//                         #modes {}
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
