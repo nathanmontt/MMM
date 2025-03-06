@@ -1,5 +1,5 @@
-# *E³ - Eu, Eu Aqui e Eu Mesmo*
-***E³***: um guia diário nos seus estudos (pelo menos nos meus, por enquanto)
+# *M³ - Me, Myself & Monteiro*
+***M³***: um guia diário nos seus estudos (os meus, por enquanto)
 
 ---
 
