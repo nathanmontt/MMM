@@ -7,7 +7,6 @@
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     
     position: absolute;
     top: 0;
@@ -26,22 +25,47 @@ header {
         display: flex;
         flex-direction: column;
         align-items: end;
+
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+        }
         .open-close-hamb-menu {
             text-align: right;
             font-size: 1.01em;
+
+            @media (min-width: 768px) {
+                display: none;
+            }
         }
 
         ul {
             position: absolute;
             margin-top: $size-big;
+            @media (min-width: 768px) {
+                position: relative;
+                margin-top: auto;
+            }
+
             .options-holder {
                 text-align: right;
-
                 transition: transform .2s;
-                &:hover {
-                    transform: translateX(-8px);
+
+                @media (min-width: 768px) {
+                    display: inline-flex;
+                    margin-right: $size-small;
                 }
 
+                &:hover { 
+                    transform: translateX(-8px);
+
+                    @media (min-width: 768px) {
+                        transform: none;
+                        transition: none;
+                    }
+                }
+                
                 .links {
                     font-weight: $font-weight-parag;
                     color: $secondary;

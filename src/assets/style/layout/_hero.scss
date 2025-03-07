@@ -5,7 +5,6 @@ $hero-hight: 100vh;
 $bg-color-overlay: #1111118c;
 
 main {
-
     #hero {
         position: absolute;
         top: 0;
@@ -13,8 +12,9 @@ main {
         right: 0;
         left: 0;
         
-        background-image: url("/src/assets/img/sven-brandsma-hero-bg.jpg");
+        background-image: url("/src/assets/img/bench-accounting-hero-bg-2.jpg");
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         
         .container-name-logo-hero {
@@ -33,10 +33,21 @@ main {
                 }
                 
                 .container-description-bellow-application-name {
+                    @media (min-width: 768px) {
+                        // border: 3px solid red;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
                     .first-description {}
                     .second-description {
                         font-size: .9em;
                         font-weight: $font-weight-parag;
+
+                        @media (min-width: 768px) {
+                            // border: 3px solid red;
+                            margin: $size-medium 5em;
+                        }
                         .redirect-link {
                             background-color: $tertiary;
                             color: $secondary;

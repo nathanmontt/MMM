@@ -162,7 +162,6 @@ html {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -179,20 +178,49 @@ header nav {
   flex-direction: column;
   align-items: end;
 }
+@media (min-width: 768px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
 header nav .open-close-hamb-menu {
   text-align: right;
   font-size: 1.01em;
+}
+@media (min-width: 768px) {
+  header nav .open-close-hamb-menu {
+    display: none;
+  }
 }
 header nav ul {
   position: absolute;
   margin-top: 2em;
 }
+@media (min-width: 768px) {
+  header nav ul {
+    position: relative;
+    margin-top: auto;
+  }
+}
 header nav ul .options-holder {
   text-align: right;
   transition: transform 0.2s;
 }
+@media (min-width: 768px) {
+  header nav ul .options-holder {
+    display: inline-flex;
+    margin-right: 0.5em;
+  }
+}
 header nav ul .options-holder:hover {
   transform: translateX(-8px);
+}
+@media (min-width: 768px) {
+  header nav ul .options-holder:hover {
+    transform: none;
+    transition: none;
+  }
 }
 header nav ul .options-holder .links {
   font-weight: 300;
@@ -205,8 +233,9 @@ main #hero {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url("/src/assets/img/sven-brandsma-hero-bg.jpg");
+  background-image: url("/src/assets/img/bench-accounting-hero-bg-2.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 main #hero .container-name-logo-hero {
@@ -223,9 +252,20 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay {
 main #hero .container-name-logo-hero .container-padding-in-front-overlay .application-name-title {
   font-size: 3em;
 }
+@media (min-width: 768px) {
+  main #hero .container-name-logo-hero .container-padding-in-front-overlay .container-description-bellow-application-name {
+    display: flex;
+    flex-direction: column;
+  }
+}
 main #hero .container-name-logo-hero .container-padding-in-front-overlay .container-description-bellow-application-name .second-description {
   font-size: 0.9em;
   font-weight: 300;
+}
+@media (min-width: 768px) {
+  main #hero .container-name-logo-hero .container-padding-in-front-overlay .container-description-bellow-application-name .second-description {
+    margin: 1em 5em;
+  }
 }
 main #hero .container-name-logo-hero .container-padding-in-front-overlay .container-description-bellow-application-name .second-description .redirect-link {
   background-color: #2e59ce;
