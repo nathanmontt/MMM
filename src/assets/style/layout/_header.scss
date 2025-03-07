@@ -1,13 +1,35 @@
 @import '../base/variables';
 
 header {
-    border: 3px solid red;
-    #logo-name-home-index {}
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
 
+    position: absolute;
+    top: 0;
+    // bottom: 0;
+    right: 0;
+    left: 0;
+    border: 3px solid red;
+    #logo-name-home-index {
+        // border: 3px solid blue;
+    }
+    
     nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        .open-close-hamb-menu {
+            text-align: right;
+        }
         ul {
+            position: absolute;
+            margin-top: $margin-big-top;
+            border: 3px solid green;
             .options-holder {
-                .links {}
+                text-align: right;
+                .links {
+                }
             }
         }
     }

@@ -23,18 +23,13 @@ $tertiary: #406ce7;
 $gray: #9c9c9c92;
 
 
-/* ----- DEFAUTLT ARRANGEMENTS ----- */
-$padding-small: 0.5em;
-$padding-medium: 1em;
-$padding-big: 2em;
-
-$margin-small: 0.4em;
-$margin-medium: 1em;
-$margin-big: 1.4em;
+// SPECIFIC SIZES
+$size-small: 0.5em;
+$size-medium: 1em;
+$size-big: 2em;
 
 
-/* ----- SPECIFIC ARRANGEMENTS ----- */
-/* -- padding -- */
+// SIZES - MARGIN & PADDING
 $padding-small-top: 0.7em;
 $padding-small-right: 0.7em;
 $padding-small-bottom: 0.7em;
@@ -50,7 +45,7 @@ $padding-big-right: 2em;
 $padding-big-bottom: 2em;
 $padding-big-left: 2em;
 
-/* -- margin -- */
+
 $margin-small-top: 0.7em;
 $margin-small-right: 0.7em;
 $margin-small-bottom: 0.4em;
@@ -67,12 +62,8 @@ $margin-big-bottom: 2em;
 $margin-big-left: 2em;
 
 
-/* ----- OTHERS ----- */
+// BORDER
 $no-border: none;
-$no-border-bg: transparent;
-$cursor-mode-pointer: pointer;
-
-$border-size: 0.01em;
+$no-border-color: transparent;
+$border-primary-size: 0.01em;
 $border-second-size: 0.1em;
-
-$main-height: 100vh;

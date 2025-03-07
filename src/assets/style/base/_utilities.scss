@@ -42,31 +42,7 @@
 .pb-5 { padding-bottom: 5em; }
 
 /* -- BORDER -- */
-.bt { border-top: $border-size solid $primary; }
-.br { border-right: $border-size solid $primary; }
-.bb { border-bottom: $border-size solid $primary; }
-.bl { border-left: $border-size solid $primary; }
-
-/* -- SEPARATORS -- */
-.ls {
-    display: grid;
-    place-self: center;
-    width: 100%;
-    height: $border-second-size;
-    background-color: $gray;
-    margin-top: $margin-medium-top;
-}
-
-.ls-accordion {
-    display: grid;
-    place-self: center;
-    width: 100%;
-    height: $border-second-size;
-    background-color: $gray;
-}
-
-/* -- JUST FOR MAIN -- */
-.main-content {
-    min-height: $main-height;
-    margin: $margin-medium;
-}
+.bt { border-top: $border-primary-size solid $primary; }
+.br { border-right: $border-primary-size solid $primary; }
+.bb { border-bottom: $border-primary-size solid $primary; }
+.bl { border-left: $border-primary-size solid $primary; }

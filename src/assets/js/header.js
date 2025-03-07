@@ -1,4 +1,17 @@
-// 'use strict'
+'use strict'
+
+const hambMenuOpenClose = document.querySelector('.open-close-hamb-menu');
+const menuOptionsLinks = document.querySelectorAll('.options-holder');
+
+hambMenuOpenClose.addEventListener('click', function() {
+    for (let i = 0; i < menuOptionsLinks.length; i++) {
+        if (menuOptionsLinks[i].classList.contains('hidden')) {
+            menuOptionsLinks[i].classList.remove('hidden');
+        } else {
+            menuOptionsLinks[i].classList.add('hidden');
+        }
+    }
+});
 
 // // Função para modificar a cor das fontes quando a tela descer até um determinado ponto
 // window.addEventListener('scroll', function changeFontMenuOptionsColor () {
