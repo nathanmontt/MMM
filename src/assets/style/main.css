@@ -155,15 +155,24 @@ html {
 }
 
 /* ----- LAYOUT ----- */
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1;
   padding: 1em;
+}
+header #logo-name-home-index {
+  color: white;
+  font-size: 1.7em;
 }
 header nav {
   display: flex;
@@ -172,6 +181,7 @@ header nav {
 }
 header nav .open-close-hamb-menu {
   text-align: right;
+  font-size: 1.01em;
 }
 header nav ul {
   position: absolute;
@@ -179,7 +189,16 @@ header nav ul {
 }
 header nav ul .options-holder {
   text-align: right;
+  transition: transform 0.2s;
 }
+header nav ul .options-holder:hover {
+  transform: translateX(-8px);
+}
+header nav ul .options-holder .links {
+  font-weight: 300;
+  color: white;
+}
+
 main #hero {
   position: absolute;
   top: 0;
@@ -195,12 +214,31 @@ main #hero .container-name-logo-hero {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  background-color: rgba(17, 17, 17, 0.5490196078);
 }
+main #hero .container-name-logo-hero .container-padding-in-front-overlay {
+  padding: 1em;
+  color: white;
+}
+main #hero .container-name-logo-hero .container-padding-in-front-overlay .application-name-title {
+  font-size: 3em;
+}
+main #hero .container-name-logo-hero .container-padding-in-front-overlay .container-description-bellow-application-name .second-description {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+main #hero .container-name-logo-hero .container-padding-in-front-overlay .container-description-bellow-application-name .second-description .redirect-link {
+  background-color: #2e59ce;
+  color: white;
+  padding: 0 0.2em;
+}
+
 /* ----- MODULES ----- */
 .btn-primary {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  color: white;
 }
 
 /* ----- STATE ----- */

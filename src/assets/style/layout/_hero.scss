@@ -2,16 +2,16 @@
 
 // LOCAL VARIABLES
 $hero-hight: 100vh;
-
+$bg-color-overlay: #1111118c;
 
 main {
+
     #hero {
         position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-        // margin-top: $size-between-small-medium;
         
         background-image: url("/src/assets/img/sven-brandsma-hero-bg.jpg");
         background-size: cover;
@@ -22,13 +22,27 @@ main {
             flex-direction: column;
             justify-content: center;
             min-height: $hero-hight;
-            
-            .application-name-title {}
-            
-            .container-description-bellow-application-name {
-                .first-description
-                .second-description {
-                    .redirect-link-linkedin {}
+
+            background-color: $bg-color-overlay;
+
+            .container-padding-in-front-overlay {
+                padding: $size-medium;
+                color: $secondary;
+                .application-name-title {
+                    font-size: 3em;
+                }
+                
+                .container-description-bellow-application-name {
+                    .first-description {}
+                    .second-description {
+                        font-size: .9em;
+                        font-weight: $font-weight-parag;
+                        .redirect-link {
+                            background-color: $tertiary;
+                            color: $secondary;
+                            padding: 0 .2em;
+                        }
+                    }
                 }
             }
         }

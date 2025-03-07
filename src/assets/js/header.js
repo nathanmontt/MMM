@@ -1,14 +1,14 @@
 'use strict'
 
 const hambMenuOpenClose = document.querySelector('.open-close-hamb-menu');
-const menuOptionsLinks = document.querySelectorAll('.options-holder');
+const menuOptionsHolder = document.querySelectorAll('.options-holder');
 
 hambMenuOpenClose.addEventListener('click', function() {
-    for (let i = 0; i < menuOptionsLinks.length; i++) {
-        if (menuOptionsLinks[i].classList.contains('hidden')) {
-            menuOptionsLinks[i].classList.remove('hidden');
+    for (let i = 0; i < menuOptionsHolder.length; i++) {
+        if (menuOptionsHolder[i].classList.contains('hidden')) {
+            menuOptionsHolder[i].classList.remove('hidden');
         } else {
-            menuOptionsLinks[i].classList.add('hidden');
+            menuOptionsHolder[i].classList.add('hidden');
         }
     }
 });

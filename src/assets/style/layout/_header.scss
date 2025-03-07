@@ -1,29 +1,50 @@
 @import '../base/variables';
 
+* {
+    font-family: $main-font;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
-
+    
     z-index: 1;
     padding: $size-medium;
+    
+    #logo-name-home-index {
+        color: $secondary;
+        font-size: $font-size-big;
+    }
+    
     nav {
         display: flex;
         flex-direction: column;
         align-items: end;
         .open-close-hamb-menu {
             text-align: right;
+            font-size: 1.01em;
         }
+
         ul {
             position: absolute;
             margin-top: $size-big;
             .options-holder {
                 text-align: right;
+
+                transition: transform .2s;
+                &:hover {
+                    transform: translateX(-8px);
+                }
+
                 .links {
+                    font-weight: $font-weight-parag;
+                    color: $secondary;
                 }
             }
         }
