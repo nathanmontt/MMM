@@ -162,7 +162,8 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  border: 3px solid red;
+  z-index: 1;
+  padding: 1em;
 }
 header nav {
   display: flex;
@@ -175,32 +176,31 @@ header nav .open-close-hamb-menu {
 header nav ul {
   position: absolute;
   margin-top: 2em;
-  border: 3px solid green;
 }
 header nav ul .options-holder {
   text-align: right;
 }
-#hero {
-  border: 3px solid red;
-  margin-top: 2em;
+main #hero {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("/src/assets/img/sven-brandsma-hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main #hero .container-name-logo-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }
 /* ----- MODULES ----- */
 .btn-primary {
+  cursor: pointer;
   background-color: transparent;
   border: none;
-}
-
-.btn-cta-access-study {
-  padding: 0.5em;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 500;
-  background-color: transparent;
-  border: 0.01em solid black;
-  transition: background-color 0.3s, color 0.3s, border 0.3s;
-}
-.btn-cta-access-study:hover {
-  background-color: #406ce7;
-  color: white;
 }
 
 /* ----- STATE ----- */

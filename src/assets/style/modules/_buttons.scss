@@ -1,21 +1,7 @@
 @import '../base/variables';
 
 .btn-primary {
-    background-color: $no-border-color;
-    border: $no-border;
-}
-
-.btn-cta-access-study {
-    padding: .5em;
-    font-family: $main-font;
-    font-weight: $font-weight-title;
-    background-color: transparent;
-    border: $border-primary-size solid $primary;
-    
-    transition: background-color .3s, color .3s, border .3s;
-    &:hover {
-        background-color: $tertiary;
-        color: $secondary;
-        // border: $border-size solid $secondary;
-    }
+    cursor: pointer;
+    background-color: $border-no-color;
+    border: $border-none;
 }

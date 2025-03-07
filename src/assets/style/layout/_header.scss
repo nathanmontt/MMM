@@ -3,18 +3,14 @@
 header {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
 
     position: absolute;
     top: 0;
-    // bottom: 0;
     right: 0;
     left: 0;
-    border: 3px solid red;
-    #logo-name-home-index {
-        // border: 3px solid blue;
-    }
-    
+
+    z-index: 1;
+    padding: $size-medium;
     nav {
         display: flex;
         flex-direction: column;
@@ -24,8 +20,7 @@ header {
         }
         ul {
             position: absolute;
-            margin-top: $margin-big-top;
-            border: 3px solid green;
+            margin-top: $size-big;
             .options-holder {
                 text-align: right;
                 .links {

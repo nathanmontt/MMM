@@ -6,8 +6,6 @@ $main-font: 'Fira Sans', sans-serif;
 $font-size-small: .8em;
 $font-size-med: 1.1em;
 $font-size-big: 1.4em;
-$font-size-big-hero: 10em;
-$font-size-about: 2.5em;
 
 $font-weight-title: 500;
 $font-weight-parag: 300;
@@ -26,44 +24,12 @@ $gray: #9c9c9c92;
 // SPECIFIC SIZES
 $size-small: 0.5em;
 $size-medium: 1em;
+$size-between-small-medium: 1.5em;
 $size-big: 2em;
 
 
-// SIZES - MARGIN & PADDING
-$padding-small-top: 0.7em;
-$padding-small-right: 0.7em;
-$padding-small-bottom: 0.7em;
-$padding-small-left: 0.7em;
-
-$padding-medium-top: 1.1em;
-$padding-medium-right: 1.1em;
-$padding-medium-bottom: 1.1em;
-$padding-medium-left: 1.1em;
-
-$padding-big-top: 2em;
-$padding-big-right: 2em;
-$padding-big-bottom: 2em;
-$padding-big-left: 2em;
-
-
-$margin-small-top: 0.7em;
-$margin-small-right: 0.7em;
-$margin-small-bottom: 0.4em;
-$margin-small-left: 0.7em;
-
-$margin-medium-top: 1.1em;
-$margin-medium-right: 1.1em;
-$margin-medium-bottom: 1.1em;
-$margin-medium-left: 1.1em;
-
-$margin-big-top: 2em;
-$margin-big-right: 2em;
-$margin-big-bottom: 2em;
-$margin-big-left: 2em;
-
-
 // BORDER
-$no-border: none;
-$no-border-color: transparent;
+$border-none: none;
+$border-no-color: transparent;
 $border-primary-size: 0.01em;
 $border-second-size: 0.1em;
