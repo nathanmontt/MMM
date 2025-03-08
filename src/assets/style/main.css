@@ -201,6 +201,7 @@ header nav ul {
   header nav ul {
     position: relative;
     margin-top: auto;
+    border: 3px solid red;
   }
 }
 header nav ul .options-holder {
