@@ -3,16 +3,36 @@
 #about {
     min-height: $size-min-height;
     padding: $size-big;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        min-height: auto;
+    }
     .container-sec-one-info-fx-phrase {
         margin-bottom: $size-medium;
         .sec-title-number {
             font-size: $font-size-small;
             color: $color-sec-gray;
+            margin-bottom: $size-small;
         }
-        .small-slogan-project {}
+        .small-slogan-project {
+            width: 8em;
+        }
     }
     .container-explanation-about-project {
-        // border: 3px solid red;
+        @media (min-width: 500px) {
+            width: 25em;
+        }
+        @media (min-width: 600px) {
+            width: 30em;
+        }
+        @media (min-width: 768px) {
+            width: 30em;
+        }
+        @media (min-width: 1024px) {
+            width: 50em;
+        }
         .normal-title-project {
             font-size: $font-size-big;
         }

@@ -28,7 +28,6 @@ main {
                 
                 .container-description-bellow-application-name {
                     @media (min-width: 768px) {
-                        // border: 3px solid red;
                         display: flex;
                         flex-direction: column;
                     }
@@ -39,7 +38,6 @@ main {
                         font-weight: $font-weight-parag;
 
                         @media (min-width: 768px) {
-                            // border: 3px solid red;
                             margin: $size-medium 5em;
                         }
                         .redirect-link {
