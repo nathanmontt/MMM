@@ -1,15 +1,27 @@
 @import '../base/variables';
 
 #about {
+    min-height: $size-min-height;
+    padding: $size-big;
     .container-sec-one-info-fx-phrase {
-        .sec-title-number {}
+        margin-bottom: $size-medium;
+        .sec-title-number {
+            font-size: $font-size-small;
+            color: $color-sec-gray;
+        }
         .small-slogan-project {}
     }
     .container-explanation-about-project {
-        .normal-title-project {}
+        // border: 3px solid red;
+        .normal-title-project {
+            font-size: $font-size-big;
+        }
         .container-two-separated-collumns-grid {
-            .grid-col-1 {}
-            .grid-col-2 {}
+            color: $color-sec-gray;
+            .grid-col-1, .grid-col-2 {
+                margin: 1em 0 1em 0;
+                font-size: $font-size-small;
+            }
         }
     }
 }

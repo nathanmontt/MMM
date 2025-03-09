@@ -42,7 +42,7 @@
 .pb-5 { padding-bottom: 5em; }
 
 /* -- BORDER -- */
-.bt { border-top: $border-primary-size solid $primary; }
-.br { border-right: $border-primary-size solid $primary; }
-.bb { border-bottom: $border-primary-size solid $primary; }
-.bl { border-left: $border-primary-size solid $primary; }
+.bt { border-top: $border-primary-size solid $color-primary; }
+.br { border-right: $border-primary-size solid $color-primary; }
+.bb { border-bottom: $border-primary-size solid $color-primary; }
+.bl { border-left: $border-primary-size solid $color-primary; }

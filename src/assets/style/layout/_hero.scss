@@ -5,13 +5,7 @@ $hero-hight: 100vh;
 $bg-color-overlay: #1111118c;
 
 main {
-    #hero {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        
+    #hero {        
         background-image: url("/src/assets/img/bench-accounting-hero-bg-2.jpg");
         background-size: cover;
         background-position: center;
@@ -27,7 +21,7 @@ main {
 
             .container-padding-in-front-overlay {
                 padding: $size-big;
-                color: $secondary;
+                color: $color-secondary;
                 .application-name-title {
                     font-size: 3em;
                 }
@@ -39,7 +33,7 @@ main {
                         flex-direction: column;
                     }
 
-                    .first-description {}
+                    // .first-description {}
                     .second-description {
                         font-size: .9em;
                         font-weight: $font-weight-parag;
@@ -49,8 +43,8 @@ main {
                             margin: $size-medium 5em;
                         }
                         .redirect-link {
-                            background-color: $tertiary;
-                            color: $secondary;
+                            background-color: $color-tertiary;
+                            color: $color-secondary;
                             padding: 0 .2em;
                         }
                     }

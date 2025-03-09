@@ -15,11 +15,12 @@ $font-weight-descs: 400;
 $font-italic: italic;
 
 // COLORS
-$primary: black;
-$secondary: white;
-$tertiary: #2e59ce;
+$color-primary: black;
+$color-secondary: white;
+$color-tertiary: #2e59ce;
 
-$gray: #9c9c9c92;
+$color-gray: #9c9c9c92;
+$color-sec-gray: #5f5f5f;
 
 
 // SPECIFIC SIZES
@@ -27,7 +28,7 @@ $size-small: 0.5em;
 $size-medium: 1em;
 $size-between-small-medium: 1.5em;
 $size-big: 2em;
-
+$size-min-height: 100vh;
 
 // BORDER
 $border-none: none;
