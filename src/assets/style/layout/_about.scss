@@ -1,7 +1,10 @@
 @import '../base/variables';
 
+// LOCAL VARIABLES
+$font-size-local-about: 1.4em;
+
 #about {
-    min-height: $size-min-height;
+    min-height: 80vh;
     padding: $size-big;
 
     @media (min-width: 768px) {
@@ -34,7 +37,10 @@
             width: 50em;
         }
         .normal-title-project {
-            font-size: $font-size-big;
+            font-size: $font-size-local-about;
+            @media (min-width: 768px) {
+                font-size: $font-size-big;
+            }
         }
         .container-two-separated-collumns-grid {
             color: $color-sec-gray;

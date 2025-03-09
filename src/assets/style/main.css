@@ -271,7 +271,7 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 }
 
 #about {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 2em;
 }
 @media (min-width: 768px) {
@@ -313,7 +313,12 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
   }
 }
 #about .container-explanation-about-project .normal-title-project {
-  font-size: 1.7em;
+  font-size: 1.4em;
+}
+@media (min-width: 768px) {
+  #about .container-explanation-about-project .normal-title-project {
+    font-size: 1.7em;
+  }
 }
 #about .container-explanation-about-project .container-two-separated-collumns-grid {
   color: #5f5f5f;
