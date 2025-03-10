@@ -162,9 +162,19 @@ html {
   right: 0;
   left: 0;
   border: 0.01em solid #a5a5a5;
-  width: 30em;
+  width: 10em;
   height: 0.01em;
   margin: 0 0 0 2em;
+}
+@media (min-width: 600px) {
+  .line-separator {
+    width: 20em;
+  }
+}
+@media (min-width: 900px) {
+  .line-separator {
+    width: 30em;
+  }
 }
 
 /* ----- LAYOUT ----- */
@@ -397,11 +407,10 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
   margin: 1em 0 1em 0;
   font-size: 0.8em;
 }
-#content .container-link-see-more-projects .container-name-links ul {
-  margin-top: 1em;
-}
 #content .container-link-see-more-projects .container-name-links ul li {
-  margin: 0.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #content .container-link-see-more-projects .container-name-links ul li .accordion-links-direct-links {
   color: black;
@@ -418,6 +427,7 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
   cursor: pointer;
   background-color: transparent;
   border: none;
+  margin: 0.5em;
 }
 
 /* ----- STATE ----- */
