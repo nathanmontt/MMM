@@ -9,6 +9,7 @@
 * [Habilidades Necessárias](#abilities)
 * [Como executar](#execute)
 * [Contribuindo](#contribuition)
+* [Pontos Importantes](#key-points)
 * [*Features* Futuras](#fut-feats)
 * [Inspirações](#inspirations)
 * [Links Úteis](#links)
@@ -38,6 +39,13 @@ O link referente ao projeto se encontra ao lado. Fique à vontade para visitá-l
 <h1 id="contribuition"> Contribuindo </h1>
 
 No momento, não há contruibuições. Caso queira, dê um PR!
+
+
+<h1 id="key-points"> Pontos Importantes </h1>
+
+Vale resaltar alguns pontos importantes, de estudo, ao decorrer do projeto:
+* O `<a href="mailto:email@example.com"></a>` foi apontado por alguns artigos sendo "não recomendado, devido à entrada do email quase sempre caindo em _spam_". É possível que, no futuro, isso seja modificado;
+
 
 <!--
 <h1 id="fut-corr"> Correções Futuras </h1>
