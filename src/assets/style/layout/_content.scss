@@ -1,8 +1,72 @@
 @import '../base/variables';
 
+// LOCAL VARIABLES
+$font-size-local-about: 1.4em;
+
 #content {
-    .container-sec-two-info-fx-phrase {
-        .sec-title-number {}
-        .small-phrase-content {}
+    min-height: 80vh;
+    padding: $size-big;
+
+    .container-grid-content-text-explanation {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            min-height: auto;
+        }
+        .container-sec-two-info-fx-phrase {
+            margin-bottom: $size-medium;
+            .sec-title-number {
+                font-size: $font-size-small;
+                color: $color-sec-gray;
+                margin-bottom: $size-small;
+            }
+            .small-phrase-content {
+                width: 8em;
+            }
+        }
+
+        .container-explanation-content {
+            @media (min-width: 500px) {
+                width: 25em;
+            }
+            @media (min-width: 600px) {
+                width: 30em;
+            }
+            @media (min-width: 768px) {
+                width: 30em;
+            }
+            @media (min-width: 1024px) {
+                width: 50em;
+            }
+            .normal-title-project {
+                font-size: $font-size-local-about;
+                @media (min-width: 768px) {
+                    font-size: $font-size-big;
+                }
+            }
+            .container-two-separated-collumns-grid {
+                color: $color-sec-gray;
+                .grid-col-1-content, .grid-col-2-content {
+                    margin: 1em 0 1em 0;
+                    font-size: $font-size-small;
+                }
+            }
+        }
+    }
+
+    .container-link-see-more-projects {
+        .container-name-links {
+            ul {
+                margin-top: $size-medium;
+                li {
+                    margin: $size-small 0;
+                    // border: 3px solid red;
+                    .accordion-links-direct-links {
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+        .container-project-imgs {}
     }
 }

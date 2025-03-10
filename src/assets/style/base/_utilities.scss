@@ -42,7 +42,18 @@
 .pb-5 { padding-bottom: 5em; }
 
 /* -- BORDER -- */
-.bt { border-top: $border-primary-size solid $color-primary; }
-.br { border-right: $border-primary-size solid $color-primary; }
-.bb { border-bottom: $border-primary-size solid $color-primary; }
-.bl { border-left: $border-primary-size solid $color-primary; }
+.bt { border-top: $border-primary-size solid $color-thr-gray; }
+.br { border-right: $border-primary-size solid $color-thr-gray; }
+.bb { border-bottom: $border-primary-size solid $color-thr-gray; }
+.bl { border-left: $border-primary-size solid $color-thr-gray; }
+
+.line-separator {
+    position: relative;
+    content: '';
+    right: 0;
+    left: 0;
+    border: $border-primary-size solid $color-thr-gray;
+    width: 30em;
+    height: $border-primary-size;
+    margin: 0 0 0 $size-big;
+}

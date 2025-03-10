@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -140,19 +141,30 @@ html {
 
 /* -- BORDER -- */
 .bt {
-  border-top: 0.01em solid black;
+  border-top: 0.01em solid #a5a5a5;
 }
 
 .br {
-  border-right: 0.01em solid black;
+  border-right: 0.01em solid #a5a5a5;
 }
 
 .bb {
-  border-bottom: 0.01em solid black;
+  border-bottom: 0.01em solid #a5a5a5;
 }
 
 .bl {
-  border-left: 0.01em solid black;
+  border-left: 0.01em solid #a5a5a5;
+}
+
+.line-separator {
+  position: relative;
+  content: "";
+  right: 0;
+  left: 0;
+  border: 0.01em solid #a5a5a5;
+  width: 30em;
+  height: 0.01em;
+  margin: 0 0 0 2em;
 }
 
 /* ----- LAYOUT ----- */
@@ -328,12 +340,84 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
   font-size: 0.8em;
 }
 
+#content {
+  min-height: 80vh;
+  padding: 2em;
+}
+@media (min-width: 768px) {
+  #content .container-grid-content-text-explanation {
+    display: flex;
+    justify-content: space-between;
+    min-height: auto;
+  }
+}
+#content .container-grid-content-text-explanation .container-sec-two-info-fx-phrase {
+  margin-bottom: 1em;
+}
+#content .container-grid-content-text-explanation .container-sec-two-info-fx-phrase .sec-title-number {
+  font-size: 0.8em;
+  color: #5f5f5f;
+  margin-bottom: 0.5em;
+}
+#content .container-grid-content-text-explanation .container-sec-two-info-fx-phrase .small-phrase-content {
+  width: 8em;
+}
+@media (min-width: 500px) {
+  #content .container-grid-content-text-explanation .container-explanation-content {
+    width: 25em;
+  }
+}
+@media (min-width: 600px) {
+  #content .container-grid-content-text-explanation .container-explanation-content {
+    width: 30em;
+  }
+}
+@media (min-width: 768px) {
+  #content .container-grid-content-text-explanation .container-explanation-content {
+    width: 30em;
+  }
+}
+@media (min-width: 1024px) {
+  #content .container-grid-content-text-explanation .container-explanation-content {
+    width: 50em;
+  }
+}
+#content .container-grid-content-text-explanation .container-explanation-content .normal-title-project {
+  font-size: 1.4em;
+}
+@media (min-width: 768px) {
+  #content .container-grid-content-text-explanation .container-explanation-content .normal-title-project {
+    font-size: 1.7em;
+  }
+}
+#content .container-grid-content-text-explanation .container-explanation-content .container-two-separated-collumns-grid {
+  color: #5f5f5f;
+}
+#content .container-grid-content-text-explanation .container-explanation-content .container-two-separated-collumns-grid .grid-col-1-content, #content .container-grid-content-text-explanation .container-explanation-content .container-two-separated-collumns-grid .grid-col-2-content {
+  margin: 1em 0 1em 0;
+  font-size: 0.8em;
+}
+#content .container-link-see-more-projects .container-name-links ul {
+  margin-top: 1em;
+}
+#content .container-link-see-more-projects .container-name-links ul li {
+  margin: 0.5em 0;
+}
+#content .container-link-see-more-projects .container-name-links ul li .accordion-links-direct-links {
+  color: black;
+}
 /* ----- MODULES ----- */
 .btn-primary {
   cursor: pointer;
   background-color: transparent;
   border: none;
   color: white;
+}
+
+.btn-project {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 /* ----- STATE ----- */
