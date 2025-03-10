@@ -79,8 +79,8 @@ A seção abaixo foi adicionada para caso queira verificar algum conteúdo de es
 **JS: "Events"** | <a href="https://bobbyhadz.com/blog/change-background-color-on-scroll-using-javascript">Change the Background Color on Scroll using JavaScript</a> (<a href="https://github.com/bobbyhadz/change-background-color-on-scroll-using-javascript">the repository to the article</a>) <br> <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener">Element.addEventListener()</a> <br> <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document/DOMContentLoaded_event">DOMContentLoaded</a> <br> <a href="https://www.w3schools.com/jsref/met_document_addeventlistener.asp"> HTML DOM Document addEventListener()</a>
 **JS: Attributes** | <a href="https://www.w3schools.com/graphics/svg_scripting.asp">SVG Scripting</a>
 **CSS** | <a href="https://medium.com/@themaheshvaishnav/how-to-change-font-color-in-css-while-scrolling-9066d24b787c">How to Change Font Color in CSS While Scrolling</a>
-**a (anchor)** | <a href="https://www.timospecht.de/pt-br/o-que-e/rel-noopener-noreferrer/">Glossário de SEO: rel="noopener noreferrer"</a>
-
+**HTML: tag `<a href="#"></a>`** | <a href="https://www.timospecht.de/pt-br/o-que-e/rel-noopener-noreferrer/">Glossário de SEO: rel="noopener noreferrer"</a>
+**HTML: tag `<a href="mailto:email@example.com"></a>`** | <a href="https://www.w3docs.com/snippets/html/how-to-create-mailto-links.html">How to Create Mailto Links</a> <br> <a href="https://www.freecodecamp.org/news/how-to-create-a-responsive-html-email-template/">How to Create a Responsive HTML Email Template</a> <br> <a href="https://www.mailmodo.com/guides/email-development/">The Ultimate Guide to HTML Email Development</a>
 
 <h1 id="credits"> Créditos </h1>
 
