@@ -3,13 +3,23 @@
 footer {
     background-color: $color-quaternary;
     color: $color-secondary;
+    padding: $size-big;
     .container-general-holder-content-footer {
-        padding: $size-big;
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
         .container-one-some-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: $size-medium;
+
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: normal;
+                justify-content: space-between;
+            }
             .project-name {
                 font-size: $font-size-bigger;
             }
@@ -22,33 +32,25 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: $size-medium;
+            
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: normal;
+                justify-content: space-between;
+            }
             ul {
+                display: flex;
+                flex-direction: column;
                 li {
-                    display: flex;
-                    flex-direction: column;
                     .social-links {
+                        margin-bottom: $size-small;
                         color: $color-secondary;
                     }
                 }
             }
 
             .policy {
-                color: $color-sec-gray;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-        
-        .container-three-contact {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .email {
-                color: $color-secondary;
-            }
-            .terms {
                 color: $color-sec-gray;
                 &:hover {
                     text-decoration: underline;
