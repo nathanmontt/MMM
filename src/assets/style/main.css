@@ -294,7 +294,7 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 }
 
 #about {
-  min-height: 80vh;
+  min-height: 70vh;
   padding: 2em;
 }
 @media (min-width: 768px) {
@@ -423,19 +423,17 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 #content .container-link-see-more-projects {
   margin-top: 2em;
 }
-#content .container-link-see-more-projects .container-name-links ul .topic-1, #content .container-link-see-more-projects .container-name-links ul .topic-2, #content .container-link-see-more-projects .container-name-links ul .topic-3 {
+#content .container-link-see-more-projects .container-name-links ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   cursor: pointer;
 }
-#content .container-link-see-more-projects .container-name-links ul .topic-1 .container-open-subtopics .accordion-links-direct-links, #content .container-link-see-more-projects .container-name-links ul .topic-2 .container-open-subtopics .accordion-links-direct-links, #content .container-link-see-more-projects .container-name-links ul .topic-3 .container-open-subtopics .accordion-links-direct-links {
-  color: black;
+#content .container-link-see-more-projects .container-name-links ul .panel {
+  display: none;
 }
-#content .container-link-see-more-projects .container-name-links ul .topic-1 .subtopic-list-career, #content .container-link-see-more-projects .container-name-links ul .topic-2 .subtopic-list-career, #content .container-link-see-more-projects .container-name-links ul .topic-3 .subtopic-list-career {
-  display: flex;
+#content .container-link-see-more-projects .container-name-links ul .panel .subtopic-list-career {
+  text-indent: 1.5em;
 }
-
 footer {
   background-color: #1b1b1b;
   color: white;

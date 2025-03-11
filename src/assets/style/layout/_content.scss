@@ -62,20 +62,21 @@ $font-size-local-about: 1.4em;
         margin-top: $size-big;
         .container-name-links {
             ul {
-                .topic-1, .topic-2, .topic-3 {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
 
-                    .container-open-subtopics {
-                        .accordion-links-direct-links {
-                            color: $color-primary;
-                        }
+                .container-open-subtopics {
+                    .accordion-links-direct-links {
+                        // color: $color-primary;
                     }
-                    
+                }
+                
+                .panel {
+                    display: none;
                     .subtopic-list-career {
-                        display: flex;
+                        text-indent: $size-between-small-medium;
+                        .li {}
                     }
                 }
             }

@@ -18,6 +18,7 @@
     <script defer src="assets/js/header.js"></script>
     <script defer src="assets/js/main.js"></script>
     <script defer src="assets/js/content.js"></script>
+    <script defer src="assets/js/accordion.js"></script>
 
     <link rel="stylesheet" href="assets/style/main.css">
     <link rel="shortcut icon" href="assets/icons/book-favicon.png" type="image/x-icon">
@@ -87,34 +88,49 @@
             <div class="container-link-see-more-projects">
                 <div class="container-name-links">
                     <ul>
-                        <li class="bt bb topic-1">
+                        <li class="bt bb">
                             <div class="container-open-subtopics">
-                                <button class="accordion-links-direct-links btn-project">Carreira</button>
-                                <span class="signal">+</span>
+                                <button class="accordion-links btn-project btn-cta-career">Carreira</button>
+                                <span class="signal one">+</span>
                             </div>
-                            <ul class="subtopic-list-career ">
-                                <li>asd</li>
-                                <li>asd</li>
-                                <li>asd</li>
-                                <li>asd</li>
-                            </ul>
-                        </li>
-                        <li class="bb topic-2">
-                            <div class="container-open-subtopics">
-                                <button class="accordion-links-direct-links btn-project">Universidade</button>
-                                <span class="signal">+</span>
+                            <div class="panel" style="display: none;">
+                                <ul class="subtopic-list-career">
+                                    <li>
+                                        <button class="open-modal-first-subtopic-career btn-project">&rightarrow; Desenvolvimento Web - Frontend</button>
+                                    </li>
+                                    <li>
+                                        <button class="open-modal-second-subtopic-career btn-project">&rightarrow; Desenvolvimento Web - Backend</button>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="subtopic-list-uni hidden">
-                                <li>asd</li>
-                                <li>asd</li>
-                                <li>asd</li>
-                                <li>asd</li>
-                            </ul>
                         </li>
-                        <li class="bb topic-3">
+                        <li class="bb">
                             <div class="container-open-subtopics">
-                                <button class="accordion-links-direct-links btn-project">Hobby</button>
-                                <span class="signal">+</span>
+                                <button class="accordion-links btn-project btn-cta-uni">Universidade</button>
+                                <span class="signal two">+</span>
+                            </div>
+                            <div class="panel" style="display: none;">
+                                <ul class="subtopic-list-uni">
+                                    <li>
+                                        <button class="open-modal-first-subtopic-uni btn-project">&rightarrow; SIN142 - Sistemas Distribuidos</button>
+                                    </li>
+                                    <li>
+                                        <button class="open-modal-second-subtopic-uni btn-project">&rightarrow; ADE190 - Economia</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="bb">
+                            <div class="container-open-subtopics">
+                                <button class="accordion-links btn-project btn-cta-hobby">Hobby</button>
+                                <span class="signal three">+</span>
+                            </div>
+                            <div class="panel" style="display: none;">
+                                <ul class="subtopic-list-hobby">
+                                    <li>
+                                        <button class="open-modal-first-subtopic-hobby btn-project">&rightarrow; Game Dev - Godot</button>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                     </ul>
