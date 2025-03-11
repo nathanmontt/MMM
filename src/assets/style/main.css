@@ -428,12 +428,27 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
   flex-direction: column;
   cursor: pointer;
 }
-#content .container-link-see-more-projects .container-name-links ul .panel {
-  display: none;
-}
-#content .container-link-see-more-projects .container-name-links ul .panel .subtopic-list-career {
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-career,
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-uni,
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-hobby {
   text-indent: 1.5em;
 }
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-career .li .open-modal,
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-uni .li .open-modal,
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-hobby .li .open-modal {
+  border: 3px solid red;
+}
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-career .li .container-content,
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-uni .li .container-content,
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-hobby .li .container-content {
+  border: 3px solid red;
+}
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-career .li .container-content p,
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-uni .li .container-content p,
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-hobby .li .container-content p {
+  border: 3px solid red;
+}
+
 footer {
   background-color: #1b1b1b;
   color: white;

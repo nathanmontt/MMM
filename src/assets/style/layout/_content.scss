@@ -66,17 +66,29 @@ $font-size-local-about: 1.4em;
                 flex-direction: column;
                 cursor: pointer;
 
-                .container-open-subtopics {
-                    .accordion-links-direct-links {
-                        // color: $color-primary;
+                li {
+                    .container-open-subtopics {
+                        .accordion-links {}
+                        .signal {}
                     }
-                }
-                
-                .panel {
-                    display: none;
-                    .subtopic-list-career {
-                        text-indent: $size-between-small-medium;
-                        .li {}
+
+                    .panel {
+                        .subtopic-list-career,
+                        .subtopic-list-uni,
+                        .subtopic-list-hobby {
+                            text-indent: $size-between-small-medium;
+                            .li {
+                                .open-modal {
+                                    border: 3px solid red;
+                                }
+                                .container-content {
+                                    border: 3px solid red;
+                                    p {
+                                        border: 3px solid red;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
