@@ -423,14 +423,17 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 #content .container-link-see-more-projects {
   margin-top: 2em;
 }
-#content .container-link-see-more-projects .container-name-links ul li {
+#content .container-link-see-more-projects .container-name-links ul .topic-1, #content .container-link-see-more-projects .container-name-links ul .topic-2, #content .container-link-see-more-projects .container-name-links ul .topic-3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
-#content .container-link-see-more-projects .container-name-links ul li .accordion-links-direct-links {
+#content .container-link-see-more-projects .container-name-links ul .topic-1 .container-open-subtopics .accordion-links-direct-links, #content .container-link-see-more-projects .container-name-links ul .topic-2 .container-open-subtopics .accordion-links-direct-links, #content .container-link-see-more-projects .container-name-links ul .topic-3 .container-open-subtopics .accordion-links-direct-links {
   color: black;
+}
+#content .container-link-see-more-projects .container-name-links ul .topic-1 .subtopic-list-career, #content .container-link-see-more-projects .container-name-links ul .topic-2 .subtopic-list-career, #content .container-link-see-more-projects .container-name-links ul .topic-3 .subtopic-list-career {
+  display: flex;
 }
 
 footer {

@@ -1,24 +1,16 @@
 'use strict'
 
-// const containerContentImg = document.querySelector("container-project-show-imgs");
-// const containerAccessTopics = document.querySelector("container-link-see-more-projects");
-const mediaQuery = window.matchMedia("(min-width: 1000px)");
+const subtopicListCareer = document.querySelector(".subtopic-list-career");
+const subtopicListUni = document.querySelector(".subtopic-list-uni");
 
-// Verificando se a media query da variável vai "bater" com a media query do browser
-function handleTabletChange (e) {
-    if (e.matches) {
-        containerAccessTopics.style.display = "flex";
-        containerAccessTopics.style.justifyContent = "space-between";
-        // containerContentImg.classList.remove("hidden");
-        alert("ola");
+const topicOne = document.querySelector(".topic-1");
+const topicTwo = document.querySelector(".topic-2");
+const topicThree = document.querySelector(".topic-3");
+
+topicOne.addEventListener("click", function openFirstTopic () {
+    if (subtopicListCareer.classList.contains("hidden")) {
+        subtopicListCareer.classList.remove("hidden");
     } else {
-        // containerContentImg.classList.add("hidden");
-        console.log("teste222");
+        subtopicListCareer.classList.add("hidden");
     }
-}
-
-// Register event listener
-landscapeMQ.addListener(handleTabletChange);
-
-// Initial check
-handleTabletChange(landscapeMQ);
+});
