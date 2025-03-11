@@ -163,18 +163,18 @@ html {
   right: 0;
   left: 0;
   border: 0.01em solid #a5a5a5;
-  width: 10em;
+  width: 15em;
   height: 0.01em;
   margin: 0 0 0 2em;
 }
 @media (min-width: 600px) {
   .line-separator {
-    width: 20em;
+    width: 30em;
   }
 }
 @media (min-width: 900px) {
   .line-separator {
-    width: 30em;
+    width: 60em;
   }
 }
 
@@ -346,6 +346,12 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 #about .container-explanation-about-project .container-two-separated-collumns-grid {
   color: #5f5f5f;
 }
+@media (min-width: 900px) {
+  #about .container-explanation-about-project .container-two-separated-collumns-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 #about .container-explanation-about-project .container-two-separated-collumns-grid .grid-col-1, #about .container-explanation-about-project .container-two-separated-collumns-grid .grid-col-2 {
   margin: 1em 0 1em 0;
   font-size: 0.8em;
@@ -371,7 +377,7 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
   margin-bottom: 0.5em;
 }
 #content .container-grid-content-text-explanation .container-sec-two-info-fx-phrase .small-phrase-content {
-  width: 8em;
+  width: 6em;
 }
 @media (min-width: 500px) {
   #content .container-grid-content-text-explanation .container-explanation-content {
@@ -404,14 +410,24 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 #content .container-grid-content-text-explanation .container-explanation-content .container-two-separated-collumns-grid {
   color: #5f5f5f;
 }
+@media (min-width: 900px) {
+  #content .container-grid-content-text-explanation .container-explanation-content .container-two-separated-collumns-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 #content .container-grid-content-text-explanation .container-explanation-content .container-two-separated-collumns-grid .grid-col-1-content, #content .container-grid-content-text-explanation .container-explanation-content .container-two-separated-collumns-grid .grid-col-2-content {
   margin: 1em 0 1em 0;
   font-size: 0.8em;
+}
+#content .container-link-see-more-projects {
+  margin-top: 2em;
 }
 #content .container-link-see-more-projects .container-name-links ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 #content .container-link-see-more-projects .container-name-links ul li .accordion-links-direct-links {
   color: black;

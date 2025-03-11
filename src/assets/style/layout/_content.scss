@@ -21,7 +21,7 @@ $font-size-local-about: 1.4em;
                 margin-bottom: $size-small;
             }
             .small-phrase-content {
-                width: 8em;
+                width: 6em;
             }
         }
 
@@ -46,6 +46,10 @@ $font-size-local-about: 1.4em;
             }
             .container-two-separated-collumns-grid {
                 color: $color-sec-gray;
+                @media (min-width: 900px) {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
                 .grid-col-1-content, .grid-col-2-content {
                     margin: 1em 0 1em 0;
                     font-size: $font-size-small;
@@ -55,12 +59,14 @@ $font-size-local-about: 1.4em;
     }
 
     .container-link-see-more-projects {
+        margin-top: $size-big;
         .container-name-links {
             ul {
                 li {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    cursor: pointer;
                     .accordion-links-direct-links {
                         color: $color-primary;
                     }
@@ -68,6 +74,5 @@ $font-size-local-about: 1.4em;
                 }
             }
         }
-        // .container-project-imgs {}
     }
 }

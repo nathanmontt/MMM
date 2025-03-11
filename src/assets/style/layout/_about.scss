@@ -44,6 +44,10 @@ $font-size-local-about: 1.4em;
         }
         .container-two-separated-collumns-grid {
             color: $color-sec-gray;
+            @media (min-width: 900px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
             .grid-col-1, .grid-col-2 {
                 margin: 1em 0 1em 0;
                 font-size: $font-size-small;

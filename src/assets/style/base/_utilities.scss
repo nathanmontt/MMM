@@ -53,14 +53,14 @@
     right: 0;
     left: 0;
     border: $border-primary-size solid $color-thr-gray;
-    width: 10em;
+    width: 15em;
     height: $border-primary-size;
     margin: 0 0 0 $size-big;
 
     @media (min-width: 600px) {
-        width: 20em;
+        width: 30em;
     }
     @media (min-width: 900px) {
-        width: 30em;
+        width: 60em;
     }
 }
