@@ -59,33 +59,30 @@ $font-size-local-about: 1.4em;
     }
 
     .container-link-see-more-projects {
-        margin-top: $size-big;
         .container-name-links {
+            margin-top: $size-big;
             ul {
-                display: flex;
-                flex-direction: column;
-                cursor: pointer;
-
                 li {
                     .container-open-subtopics {
-                        .accordion-links {}
-                        .signal {}
+                        .accordion-links {
+                            
+                        }
+                        .signal {
+                            
+                        }
                     }
-
+                    
                     .panel {
                         .subtopic-list-career,
                         .subtopic-list-uni,
                         .subtopic-list-hobby {
                             text-indent: $size-between-small-medium;
-                            .li {
-                                .open-modal {
-                                    border: 3px solid red;
-                                }
+                            li {
+                                .open-modal {}
                                 .container-content {
+                                    position: absolute;
                                     border: 3px solid red;
-                                    p {
-                                        border: 3px solid red;
-                                    }
+                                    p {}
                                 }
                             }
                         }
