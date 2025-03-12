@@ -80,9 +80,18 @@ $font-size-local-about: 1.4em;
                             li {
                                 .open-modal {}
                                 .container-content {
-                                    position: absolute;
+                                    // min-height: 100vh;
+                                    margin: 1em;
+                                    overflow-y: scroll;
                                     border: 3px solid red;
-                                    p {}
+                                    background-color: #fff;
+                                    position: absolute;
+                                    top: 15em;
+                                    bottom: 15em;
+                                    left: 0;
+                                    right: 0;
+                                    .container-frontend-content {
+                                    }
                                 }
                             }
                         }

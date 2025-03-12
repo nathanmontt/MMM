@@ -431,8 +431,15 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-career li .container-content,
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-uni li .container-content,
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-hobby li .container-content {
-  position: absolute;
+  margin: 1em;
+  overflow-y: scroll;
   border: 3px solid red;
+  background-color: #fff;
+  position: absolute;
+  top: 15em;
+  bottom: 15em;
+  left: 0;
+  right: 0;
 }
 footer {
   background-color: #1b1b1b;
