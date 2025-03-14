@@ -86,12 +86,15 @@ $font-size-local-about: 1.4em;
 
 main {
     #subtopics-content {
+        border: 3px solid red;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         .container-content {
-            min-height: 100vh;
-            border: 3px solid red;
-            .content-type {
-                .container-frontend {}
-            }
+            // min-height: 100vh;
+            // position: sticky;
         }
     }
 }

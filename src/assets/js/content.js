@@ -1,20 +1,24 @@
 'use strict'
 
-const modalLinks = document.getElementsByClassName("open-modal");
-const container = document.querySelectorAll(".container");
+// Não consegui encontrar uma forma menos "custosa" do que essa
+
+const frontendClass = document.querySelector(".frontend");
+const backendClass = document.querySelector(".backend");
 let frontend = document.querySelector(".content-type-frontend");
+let backend = document.querySelector(".content-type-backend");
 
-// Uma das opções viáveis é varrer todo o conteudo em modalLinks e depois verificar um por um e ver onde cada um entra
+frontendClass.addEventListener("click", function () {
+    if (frontend.classList.contains('hidden')) {
+        frontend.classList.remove("hidden");
+    } else {
+        frontend.classList.add("hidden");
+    }
+});
 
-// for (let k=0 ; k< modalLinks.length ; k++) {
-//     modalLinks[k].addEventListener("click", function () {
-//         console.log("debuggs 1");
-
-
-//         if (frontend.classList.contains('hidden')) {
-//             frontend.classList.remove("hidden");
-//         } else {
-//             frontend.classList.add("hidden");
-//         }
-//     });
-// }
+backendClass.addEventListener("click", function () {
+    if (backend.classList.contains('hidden')) {
+        backend.classList.remove("hidden");
+    } else {
+        backend.classList.add("hidden");
+    }
+});

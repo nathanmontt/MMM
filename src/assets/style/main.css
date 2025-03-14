@@ -432,9 +432,13 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-hobby {
   text-indent: 1.5em;
 }
-main #subtopics-content .container-content {
-  min-height: 100vh;
+main #subtopics-content {
   border: 3px solid red;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 footer {
   background-color: #1b1b1b;
