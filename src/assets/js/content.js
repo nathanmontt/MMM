@@ -2,23 +2,25 @@
 
 // Não consegui encontrar uma forma menos "custosa" do que essa
 
-const frontendClass = document.querySelector(".frontend");
-const backendClass = document.querySelector(".backend");
-let frontend = document.querySelector(".content-type-frontend");
-let backend = document.querySelector(".content-type-backend");
+const closeBtnFromContents = document.querySelector('.close-btn');
 
-frontendClass.addEventListener("click", function () {
-    if (frontend.classList.contains('hidden')) {
-        frontend.classList.remove("hidden");
-    } else {
-        frontend.classList.add("hidden");
+const frontendBtnFromAccordion = document.querySelector(".frontend");
+const backendClassBtnFromAccordion = document.querySelector(".backend");
+
+const frontendContentTypeContainer = document.querySelector(".content-type-frontend");
+const backendContentTypeContainer = document.querySelector(".content-type-backend");
+
+// Botão que vai servir como um "exit" para todos
+closeBtnFromContents.addEventListener('click', function () {
+    console.log("teste")
+    if (!frontendContentTypeContainer.classList.contains('hidden')) {
+        frontendContentTypeContainer.classList.remove("hidden");
     }
 });
 
-backendClass.addEventListener("click", function () {
-    if (backend.classList.contains('hidden')) {
-        backend.classList.remove("hidden");
-    } else {
-        backend.classList.add("hidden");
+// Abrindo o conteúdo de frontend
+frontendBtnFromAccordion.addEventListener("click", function () {
+    if (frontendContentTypeContainer.classList.contains('hidden')) {
+        frontendContentTypeContainer.classList.remove("hidden");
     }
 });
