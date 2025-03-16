@@ -94,11 +94,12 @@ main {
         right: 0;
         background-color: $color-gray;
         min-height: 100vh;
-        
     }
     
     #subtopics-content {
         // z-index: -1;
+        // margin: $size-between-small-medium;
+        
         .content-type-frontend {
             position: fixed;
             top: 0;
@@ -106,10 +107,12 @@ main {
             left: 0;
             right: 0;
             overflow-y: scroll;
-            padding: $size-between-small-medium;
+            // padding: $size-between-small-medium;
+            background-color: #fff;
             .close-btn {
-                margin: $size-medium 0 $size-medium $size-medium;
+                // margin: $size-medium 0 $size-medium $size-medium;
                 color: $color-primary;
+                border: 3px solid red;
             }
         }
     }
