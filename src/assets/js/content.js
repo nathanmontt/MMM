@@ -5,7 +5,6 @@
 const closeBtnFromContents = document.querySelector('.close-btn');
 
 const frontendBtnFromAccordion = document.querySelector(".frontend");
-const backendClassBtnFromAccordion = document.querySelector(".backend");
 
 const frontendContentTypeContainer = document.querySelector(".content-type-frontend");
 
@@ -22,3 +21,10 @@ frontendBtnFromAccordion.addEventListener("click", function () {
         frontendContentTypeContainer.classList.remove("hidden");
     }
 });
+
+const ul = document.createElement('ul');
+const li = document.createElement('li');
+
+let variable = ul.appendChild(li);
+
+frontendContentTypeContainer.appendChild(variable)

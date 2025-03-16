@@ -443,11 +443,11 @@ main #subtopics-content .content-type-frontend {
   left: 0;
   right: 0;
   overflow-y: scroll;
-  background-color: #fff;
+  background-color: white;
 }
 main #subtopics-content .content-type-frontend .close-btn {
+  margin: 1em 0 1em 1em;
   color: black;
-  border: 3px solid red;
 }
 
 footer {
