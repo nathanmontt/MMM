@@ -19,8 +19,16 @@ closeBtnFromContents.addEventListener('click', function () {
         frontendContentTypeContainer.classList.add("hidden");
     }
 });
+/* Abrindo conteúdos */
 
-// Abrindo o conteúdo de frontend
+// Concursos
+civilServiceBtnFromAccordion.addEventListener("click", function () {
+    if (civilServiceContentTypeContainer.classList.contains('hidden')) {
+        civilServiceContentTypeContainer.classList.remove("hidden");
+    }
+});
+
+// Frontend
 frontendBtnFromAccordion.addEventListener("click", function () {
     if (frontendContentTypeContainer.classList.contains('hidden')) {
         frontendContentTypeContainer.classList.remove("hidden");
