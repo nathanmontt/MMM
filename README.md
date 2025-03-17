@@ -64,9 +64,8 @@ Para futuras <em>features</em>, alguns opções podem ser levadas em consideraç
 
 *Feature* | Motivo/Explicação
 :---------: | :------:
-**Modals** | Como poderão aparecer outros projetos, adicionar uma _modal window_ para facilitar a navegação
+**Modals** | Como poderão aparecer outros projetos, adicionar uma _modal_ para facilitar a navegação
 **Modes** | Idealizar um _dark/light mode_. Essa criação resultará na tentativa de uma nova _branch_
-**JS** | Na parte do conteúdo, criar um de forma que, ao passar o _mouse_ em cima do nome do "projeto", uma imagem referente ao mesmo aparecerá
 
 
 <h1 id="inspirations"> Inspirações </h1>
