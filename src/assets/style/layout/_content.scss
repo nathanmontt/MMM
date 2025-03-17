@@ -63,10 +63,9 @@ $font-size-local-about: 1.4em;
             margin-top: $size-big;
             ul {
                 li {
-                    .container-open-subtopics {
-                        .accordion-links {}
-                        .signal {}
-                    }
+                    // .container-open-subtopics {
+                    //     // .accordz {}
+                    // }
                     
                     .panel {
                         .subtopic-list-career,
@@ -74,9 +73,9 @@ $font-size-local-about: 1.4em;
                         .subtopic-list-hobby, 
                         .subtopic-list-civil-service {
                             text-indent: $size-between-small-medium;
-                            li {
-                                .open-modal {}
-                            }
+                            // li {
+                            //     .open-modal {}
+                            // }
                         }
                     }
                 }
@@ -98,7 +97,10 @@ main {
     }
     
     #subtopics-content {
-        .content-type-frontend {
+        .content-type-frontend,
+        .content-type-grammar,
+        .content-type-math,
+        .content-type-english {
             position: fixed;
             top: 0;
             bottom: 0;

@@ -428,6 +428,7 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-civil-service {
   text-indent: 1.5em;
 }
+
 main .overlay {
   position: fixed;
   top: 0;
@@ -437,7 +438,10 @@ main .overlay {
   background-color: rgba(156, 156, 156, 0.5725490196);
   min-height: 100vh;
 }
-main #subtopics-content .content-type-frontend {
+main #subtopics-content .content-type-frontend,
+main #subtopics-content .content-type-grammar,
+main #subtopics-content .content-type-math,
+main #subtopics-content .content-type-english {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -446,7 +450,10 @@ main #subtopics-content .content-type-frontend {
   overflow-y: scroll;
   background-color: white;
 }
-main #subtopics-content .content-type-frontend .close-btn {
+main #subtopics-content .content-type-frontend .close-btn,
+main #subtopics-content .content-type-grammar .close-btn,
+main #subtopics-content .content-type-math .close-btn,
+main #subtopics-content .content-type-english .close-btn {
   margin: 1em 0 1em 1em;
   color: black;
 }
