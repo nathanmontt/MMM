@@ -2,8 +2,14 @@
 
 // Não consegui encontrar uma forma menos "custosa" do que essa
 
-/* Conteúdo Frontend */
 const closeBtnFromContents = document.querySelector('.close-btn');
+
+/* Conteúdo Concurso */
+const civilServiceBtnFromAccordion = document.querySelector(".civil-service");
+const civilServiceContentTypeContainer = document.querySelector(".content-type-frontend");
+
+
+/* Conteúdo Frontend */
 const frontendBtnFromAccordion = document.querySelector(".frontend");
 const frontendContentTypeContainer = document.querySelector(".content-type-frontend");
 
