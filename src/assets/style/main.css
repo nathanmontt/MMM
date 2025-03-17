@@ -456,6 +456,7 @@ main #subtopics-content .content-type-math .close-btn,
 main #subtopics-content .content-type-english .close-btn {
   margin: 1em 0 1em 1em;
   color: black;
+  border: 3px solid red;
 }
 
 footer {
