@@ -71,7 +71,8 @@ $font-size-local-about: 1.4em;
                     .panel {
                         .subtopic-list-career,
                         .subtopic-list-uni,
-                        .subtopic-list-hobby {
+                        .subtopic-list-hobby, 
+                        .subtopic-list-civil-service {
                             text-indent: $size-between-small-medium;
                             li {
                                 .open-modal {}

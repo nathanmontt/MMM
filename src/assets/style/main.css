@@ -424,7 +424,8 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 }
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-career,
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-uni,
-#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-hobby {
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-hobby,
+#content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-civil-service {
   text-indent: 1.5em;
 }
 main .overlay {
