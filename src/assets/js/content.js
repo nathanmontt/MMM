@@ -81,29 +81,32 @@ for (let k=0 ; k<closeModals.length ; k++) {
 */
 const subjectGrammar = [
     {
-        date: "17/03/2025",
-        sotd: "Fonema",
+        date: "",
+        sotd: "",
         activity: [
-            "fonema é o som que ouvimos",
-            "mas n todas as letras"
+            ``,
         ],
-    },
+    }
+];
+
+const subjectMath = [
     {
-        date: "17/03/2025",
-        sotd: "Fonema",
+        date: "as",
+        sotd: "dddd",
         activity: [
-            "fonema é o som que ouvimos",
-            "mas n todas as letras"
+            `assaddas`,
         ],
-    },
+    }
+];
+
+const subjectEnglish = [
     {
-        date: "17/03/2025",
-        sotd: "Fonema",
+        date: "as",
+        sotd: "dddd",
         activity: [
-            "fonema é o som que ouvimos",
-            "mas n todas as letras"
+            `s`,
         ],
-    },
+    }
 ];
 
 function renderGrammar (subjectGrammar) {
@@ -151,9 +154,103 @@ function renderGrammar (subjectGrammar) {
   return grammarContainer;
 }
 
+function renderMath (subjectMath) {
+  /* Criando uma div e adicionando uma classe a mesma
+  Essa criação vai ser necessária para adicionar todo o conteúdo dentro dela*/
+  const mathContainer = document.createElement('div');
+  mathContainer.classList.add('math-day');
+
+  // Primeira interação com o conteúdo
+  // Criando um título e anexando a data a ele
+  // Dando append no conteúdo para que ele fique dentro do container
+  const mathTitle = document.createElement('p');
+  const mathSOTD = document.createElement('p');
+
+  mathTitle.innerHTML = `Dia: <strong>${subjectMath.date}</strong>`;
+  mathSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectMath.sotd}</strong>`;
+
+  mathContainer.appendChild(mathTitle);
+  mathContainer.appendChild(mathSOTD);
+
+  // Cria uma lista para as atividades
+  const ulMath = document.createElement('ul');
+
+  subjectMath.activity.forEach((activities, index, array) => {
+    const liMath = document.createElement('li');
+    liMath.innerHTML = activities;
+    ulMath.appendChild(liMath);
+
+    liMath.style.cssText = `
+      margin-left: 2em;
+    `;
+  });
+
+  mathContainer.appendChild(ulMath);
+  
+  const lastDiv = document.createElement('div');
+  lastDiv.classList.add('line', 'mt-1', 'mr-05', 'mb-05', 'ml-05');
+  mathContainer.appendChild(lastDiv);
+
+  // Estilos
+  let mLS = `1em`;
+  mathTitle.style.marginLeft = mLS;
+  mathSOTD.style.marginLeft = mLS;
+
+  return mathContainer;
+}
+
+function renderEnglish (subjectEnglish) {
+  /* Criando uma div e adicionando uma classe a mesma
+  Essa criação vai ser necessária para adicionar todo o conteúdo dentro dela*/
+  const englishContainer = document.createElement('div');
+  englishContainer.classList.add('english-day');
+
+  // Primeira interação com o conteúdo
+  // Criando um título e anexando a data a ele
+  // Dando append no conteúdo para que ele fique dentro do container
+  const englishTitle = document.createElement('p');
+  const englishSOTD = document.createElement('p');
+
+  englishTitle.innerHTML = `Dia: <strong>${subjectEnglish.date}</strong>`;
+  englishSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectEnglish.sotd}</strong>`;
+
+  englishContainer.appendChild(englishTitle);
+  englishContainer.appendChild(englishSOTD);
+
+  // Cria uma lista para as atividades
+  const ulEnglish = document.createElement('ul');
+
+  subjectEnglish.activity.forEach((activities, index, array) => {
+    const liEnglish = document.createElement('li');
+    liEnglish.innerHTML = activities;
+    ulEnglish.appendChild(liEnglish);
+
+    liEnglish.style.cssText = `
+      margin-left: 2em;
+    `;
+  });
+
+  englishContainer.appendChild(ulEnglish);
+  
+  const lastDiv = document.createElement('div');
+  lastDiv.classList.add('line', 'mt-1', 'mr-05', 'mb-05', 'ml-05');
+  englishContainer.appendChild(lastDiv);
+
+  // Estilos
+  let mLS = `1em`;
+  englishTitle.style.marginLeft = mLS;
+  englishSOTD.style.marginLeft = mLS;
+
+  return englishContainer;
+}
+
 // Função principal para renderizar todos os conteúdos do grammar no container. Fazer isso com os outros
 function renderAllContent() {
   const holderContentGrammar = document.querySelector('.content-type-grammar');
+  
+  const holderContentMath = document.querySelector('.content-type-math');
+  
+  const holderContentEnglish = document.querySelector('.content-type-english');
   
   // Limpa qualquer conteúdo anterior
   // holderContentGrammar.innerHTML = '';
@@ -162,6 +259,16 @@ function renderAllContent() {
   subjectGrammar.forEach(subject => {
     const grammarEl = renderGrammar(subject);
     holderContentGrammar.appendChild(grammarEl);
+  });
+
+  subjectMath.forEach(subject => {
+    const mathEl = renderMath(subject);
+    holderContentMath.appendChild(mathEl);
+  });
+
+  subjectEnglish.forEach(subject => {
+    const englishEl = renderEnglish(subject);
+    holderContentEnglish.appendChild(englishEl);
   });
 }
 
