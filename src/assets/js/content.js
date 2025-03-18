@@ -3,29 +3,6 @@
 /* Não consegui encontrar uma forma menos "custosa" do que essa.
 A ideia menos custosa seria: fazer um btn como class, agregando todas as modals. Depois, quando clicada, seria visto se elas contains('frontend') ou  contains('civil-services'). Caso sim, aquela lá é aberta */
 
-// const closeBtnContent = document.querySelector('.close-btn');
-
-// /* Conteúdo Concurso */
-
-
-// /* Conteúdo Frontend */
-// const frontendBtnAcc = document.querySelector(".frontend");
-// const frontendContentType = document.querySelector(".content-type-frontend");
-
-// /* Botão que fecha as modals */
-// closeBtnContent.addEventListener('click', function () {
-//     if (!frontendContentType.classList.contains('hidden')) {
-//         frontendContentType.classList.add("hidden");
-//     }
-// });
-
-// /* Abrindo conteúdos */
-// frontendBtnAcc.addEventListener("click", function () {
-//     if (frontendContentType.classList.contains('hidden')) {
-//         frontendContentType.classList.remove("hidden");
-//     }
-// });
-
 const openModals = document.getElementsByClassName('open-modal');
 const closeModals = document.getElementsByClassName('close-btn');
 
@@ -109,6 +86,16 @@ const subjectEnglish = [
     }
 ];
 
+const careerFront = [
+    {
+        date: "",
+        content: "dddd",
+        activity: [
+            `sasdasqwe qwddqwd`,
+        ],
+    }
+];
+
 function renderGrammar (subjectGrammar) {
   /* Criando uma div e adicionando uma classe a mesma
   Essa criação vai ser necessária para adicionar todo o conteúdo dentro dela*/
@@ -155,14 +142,9 @@ function renderGrammar (subjectGrammar) {
 }
 
 function renderMath (subjectMath) {
-  /* Criando uma div e adicionando uma classe a mesma
-  Essa criação vai ser necessária para adicionar todo o conteúdo dentro dela*/
   const mathContainer = document.createElement('div');
   mathContainer.classList.add('math-day');
 
-  // Primeira interação com o conteúdo
-  // Criando um título e anexando a data a ele
-  // Dando append no conteúdo para que ele fique dentro do container
   const mathTitle = document.createElement('p');
   const mathSOTD = document.createElement('p');
 
@@ -172,7 +154,6 @@ function renderMath (subjectMath) {
   mathContainer.appendChild(mathTitle);
   mathContainer.appendChild(mathSOTD);
 
-  // Cria uma lista para as atividades
   const ulMath = document.createElement('ul');
 
   subjectMath.activity.forEach((activities, index, array) => {
@@ -200,14 +181,9 @@ function renderMath (subjectMath) {
 }
 
 function renderEnglish (subjectEnglish) {
-  /* Criando uma div e adicionando uma classe a mesma
-  Essa criação vai ser necessária para adicionar todo o conteúdo dentro dela*/
   const englishContainer = document.createElement('div');
   englishContainer.classList.add('english-day');
 
-  // Primeira interação com o conteúdo
-  // Criando um título e anexando a data a ele
-  // Dando append no conteúdo para que ele fique dentro do container
   const englishTitle = document.createElement('p');
   const englishSOTD = document.createElement('p');
 
@@ -217,7 +193,6 @@ function renderEnglish (subjectEnglish) {
   englishContainer.appendChild(englishTitle);
   englishContainer.appendChild(englishSOTD);
 
-  // Cria uma lista para as atividades
   const ulEnglish = document.createElement('ul');
 
   subjectEnglish.activity.forEach((activities, index, array) => {
@@ -244,13 +219,52 @@ function renderEnglish (subjectEnglish) {
   return englishContainer;
 }
 
+function renderCareerFront (careerFront) {
+  const frontContainer = document.createElement('div');
+  frontContainer.classList.add('frontend-block');
+
+  const frontTitle = document.createElement('p');
+  const frontContent = document.createElement('p');
+
+  frontTitle.innerHTML = `Dia: <strong>${careerFront.date}</strong>`;
+  frontContent.innerHTML = `Conteúdo do dia: <strong>${careerFront.content}</strong>`;
+
+  frontContainer.appendChild(frontTitle);
+  frontContainer.appendChild(frontContent);
+
+  // Cria uma lista para as atividades
+  const ulFront = document.createElement('ul');
+
+  careerFront.activity.forEach((activities, index, array) => {
+    const liFront = document.createElement('li');
+    liFront.innerHTML = activities;
+    ulFront.appendChild(liFront);
+
+    liFront.style.cssText = `
+      margin-left: 2em;
+    `;
+  });
+
+  frontContainer.appendChild(ulFront);
+  
+  const lastDiv = document.createElement('div');
+  lastDiv.classList.add('line', 'mt-1', 'mr-05', 'mb-05', 'ml-05');
+  frontContainer.appendChild(lastDiv);
+
+  // Estilos
+  let mLS = `1em`;
+  frontTitle.style.marginLeft = mLS;
+  frontContent.style.marginLeft = mLS;
+
+  return frontContainer;
+}
+
 // Função principal para renderizar todos os conteúdos do grammar no container. Fazer isso com os outros
 function renderAllContent() {
   const holderContentGrammar = document.querySelector('.content-type-grammar');
-  
   const holderContentMath = document.querySelector('.content-type-math');
-  
   const holderContentEnglish = document.querySelector('.content-type-english');
+  const holderContentFront = document.querySelector('.content-type-frontend');
   
   // Limpa qualquer conteúdo anterior
   // holderContentGrammar.innerHTML = '';
@@ -269,6 +283,11 @@ function renderAllContent() {
   subjectEnglish.forEach(subject => {
     const englishEl = renderEnglish(subject);
     holderContentEnglish.appendChild(englishEl);
+  });
+
+  careerFront.forEach(career => {
+    const frontEl = renderEnglish(career);
+    holderContentFront.appendChild(frontEl);
   });
 }
 
