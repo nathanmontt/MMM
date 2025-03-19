@@ -71,16 +71,16 @@ for (let k=0 ; k<closeModals.length ; k++) {
 
 /* Colocação do conteúdo */
 
-// Exemplo de dados: cada dia tem uma data e um array de atividades
-/* Legenda:
-       sotd: subject of the day
-*/
+// Variáveis para certos momentos
+let rightArrow = `&rightarrow;`;
+let one = `<strong>1 por 1 </strong>`;
+
 const subjectGeneral = [
     {
-        date: "",
-        sotd: "",
+        date: "19/03/2025",
+        sotd: "Busca de conteúdo",
         activity: [
-            ``,
+            `${rightArrow} Como ainda estou um pouco perdido, já que essa é a minha primeira tentativa de concurso, resolvi ler o edital e ir atrás do conteúdo ${one} de acordo com o que diz no mesmo.`,
         ],
     }
 ];
