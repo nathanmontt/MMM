@@ -6,6 +6,7 @@ A ideia menos custosa seria: fazer um btn como class, agregando todas as modals.
 const openModals = document.getElementsByClassName('open-modal');
 const closeModals = document.getElementsByClassName('close-btn');
 
+const openCloseContentGeneral = document.querySelector('.content-type-general');
 const openCloseContentGrammar = document.querySelector('.content-type-grammar');
 const openCloseContentMath = document.querySelector('.content-type-math');
 const openCloseContentEnglish = document.querySelector('.content-type-english');
@@ -14,26 +15,28 @@ const openCloseContentUniSystems = document.querySelector('.content-type-uni-sys
 const openCloseContentUniEco = document.querySelector('.content-type-uni-eco');
 
 /* Para abrir */
-// Frontend
 for (let i=0 ; i<openModals.length ; i++) {
     openModals[i].addEventListener('click', function () {
-        if (openModals[i].classList.contains("frontend")) {
-            openCloseContentFrontend.classList.remove('hidden')
+        if (openModals[i].classList.contains("general")) {
+          openCloseContentGeneral.classList.remove('hidden')
+        }
+        else if (openModals[i].classList.contains("frontend")) {
+          openCloseContentFrontend.classList.remove('hidden')
 
         } else if (openModals[i].classList.contains("grammar")) {
-            openCloseContentGrammar.classList.remove('hidden');
+          openCloseContentGrammar.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("math")) {
-            openCloseContentMath.classList.remove('hidden');
+          openCloseContentMath.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("english")) {
-            openCloseContentEnglish.classList.remove('hidden');
+          openCloseContentEnglish.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("subject-1")) {
-            openCloseContentUniSystems.classList.remove('hidden');
+          openCloseContentUniSystems.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("subject-2")) {
-            openCloseContentUniEco.classList.remove('hidden');
+          openCloseContentUniEco.classList.remove('hidden');
         }
     });
 }
@@ -41,23 +44,26 @@ for (let i=0 ; i<openModals.length ; i++) {
 /* Para fechar */
 for (let k=0 ; k<closeModals.length ; k++) {
     closeModals[k].addEventListener('click', function () {
-        if (!openCloseContentFrontend.classList.contains('hidden')) {
-            openCloseContentFrontend.classList.add('hidden');
+        if (!openCloseContentGeneral.classList.contains('hidden')) {
+          openCloseContentGeneral.classList.add('hidden');
+
+        } else if (!openCloseContentFrontend.classList.contains('hidden')) {
+          openCloseContentFrontend.classList.add('hidden');
 
         } else if (!openCloseContentGrammar.classList.contains('hidden')) {
-            openCloseContentGrammar.classList.add('hidden');
+          openCloseContentGrammar.classList.add('hidden');
             
         } else if (!openCloseContentMath.classList.contains('hidden')) {
-            openCloseContentMath.classList.add('hidden');
+          openCloseContentMath.classList.add('hidden');
             
         } else if (!openCloseContentEnglish.classList.contains('hidden')) {
-            openCloseContentEnglish.classList.add('hidden');
+          openCloseContentEnglish.classList.add('hidden');
 
         } else if (!openCloseContentUniSystems.classList.contains('hidden')) {
-            openCloseContentUniSystems.classList.add('hidden');
+          openCloseContentUniSystems.classList.add('hidden');
 
         } else if (!openCloseContentUniEco.classList.contains('hidden')) {
-            openCloseContentUniEco.classList.add('hidden');
+          openCloseContentUniEco.classList.add('hidden');
         }
     });
 }
@@ -69,6 +75,16 @@ for (let k=0 ; k<closeModals.length ; k++) {
 /* Legenda:
        sotd: subject of the day
 */
+const subjectGeneral = [
+    {
+        date: "",
+        sotd: "",
+        activity: [
+            ``,
+        ],
+    }
+];
+
 const subjectGrammar = [
     {
         date: "",
@@ -129,15 +145,55 @@ const uniEco = [
     }
 ];
 
-function renderGrammar (subjectGrammar) {
+function renderGeneral (subjectGeneral) {
   /* Criando uma div e adicionando uma classe a mesma
   Essa criação vai ser necessária para adicionar todo o conteúdo dentro dela*/
-  const grammarContainer = document.createElement('div');
-  grammarContainer.classList.add('grammar-day');
+  const generalContainer = document.createElement('div');
+  generalContainer.classList.add('general-day');
 
   // Primeira interação com o conteúdo
   // Criando um título e anexando a data a ele
   // Dando append no conteúdo para que ele fique dentro do container
+  const generalTitle = document.createElement('p');
+  const generalSOTD = document.createElement('p');
+
+  generalTitle.innerHTML = `Dia: <strong>${subjectGeneral.date}</strong>`;
+  generalSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectGeneral.sotd}</strong>`;
+
+  generalContainer.appendChild(generalTitle, generalSOTD);
+  // generalContainer.appendChild(generalSOTD);
+
+  // Cria uma lista para as atividades
+  const ulGeneral = document.createElement('ul');
+
+  subjectGeneral.activity.forEach((activities, index, array) => {
+    const liGeneral = document.createElement('li');
+    liGeneral.innerHTML = activities;
+    ulGeneral.appendChild(liGeneral);
+
+    liGeneral.style.cssText = `
+      margin-left: 2em;
+    `;
+  });
+
+  generalContainer.appendChild(ulGeneral);
+  
+  const lastDiv = document.createElement('div');
+  lastDiv.classList.add('line', 'mt-1', 'mr-05', 'mb-05', 'ml-05');
+  generalContainer.appendChild(lastDiv);
+
+  // Estilos
+  let mLS = `1em`;
+  generalTitle.style.marginLeft = mLS;
+  generalSOTD.style.marginLeft = mLS;
+
+  return generalContainer;
+}
+
+function renderGrammar (subjectGrammar) {
+  const grammarContainer = document.createElement('div');
+  grammarContainer.classList.add('grammar-day');
+
   const grammarTitle = document.createElement('p');
   const grammarSOTD = document.createElement('p');
 
@@ -147,7 +203,6 @@ function renderGrammar (subjectGrammar) {
   grammarContainer.appendChild(grammarTitle);
   grammarContainer.appendChild(grammarSOTD);
 
-  // Cria uma lista para as atividades
   const ulGrammar = document.createElement('ul');
 
   subjectGrammar.activity.forEach((activities, index, array) => {
@@ -371,6 +426,7 @@ function renderUniEco (uniEco) {
 
 // Função principal para renderizar todos os conteúdos do grammar no container. Fazer isso com os outros
 function renderAllContent() {
+  const holderContentGeneral = document.querySelector('.content-type-general');
   const holderContentGrammar = document.querySelector('.content-type-grammar');
   const holderContentMath = document.querySelector('.content-type-math');
   const holderContentEnglish = document.querySelector('.content-type-english');
@@ -382,6 +438,11 @@ function renderAllContent() {
   // holderContentGrammar.innerHTML = '';
 
   // Percorre o array 'days' e renderiza cada dia
+  subjectGeneral.forEach(subGen => {
+    const generalEl = renderGrammar(subGen);
+    holderContentGeneral.appendChild(generalEl);
+  });
+
   subjectGrammar.forEach(subject => {
     const grammarEl = renderGrammar(subject);
     holderContentGrammar.appendChild(grammarEl);

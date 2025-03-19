@@ -63,19 +63,17 @@ $font-size-local-about: 1.4em;
             margin-top: $size-big;
             ul {
                 li {
-                    // .container-open-subtopics {
-                    //     // .accordz {}
-                    // }
-                    
+                    .container-open-subtopics {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
                     .panel {
                         .subtopic-list-career,
                         .subtopic-list-uni,
                         .subtopic-list-hobby, 
                         .subtopic-list-civil-service {
                             text-indent: $size-between-small-medium;
-                            // li {
-                            //     .open-modal {}
-                            // }
                         }
                     }
                 }
@@ -85,7 +83,6 @@ $font-size-local-about: 1.4em;
 }
 
 main {
-    // min-height: 100vh;
     .overlay {
         position: fixed;
         top: 0;
@@ -98,6 +95,7 @@ main {
     
     #subtopics-content {
         .content-type-frontend,
+        .content-type-general,
         .content-type-grammar,
         .content-type-math,
         .content-type-english,
@@ -113,7 +111,6 @@ main {
             .close-btn {
                 margin: $size-medium 0 $size-medium $size-medium;
                 color: $color-primary;
-                // border: 3px solid red;
             }
         }
     }

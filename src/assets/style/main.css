@@ -430,6 +430,11 @@ main #hero .container-name-logo-hero .container-padding-in-front-overlay .contai
 #content .container-link-see-more-projects .container-name-links {
   margin-top: 2em;
 }
+#content .container-link-see-more-projects .container-name-links ul li .container-open-subtopics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-career,
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-uni,
 #content .container-link-see-more-projects .container-name-links ul li .panel .subtopic-list-hobby,
@@ -447,6 +452,7 @@ main .overlay {
   min-height: 100vh;
 }
 main #subtopics-content .content-type-frontend,
+main #subtopics-content .content-type-general,
 main #subtopics-content .content-type-grammar,
 main #subtopics-content .content-type-math,
 main #subtopics-content .content-type-english,
@@ -461,6 +467,7 @@ main #subtopics-content .content-type-uni-eco {
   background-color: white;
 }
 main #subtopics-content .content-type-frontend .close-btn,
+main #subtopics-content .content-type-general .close-btn,
 main #subtopics-content .content-type-grammar .close-btn,
 main #subtopics-content .content-type-math .close-btn,
 main #subtopics-content .content-type-english .close-btn,
