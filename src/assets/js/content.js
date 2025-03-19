@@ -30,10 +30,10 @@ for (let i=0 ; i<openModals.length ; i++) {
             openCloseContentEnglish.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("subject-1")) {
-            openCloseContentEnglish.classList.remove('hidden');
+            openCloseContentUniSystems.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("subject-2")) {
-            openCloseContentEnglish.classList.remove('hidden');
+            openCloseContentUniEco.classList.remove('hidden');
         }
     });
 }
@@ -81,20 +81,20 @@ const subjectGrammar = [
 
 const subjectMath = [
     {
-        date: "as",
-        sotd: "dddd",
+        date: "",
+        sotd: "",
         activity: [
-            `assaddas`,
+            ``,
         ],
     }
 ];
 
 const subjectEnglish = [
     {
-        date: "as",
-        sotd: "dddd",
+        date: "",
+        sotd: "",
         activity: [
-            `s`,
+            ``,
         ],
     }
 ];
@@ -102,9 +102,9 @@ const subjectEnglish = [
 const careerFront = [
     {
         date: "",
-        content: "dddd",
+        content: "",
         activity: [
-            `sasdasqwe qwddqwd`,
+            ``,
         ],
     }
 ];
@@ -112,20 +112,19 @@ const careerFront = [
 const uniSystems = [
     {
         date: "",
-        content: "modelo",
+        content: "",
         activity: [
-            `as s`,
+            ``,
         ],
     }
 ];
 
 const uniEco = [
     {
-        date: "sswad",
-        content: "eco",
+        date: "",
+        content: "",
         activity: [
-            `as sasdsaddas`,
-            `as aaacccq2wqq`,
+            ``,
         ],
     }
 ];
