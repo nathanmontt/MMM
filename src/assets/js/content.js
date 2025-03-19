@@ -10,12 +10,13 @@ const openCloseContentGrammar = document.querySelector('.content-type-grammar');
 const openCloseContentMath = document.querySelector('.content-type-math');
 const openCloseContentEnglish = document.querySelector('.content-type-english');
 const openCloseContentFrontend = document.querySelector('.content-type-frontend');
+const openCloseContentUniSystems = document.querySelector('.content-type-uni-systems');
+const openCloseContentUniEco = document.querySelector('.content-type-uni-eco');
 
 /* Para abrir */
 // Frontend
 for (let i=0 ; i<openModals.length ; i++) {
     openModals[i].addEventListener('click', function () {
-        console.log("asdasddsa")
         if (openModals[i].classList.contains("frontend")) {
             openCloseContentFrontend.classList.remove('hidden')
 
@@ -26,6 +27,12 @@ for (let i=0 ; i<openModals.length ; i++) {
             openCloseContentMath.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("english")) {
+            openCloseContentEnglish.classList.remove('hidden');
+
+        } else if (openModals[i].classList.contains("subject-1")) {
+            openCloseContentEnglish.classList.remove('hidden');
+
+        } else if (openModals[i].classList.contains("subject-2")) {
             openCloseContentEnglish.classList.remove('hidden');
         }
     });
@@ -45,6 +52,12 @@ for (let k=0 ; k<closeModals.length ; k++) {
             
         } else if (!openCloseContentEnglish.classList.contains('hidden')) {
             openCloseContentEnglish.classList.add('hidden');
+
+        } else if (!openCloseContentUniSystems.classList.contains('hidden')) {
+            openCloseContentUniSystems.classList.add('hidden');
+
+        } else if (!openCloseContentUniEco.classList.contains('hidden')) {
+            openCloseContentUniEco.classList.add('hidden');
         }
     });
 }
@@ -92,6 +105,27 @@ const careerFront = [
         content: "dddd",
         activity: [
             `sasdasqwe qwddqwd`,
+        ],
+    }
+];
+
+const uniSystems = [
+    {
+        date: "",
+        content: "modelo",
+        activity: [
+            `as s`,
+        ],
+    }
+];
+
+const uniEco = [
+    {
+        date: "sswad",
+        content: "eco",
+        activity: [
+            `as sasdsaddas`,
+            `as aaacccq2wqq`,
         ],
     }
 ];
@@ -232,7 +266,6 @@ function renderCareerFront (careerFront) {
   frontContainer.appendChild(frontTitle);
   frontContainer.appendChild(frontContent);
 
-  // Cria uma lista para as atividades
   const ulFront = document.createElement('ul');
 
   careerFront.activity.forEach((activities, index, array) => {
@@ -259,12 +292,92 @@ function renderCareerFront (careerFront) {
   return frontContainer;
 }
 
+function renderUniSystems (uniSystems) {
+  const uniSystemsContainer = document.createElement('div');
+  uniSystemsContainer.classList.add('systems-block');
+
+  const uniSystemsTitle = document.createElement('p');
+  const uniSystemsContent = document.createElement('p');
+
+  uniSystemsTitle.innerHTML = `Dia: <strong>${uniSystems.date}</strong>`;
+  uniSystemsContent.innerHTML = `Conteúdo do dia: <strong>${uniSystems.content}</strong>`;
+
+  uniSystemsContainer.appendChild(uniSystemsTitle);
+  uniSystemsContainer.appendChild(uniSystemsContent);
+
+  const ulUniSystems = document.createElement('ul');
+
+  uniSystems.activity.forEach((activities, index, array) => {
+    const liUniSystems = document.createElement('li');
+    liUniSystems.innerHTML = activities;
+    ulUniSystems.appendChild(liUniSystems);
+
+    liUniSystems.style.cssText = `
+      margin-left: 2em;
+    `;
+  });
+
+  uniSystemsContainer.appendChild(ulUniSystems);
+  
+  const lastDiv = document.createElement('div');
+  lastDiv.classList.add('line', 'mt-1', 'mr-05', 'mb-05', 'ml-05');
+  uniSystemsContainer.appendChild(lastDiv);
+
+  // Estilos
+  let mLS = `1em`;
+  uniSystemsTitle.style.marginLeft = mLS;
+  uniSystemsContent.style.marginLeft = mLS;
+
+  return uniSystemsContainer;
+}
+
+function renderUniEco (uniEco) {
+  const uniEcoContainer = document.createElement('div');
+  uniEcoContainer.classList.add('eco-block');
+
+  const uniEcoTitle = document.createElement('p');
+  const uniEcoContent = document.createElement('p');
+
+  uniEcoTitle.innerHTML = `Dia: <strong>${uniEco.date}</strong>`;
+  uniEcoContent.innerHTML = `Conteúdo do dia: <strong>${uniEco.content}</strong>`;
+
+  uniEcoContainer.appendChild(uniEcoTitle);
+  uniEcoContainer.appendChild(uniEcoContent);
+
+  const ulUniEco = document.createElement('ul');
+
+  uniEco.activity.forEach((activities, index, array) => {
+    const liUniEco = document.createElement('li');
+    liUniEco.innerHTML = activities;
+    ulUniEco.appendChild(liUniEco);
+
+    liUniEco.style.cssText = `
+      margin-left: 2em;
+    `;
+  });
+
+  uniEcoContainer.appendChild(ulUniEco);
+  
+  const lastDiv = document.createElement('div');
+  lastDiv.classList.add('line', 'mt-1', 'mr-05', 'mb-05', 'ml-05');
+  uniEcoContainer.appendChild(lastDiv);
+
+  // Estilos
+  let mLS = `1em`;
+  uniEcoTitle.style.marginLeft = mLS;
+  uniEcoContent.style.marginLeft = mLS;
+
+  return uniEcoContainer;
+}
+
 // Função principal para renderizar todos os conteúdos do grammar no container. Fazer isso com os outros
 function renderAllContent() {
   const holderContentGrammar = document.querySelector('.content-type-grammar');
   const holderContentMath = document.querySelector('.content-type-math');
   const holderContentEnglish = document.querySelector('.content-type-english');
   const holderContentFront = document.querySelector('.content-type-frontend');
+  const holderContentSystems = document.querySelector('.content-type-uni-systems');
+  const holderContentEco = document.querySelector('.content-type-uni-eco');
   
   // Limpa qualquer conteúdo anterior
   // holderContentGrammar.innerHTML = '';
@@ -286,8 +399,18 @@ function renderAllContent() {
   });
 
   careerFront.forEach(career => {
-    const frontEl = renderEnglish(career);
+    const frontEl = renderCareerFront(career);
     holderContentFront.appendChild(frontEl);
+  });
+
+  uniSystems.forEach(systems => {
+    const systemsEl = renderUniSystems(systems);
+    holderContentSystems.appendChild(systemsEl);
+  });
+
+  uniEco.forEach(eco => {
+    const ecoEl = renderUniEco(eco);
+    holderContentEco.appendChild(ecoEl);
   });
 }
 
