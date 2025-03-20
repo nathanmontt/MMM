@@ -42,7 +42,7 @@ for (let i=0 ; i<openModals.length ; i++) {
 }
 
 /* Para fechar */
-for (let k=0 ; k<closeModals.length ; k++) {
+for (let k=0 ; k<closeModals.length ; k++) {  
     closeModals[k].addEventListener('click', function () {
         if (!openCloseContentGeneral.classList.contains('hidden')) {
           openCloseContentGeneral.classList.add('hidden');
@@ -145,6 +145,9 @@ const uniEco = [
     }
 ];
 
+
+// Variáveis para estilo
+let totalMargin = `margin: .5em 1em 0 2em;`;
 function renderGeneral (subjectGeneral) {
   /* Criando uma div e adicionando uma classe a mesma
   Essa criação vai ser necessária para adicionar todo o conteúdo dentro dela*/
@@ -161,7 +164,6 @@ function renderGeneral (subjectGeneral) {
   generalSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectGeneral.sotd}</strong>`;
 
   generalContainer.appendChild(generalTitle, generalSOTD);
-  // generalContainer.appendChild(generalSOTD);
 
   // Cria uma lista para as atividades
   const ulGeneral = document.createElement('ul');
@@ -172,7 +174,7 @@ function renderGeneral (subjectGeneral) {
     ulGeneral.appendChild(liGeneral);
 
     liGeneral.style.cssText = `
-      margin-left: 2em;
+      ${totalMargin}
     `;
   });
 
@@ -200,8 +202,7 @@ function renderGrammar (subjectGrammar) {
   grammarTitle.innerHTML = `Dia: <strong>${subjectGrammar.date}</strong>`;
   grammarSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectGrammar.sotd}</strong>`;
 
-  grammarContainer.appendChild(grammarTitle);
-  grammarContainer.appendChild(grammarSOTD);
+  grammarContainer.appendChild(grammarTitle, grammarSOTD);
 
   const ulGrammar = document.createElement('ul');
 
@@ -211,7 +212,7 @@ function renderGrammar (subjectGrammar) {
     ulGrammar.appendChild(liGrammar);
 
     liGrammar.style.cssText = `
-      margin-left: 2em;
+      ${totalMargin}
     `;
   });
 
@@ -239,8 +240,7 @@ function renderMath (subjectMath) {
   mathTitle.innerHTML = `Dia: <strong>${subjectMath.date}</strong>`;
   mathSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectMath.sotd}</strong>`;
 
-  mathContainer.appendChild(mathTitle);
-  mathContainer.appendChild(mathSOTD);
+  mathContainer.appendChild(mathTitle, mathSOTD);
 
   const ulMath = document.createElement('ul');
 
@@ -250,7 +250,7 @@ function renderMath (subjectMath) {
     ulMath.appendChild(liMath);
 
     liMath.style.cssText = `
-      margin-left: 2em;
+      ${totalMargin}
     `;
   });
 
@@ -278,8 +278,7 @@ function renderEnglish (subjectEnglish) {
   englishTitle.innerHTML = `Dia: <strong>${subjectEnglish.date}</strong>`;
   englishSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectEnglish.sotd}</strong>`;
 
-  englishContainer.appendChild(englishTitle);
-  englishContainer.appendChild(englishSOTD);
+  englishContainer.appendChild(englishTitle, englishSOTD);
 
   const ulEnglish = document.createElement('ul');
 
@@ -289,7 +288,7 @@ function renderEnglish (subjectEnglish) {
     ulEnglish.appendChild(liEnglish);
 
     liEnglish.style.cssText = `
-      margin-left: 2em;
+      ${totalMargin}
     `;
   });
 
@@ -317,8 +316,7 @@ function renderCareerFront (careerFront) {
   frontTitle.innerHTML = `Dia: <strong>${careerFront.date}</strong>`;
   frontContent.innerHTML = `Conteúdo do dia: <strong>${careerFront.content}</strong>`;
 
-  frontContainer.appendChild(frontTitle);
-  frontContainer.appendChild(frontContent);
+  frontContainer.appendChild(frontTitle, frontContent);
 
   const ulFront = document.createElement('ul');
 
@@ -328,7 +326,7 @@ function renderCareerFront (careerFront) {
     ulFront.appendChild(liFront);
 
     liFront.style.cssText = `
-      margin-left: 2em;
+      ${totalMargin}
     `;
   });
 
@@ -356,8 +354,7 @@ function renderUniSystems (uniSystems) {
   uniSystemsTitle.innerHTML = `Dia: <strong>${uniSystems.date}</strong>`;
   uniSystemsContent.innerHTML = `Conteúdo do dia: <strong>${uniSystems.content}</strong>`;
 
-  uniSystemsContainer.appendChild(uniSystemsTitle);
-  uniSystemsContainer.appendChild(uniSystemsContent);
+  uniSystemsContainer.appendChild(uniSystemsTitle, uniSystemsContent);
 
   const ulUniSystems = document.createElement('ul');
 
@@ -367,7 +364,7 @@ function renderUniSystems (uniSystems) {
     ulUniSystems.appendChild(liUniSystems);
 
     liUniSystems.style.cssText = `
-      margin-left: 2em;
+      ${totalMargin}
     `;
   });
 
@@ -395,8 +392,7 @@ function renderUniEco (uniEco) {
   uniEcoTitle.innerHTML = `Dia: <strong>${uniEco.date}</strong>`;
   uniEcoContent.innerHTML = `Conteúdo do dia: <strong>${uniEco.content}</strong>`;
 
-  uniEcoContainer.appendChild(uniEcoTitle);
-  uniEcoContainer.appendChild(uniEcoContent);
+  uniEcoContainer.appendChild(uniEcoTitle, uniEcoContent);
 
   const ulUniEco = document.createElement('ul');
 
@@ -406,7 +402,7 @@ function renderUniEco (uniEco) {
     ulUniEco.appendChild(liUniEco);
 
     liUniEco.style.cssText = `
-      margin-left: 2em;
+      ${totalMargin}
     `;
   });
 
@@ -437,9 +433,9 @@ function renderAllContent() {
   // Limpa qualquer conteúdo anterior
   // holderContentGrammar.innerHTML = '';
 
-  // Percorre o array 'days' e renderiza cada dia
+  // Percorre os array e renderiza cada dia
   subjectGeneral.forEach(subGen => {
-    const generalEl = renderGrammar(subGen);
+    const generalEl = renderGeneral(subGen);
     holderContentGeneral.appendChild(generalEl);
   });
 
