@@ -76,6 +76,8 @@ let rightArrow = `&rightarrow;`;
 let one = `<strong>1 por 1 </strong>`;
 let ilovepdf = `<a href="https://www.ilovepdf.com/pt" target="_blank" style="color: black; text-decoration: underline">nesse site</a>`;
 let commit = `<em>commitar</em>`;
+let twoWeeks = `<strong>2 semanas</strong>`;
+let classesDate = `<strong>24/03/2025</strong>`;
 
 const subjectGeneral = [
     {
@@ -146,10 +148,10 @@ const uniSystems = [
 
 const uniEco = [
     {
-        date: "",
-        content: "",
+        date: "21/03/2025",
+        content: "Informações",
         activity: [
-            ``,
+            `Professor doente. Pegou liçensa de ${twoWeeks}. Aulas começam dia ${classesDate}.`,
         ],
     }
 ];
