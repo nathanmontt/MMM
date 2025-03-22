@@ -134,14 +134,14 @@ const uniSystems = [
       date: "20/03/2025",
       content: "Sistemas Distribuídos, de Tanenbaum",
       activity: [
-          `Início do estudo. Ainda não saí do começo, mas pelo menos, comecei. Separei todos os capítulos ${ilovepdf}.`,
+          `${rightArrow} Início do estudo. Ainda não saí do começo, mas pelo menos, comecei. Separei todos os capítulos ${ilovepdf}.`,
       ],
     },
     {
       date: "21/03/2025",
       content: "Sistemas Distribuídos, de Tanenbaum e Colourius",
       activity: [
-          `Estudos em andamento. Me esqueci de ${commit} mais cedo. A explicação do que foi estudado (o resumo em si) será colocado depois.`,
+          `${rightArrow} Estudos em andamento. Me esqueci de ${commit} mais cedo. A explicação do que foi estudado (o resumo em si) será colocado depois.`,
       ],
     },
 ];
@@ -151,7 +151,7 @@ const uniEco = [
         date: "21/03/2025",
         content: "Informações",
         activity: [
-            `Professor doente. Pegou liçensa de ${twoWeeks}. Aulas começam dia ${classesDate}.`,
+            `${rightArrow} Professor doente. Pegou liçensa de ${twoWeeks}. Aulas começam dia ${classesDate}.`,
         ],
     }
 ];
