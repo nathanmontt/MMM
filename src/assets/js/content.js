@@ -72,19 +72,14 @@ for (let k=0 ; k<closeModals.length ; k++) {
 /* Colocação do conteúdo */
 
 // Variáveis para certos momentos
-let rightArrow = `&rightarrow;`;
-let one = `<strong>1 por 1 </strong>`;
 let ilovepdf = `<a href="https://www.ilovepdf.com/pt" target="_blank" style="color: black; text-decoration: underline">nesse site</a>`;
-let commit = `<em>commitar</em>`;
-let twoWeeks = `<strong>2 semanas</strong>`;
-let classesDate = `<strong>24/03/2025</strong>`;
 
 const subjectGeneral = [
     {
         date: "19/03/2025",
         sotd: "Busca de conteúdo",
         activity: [
-            `${rightArrow} Como ainda estou um pouco perdido, já que essa é a minha primeira tentativa de concurso, resolvi ler o edital e ir atrás do conteúdo ${one} de acordo com o que diz no mesmo.`,
+            `&rightarrow; Como ainda estou um pouco perdido, já que essa é a minha primeira tentativa de concurso, resolvi ler o edital e ir atrás do conteúdo <strong>1 por 1</strong> de acordo com o que diz no mesmo.`,
         ],
     }
 ];
@@ -134,14 +129,14 @@ const uniSystems = [
       date: "20/03/2025",
       content: "Sistemas Distribuídos, de Tanenbaum",
       activity: [
-          `${rightArrow} Início do estudo. Ainda não saí do começo, mas pelo menos, comecei. Separei todos os capítulos ${ilovepdf}.`,
+          `&rightarrow; Início do estudo. Ainda não saí do começo, mas pelo menos, comecei. Separei todos os capítulos ${ilovepdf}.`,
       ],
     },
     {
       date: "21/03/2025",
       content: "Sistemas Distribuídos, de Tanenbaum e Colourius",
       activity: [
-          `${rightArrow} Estudos em andamento. Me esqueci de ${commit} mais cedo. A explicação do que foi estudado (o resumo em si) será colocado depois.`,
+          `&rightarrow; Estudos em andamento. Me esqueci de <em>commitar</em> mais cedo. A explicação do que foi estudado (o resumo em si) será colocado depois.`,
       ],
     },
 ];
@@ -151,7 +146,7 @@ const uniEco = [
         date: "21/03/2025",
         content: "Informações",
         activity: [
-            `${rightArrow} Professor doente. Pegou liçensa de ${twoWeeks}. Aulas começam dia ${classesDate}.`,
+            `&rightarrow; Professor doente. Pegou liçensa de <strong>2 semanas</strong>. Aulas começam dia <strong>24/03/2025</strong>.`,
         ],
     }
 ];
