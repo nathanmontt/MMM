@@ -74,7 +74,8 @@ for (let k=0 ; k<closeModals.length ; k++) {
 // Variáveis para certos momentos
 let rightArrow = `&rightarrow;`;
 let one = `<strong>1 por 1 </strong>`;
-let ilovepdf = `<a href="https://www.ilovepdf.com/pt" target="_blank">nesse site</a>`;
+let ilovepdf = `<a href="https://www.ilovepdf.com/pt" target="_blank" style="color: black; text-decoration: underline">nesse site</a>`;
+let commit = `<em>commitar</em>`;
 
 const subjectGeneral = [
     {
@@ -128,12 +129,19 @@ const careerFront = [
 
 const uniSystems = [
     {
-        date: "20/03/2025",
-        content: "Sistemas Distribuídos, de Tanenbaum",
-        activity: [
-            `Início do estudo. Ainda não saí do começo, mas pelo menos, comecei. Separei todos os capítulos ${ilovepdf}.`,
-        ],
-    }
+      date: "20/03/2025",
+      content: "Sistemas Distribuídos, de Tanenbaum",
+      activity: [
+          `Início do estudo. Ainda não saí do começo, mas pelo menos, comecei. Separei todos os capítulos ${ilovepdf}.`,
+      ],
+    },
+    {
+      date: "21/03/2025",
+      content: "Sistemas Distribuídos, de Tanenbaum e Colourius",
+      activity: [
+          `Estudos em andamento. Me esqueci de ${commit} mais cedo. A explicação do que foi estudado (o resumo em si) será colocado depois.`,
+      ],
+    },
 ];
 
 const uniEco = [
