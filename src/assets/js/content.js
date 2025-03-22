@@ -169,7 +169,7 @@ function renderGeneral (subjectGeneral) {
   generalTitle.innerHTML = `Dia: <strong>${subjectGeneral.date}</strong>`;
   generalSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectGeneral.sotd}</strong>`;
 
-  generalContainer.appendChild(generalTitle, generalSOTD);
+  generalContainer.append(generalTitle, generalSOTD);
 
   // Cria uma lista para as atividades
   const ulGeneral = document.createElement('ul');
@@ -208,7 +208,7 @@ function renderGrammar (subjectGrammar) {
   grammarTitle.innerHTML = `Dia: <strong>${subjectGrammar.date}</strong>`;
   grammarSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectGrammar.sotd}</strong>`;
 
-  grammarContainer.appendChild(grammarTitle, grammarSOTD);
+  grammarContainer.append(grammarTitle, grammarSOTD);
 
   const ulGrammar = document.createElement('ul');
 
@@ -246,7 +246,7 @@ function renderMath (subjectMath) {
   mathTitle.innerHTML = `Dia: <strong>${subjectMath.date}</strong>`;
   mathSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectMath.sotd}</strong>`;
 
-  mathContainer.appendChild(mathTitle, mathSOTD);
+  mathContainer.append(mathTitle, mathSOTD);
 
   const ulMath = document.createElement('ul');
 
@@ -284,7 +284,7 @@ function renderEnglish (subjectEnglish) {
   englishTitle.innerHTML = `Dia: <strong>${subjectEnglish.date}</strong>`;
   englishSOTD.innerHTML = `Conteúdo do dia: <strong>${subjectEnglish.sotd}</strong>`;
 
-  englishContainer.appendChild(englishTitle, englishSOTD);
+  englishContainer.append(englishTitle, englishSOTD);
 
   const ulEnglish = document.createElement('ul');
 
@@ -322,7 +322,7 @@ function renderCareerFront (careerFront) {
   frontTitle.innerHTML = `Dia: <strong>${careerFront.date}</strong>`;
   frontContent.innerHTML = `Conteúdo do dia: <strong>${careerFront.content}</strong>`;
 
-  frontContainer.appendChild(frontTitle, frontContent);
+  frontContainer.append(frontTitle, frontContent);
 
   const ulFront = document.createElement('ul');
 
@@ -360,7 +360,7 @@ function renderUniSystems (uniSystems) {
   uniSystemsTitle.innerHTML = `Dia: <strong>${uniSystems.date}</strong>`;
   uniSystemsContent.innerHTML = `Conteúdo do dia: <strong>${uniSystems.content}</strong>`;
 
-  uniSystemsContainer.appendChild(uniSystemsTitle, uniSystemsContent);
+  uniSystemsContainer.append(uniSystemsTitle, uniSystemsContent);
 
   const ulUniSystems = document.createElement('ul');
 
@@ -398,7 +398,7 @@ function renderUniEco (uniEco) {
   uniEcoTitle.innerHTML = `Dia: <strong>${uniEco.date}</strong>`;
   uniEcoContent.innerHTML = `Conteúdo do dia: <strong>${uniEco.content}</strong>`;
 
-  uniEcoContainer.appendChild(uniEcoTitle, uniEcoContent);
+  uniEcoContainer.append(uniEcoTitle, uniEcoContent);
 
   const ulUniEco = document.createElement('ul');
 
