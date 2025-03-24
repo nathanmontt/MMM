@@ -13,6 +13,7 @@ const openCloseContentEnglish = document.querySelector('.content-type-english');
 const openCloseContentFrontend = document.querySelector('.content-type-frontend');
 const openCloseContentUniSystems = document.querySelector('.content-type-uni-systems');
 const openCloseContentUniEco = document.querySelector('.content-type-uni-eco');
+const openCloseContentHobbyGame = document.querySelector('.content-type-hobby-game');
 
 /* Para abrir */
 for (let i=0 ; i<openModals.length ; i++) {
@@ -36,6 +37,9 @@ for (let i=0 ; i<openModals.length ; i++) {
           openCloseContentUniSystems.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("subject-2")) {
+          openCloseContentUniEco.classList.remove('hidden');
+
+        } else if (openModals[i].classList.contains("gamedev")) {
           openCloseContentUniEco.classList.remove('hidden');
         }
     });
@@ -64,6 +68,9 @@ for (let k=0 ; k<closeModals.length ; k++) {
 
         } else if (!openCloseContentUniEco.classList.contains('hidden')) {
           openCloseContentUniEco.classList.add('hidden');
+
+        } else if (!openCloseContentHobbyGame.classList.contains('hidden')) {
+          openCloseContentHobbyGame.classList.add('hidden');
         }
     });
 }
@@ -147,6 +154,16 @@ const uniEco = [
         content: "Informações",
         activity: [
             `&rightarrow; Professor doente. Pegou liçensa de <strong>2 semanas</strong>. Aulas começam dia <strong>24/03/2025</strong>.`,
+        ],
+    }
+];
+
+const hobbyGame = [
+    {
+        date: "dd",
+        content: "",
+        activity: [
+            ``,
         ],
     }
 ];
@@ -426,6 +443,44 @@ function renderUniEco (uniEco) {
   return uniEcoContainer;
 }
 
+function renderHobbyGame (hobbyGame) {
+  const hobbyGameContainer = document.createElement('div');
+  hobbyGameContainer.classList.add('hobby-game-block');
+
+  const hobbyGameTitle = document.createElement('p');
+  const hobbyGameContent = document.createElement('p');
+
+  hobbyGameTitle.innerHTML = `Dia: <strong>${hobbyGame.date}</strong>`;
+  hobbyGameContent.innerHTML = `Conteúdo do dia: <strong>${hobbyGame.content}</strong>`;
+
+  hobbyGameContainer.append(hobbyGameTitle, hobbyGameContent);
+
+  const ulHobbyGame = document.createElement('ul');
+
+  hobbyGame.activity.forEach((activities, index, array) => {
+    const liHobbyGame = document.createElement('li');
+    liHobbyGame.innerHTML = activities;
+    ulHobbyGame.appendChild(liHobbyGame);
+
+    liHobbyGame.style.cssText = `
+      ${totalMargin}
+    `;
+  });
+
+  hobbyGameContainer.appendChild(ulHobbyGame);
+  
+  const lastDiv = document.createElement('div');
+  lastDiv.classList.add('line', 'mt-1', 'mr-05', 'mb-05', 'ml-05');
+  hobbyGameContainer.appendChild(lastDiv);
+
+  // Estilos
+  let mLS = `1em`;
+  hobbyGameTitle.style.marginLeft = mLS;
+  hobbyGameContent.style.marginLeft = mLS;
+
+  return hobbyGameContainer;
+}
+
 // Função principal para renderizar todos os conteúdos do grammar no container. Fazer isso com os outros
 function renderAllContent() {
   const holderContentGeneral = document.querySelector('.content-type-general');
@@ -435,6 +490,7 @@ function renderAllContent() {
   const holderContentFront = document.querySelector('.content-type-frontend');
   const holderContentSystems = document.querySelector('.content-type-uni-systems');
   const holderContentEco = document.querySelector('.content-type-uni-eco');
+  const holderContentHobbyGame = document.querySelector('.content-type-hobby-game');
   
   // Limpa qualquer conteúdo anterior
   // holderContentGrammar.innerHTML = '';
@@ -473,6 +529,11 @@ function renderAllContent() {
   uniEco.forEach(eco => {
     const ecoEl = renderUniEco(eco);
     holderContentEco.appendChild(ecoEl);
+  });
+
+  hobbyGame.forEach(hobby => {
+    const hobbyGameEl = renderUniEco(hobby);
+    holderContentHobbyGame.appendChild(hobbyGameEl);
   });
 }
 
