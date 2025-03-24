@@ -85,7 +85,7 @@ let brackeys = `<a href="https://www.youtube.com/@Brackeys" target="_blank" styl
 
 let videoTag = `
   <video autoplay="true" controlslist="nofullscreen nodownload" loop heigh="250px" width="250px"">
-      <source src="assets/videos/initial-steps.mkv">
+    <source src="assets/videos/initial-steps.mkv">
   </video>
 `;
 
