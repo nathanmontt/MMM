@@ -457,7 +457,8 @@ main #subtopics-content .content-type-grammar,
 main #subtopics-content .content-type-math,
 main #subtopics-content .content-type-english,
 main #subtopics-content .content-type-uni-systems,
-main #subtopics-content .content-type-uni-eco {
+main #subtopics-content .content-type-uni-eco,
+main #subtopics-content .content-type-hobby-game {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -472,7 +473,8 @@ main #subtopics-content .content-type-grammar .close-btn,
 main #subtopics-content .content-type-math .close-btn,
 main #subtopics-content .content-type-english .close-btn,
 main #subtopics-content .content-type-uni-systems .close-btn,
-main #subtopics-content .content-type-uni-eco .close-btn {
+main #subtopics-content .content-type-uni-eco .close-btn,
+main #subtopics-content .content-type-hobby-game .close-btn {
   margin: 1em 0 1em 1em;
   color: #212121;
 }

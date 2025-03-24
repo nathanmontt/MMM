@@ -13,7 +13,7 @@ const openCloseContentEnglish = document.querySelector('.content-type-english');
 const openCloseContentFrontend = document.querySelector('.content-type-frontend');
 const openCloseContentUniSystems = document.querySelector('.content-type-uni-systems');
 const openCloseContentUniEco = document.querySelector('.content-type-uni-eco');
-const openCloseContentHobbyGame = document.querySelector('.content-type-hobby-game');
+const openCloseContentGame = document.querySelector('.content-type-hobby-game');
 
 /* Para abrir */
 for (let i=0 ; i<openModals.length ; i++) {
@@ -40,7 +40,7 @@ for (let i=0 ; i<openModals.length ; i++) {
           openCloseContentUniEco.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("gamedev")) {
-          openCloseContentHobbyGame.classList.remove('hidden');
+          openCloseContentGame.classList.remove('hidden');
         }
     });
 }
@@ -69,8 +69,8 @@ for (let k=0 ; k<closeModals.length ; k++) {
         } else if (!openCloseContentUniEco.classList.contains('hidden')) {
           openCloseContentUniEco.classList.add('hidden');
 
-        } else if (!openCloseContentHobbyGame.classList.contains('hidden')) {
-          openCloseContentHobbyGame.classList.add('hidden');
+        } else if (!openCloseContentGame.classList.contains('hidden')) {
+          openCloseContentGame.classList.add('hidden');
         }
     });
 }
@@ -160,11 +160,11 @@ const uniEco = [
 
 const hobbyGame = [
     {
-        date: "dd",
+        date: "",
         content: "",
         activity: [
             ``,
-        ],
+        ]
     }
 ];
 
@@ -445,7 +445,7 @@ function renderUniEco (uniEco) {
 
 function renderHobbyGame (hobbyGame) {
   const hobbyGameContainer = document.createElement('div');
-  hobbyGameContainer.classList.add('hobby-game-block');
+  hobbyGameContainer.classList.add('hobby-block');
 
   const hobbyGameTitle = document.createElement('p');
   const hobbyGameContent = document.createElement('p');
@@ -490,7 +490,7 @@ function renderAllContent() {
   const holderContentFront = document.querySelector('.content-type-frontend');
   const holderContentSystems = document.querySelector('.content-type-uni-systems');
   const holderContentEco = document.querySelector('.content-type-uni-eco');
-  const holderContentHobbyGame = document.querySelector('.content-type-hobby-game');
+  const holderContentGame = document.querySelector('.content-type-hobby-game');
   
   // Limpa qualquer conteúdo anterior
   // holderContentGrammar.innerHTML = '';
@@ -533,7 +533,7 @@ function renderAllContent() {
 
   hobbyGame.forEach(hobby => {
     const hobbyGameEl = renderUniEco(hobby);
-    holderContentHobbyGame.appendChild(hobbyGameEl);
+    holderContentGame.appendChild(hobbyGameEl);
   });
 }
 
