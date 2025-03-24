@@ -80,6 +80,8 @@ for (let k=0 ; k<closeModals.length ; k++) {
 
 // Variáveis para certos momentos
 let ilovepdf = `<a href="https://www.ilovepdf.com/pt" target="_blank" style="color: black; text-decoration: underline">nesse site</a>`;
+let playlist = `<a href="https://www.youtube.com/playlist?list=PLrT2fbyJrAIctd7zNUsdPakIllX2lhrzo" target="_blank" style="color: black; text-decoration: underline">essa playlist</a>`;
+let brackeys = `<a href="https://www.youtube.com/@Brackeys" target="_blank" style="color: black; text-decoration: underline">Brackeys</a>`;
 
 const subjectGeneral = [
     {
@@ -160,10 +162,10 @@ const uniEco = [
 
 const hobbyGame = [
     {
-        date: "",
-        content: "",
+        date: "23/03/2025",
+        content: "Primeiros Passos em Godot",
         activity: [
-            ``,
+            `Tinha resolvido dar uma parada, mas voltei para não tentar perder o costume de estudo pelos jogos. Comecei os estudos por ${playlist}. Não cheguei perto de terminar, mas ${brackeys} sempre foi e sempre será um ótimo professor para <em>gamedev</em>.`,
         ]
     }
 ];
