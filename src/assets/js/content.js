@@ -83,6 +83,12 @@ let ilovepdf = `<a href="https://www.ilovepdf.com/pt" target="_blank" style="col
 let playlist = `<a href="https://www.youtube.com/playlist?list=PLrT2fbyJrAIctd7zNUsdPakIllX2lhrzo" target="_blank" style="color: black; text-decoration: underline">essa playlist</a>`;
 let brackeys = `<a href="https://www.youtube.com/@Brackeys" target="_blank" style="color: black; text-decoration: underline">Brackeys</a>`;
 
+let videoTag = `
+  <video autoplay="true" controlslist="nofullscreen nodownload" loop heigh="250px" width="250px"">
+      <source src="assets/videos/initial-steps.mkv">
+  </video>
+`;
+
 const subjectGeneral = [
     {
         date: "19/03/2025",
@@ -161,13 +167,21 @@ const uniEco = [
 ];
 
 const hobbyGame = [
-    {
-        date: "23/03/2025",
-        content: "Primeiros Passos em Godot",
-        activity: [
-            `Tinha resolvido dar uma parada, mas voltei para não tentar perder o costume de estudo pelos jogos. Comecei os estudos por ${playlist}. Não cheguei perto de terminar, mas ${brackeys} sempre foi e sempre será um ótimo professor para <em>gamedev</em>.`,
-        ]
-    }
+  {
+      date: "23/03/2025",
+      content: "Primeiros Passos em Godot",
+      activity: [
+          `&rightarrow; Tinha resolvido dar uma parada, mas voltei para não tentar perder o costume de estudo pelos jogos. Comecei os estudos por ${playlist}. Não cheguei perto de terminar, mas ${brackeys} sempre foi e sempre será um ótimo professor para <em>gamedev</em>.`,
+      ]
+  },
+  {
+      date: "24/03/2025",
+      content: "Progresso",
+      activity: [
+          `&rightarrow; Seguindo o vídeo do ${brackeys}, consegui meu primeiro resultado.`,
+          `${videoTag}`,
+      ]
+  },
 ];
 
 
@@ -534,7 +548,7 @@ function renderAllContent() {
   });
 
   hobbyGame.forEach(hobby => {
-    const hobbyGameEl = renderUniEco(hobby);
+    const hobbyGameEl = renderHobbyGame(hobby);
     holderContentGame.appendChild(hobbyGameEl);
   });
 }
