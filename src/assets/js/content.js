@@ -154,6 +154,13 @@ const uniSystems = [
           `&rightarrow; Estudos em andamento. Me esqueci de <em>commitar</em> mais cedo. A explicação do que foi estudado (o resumo em si) será colocado depois.`,
       ],
     },
+    {
+      date: "24/03/2025",
+      content: "Sistemas Distribuídos, de Tanenbaum",
+      activity: [
+          `&rightarrow; Continuação dos estudos. Depois, irei resumir o que foi aprendido aqui.`,
+      ],
+    },
 ];
 
 const uniEco = [
