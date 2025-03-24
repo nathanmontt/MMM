@@ -40,7 +40,7 @@ for (let i=0 ; i<openModals.length ; i++) {
           openCloseContentUniEco.classList.remove('hidden');
 
         } else if (openModals[i].classList.contains("gamedev")) {
-          openCloseContentUniEco.classList.remove('hidden');
+          openCloseContentHobbyGame.classList.remove('hidden');
         }
     });
 }
