@@ -28,7 +28,7 @@ Seguindo o "*template*" de projetos anteriores, serão usadas as seguintes lingu
 - **HTML**
 - **CSS**, mais especificamente **_SCSS_**
 - **JavaScript** (*vanillia*)
-- **Tailwind CSS**a (ainda não implementado, apenas uma possibilidade)
+- **Tailwind CSS** (ainda não implementado, apenas uma possibilidade)
 
 
 <h1 id="execute"> Como executar </h1>
