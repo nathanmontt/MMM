@@ -89,6 +89,10 @@ let videoTag = `
   </video>
 `;
 
+let udemy = `
+  <a href="https://github.com/nathanmontt/JSZH" target="_blank" style="color: black; text-decoration: underline">aqui</a>
+`;
+
 const subjectGeneral = [
     {
         date: "19/03/2025",
@@ -131,10 +135,10 @@ const subjectEnglish = [
 
 const careerFront = [
     {
-        date: "",
-        content: "",
+        date: "25/03/2025",
+        content: "Javascript",
         activity: [
-            ``,
+            `Iniciando "tudo" sobre Javascript com um curso da Udemy. O link do projeto e do processo do meu estudo pode ser visto ${udemy}.`,
         ],
     }
 ];
