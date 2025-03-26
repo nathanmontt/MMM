@@ -162,7 +162,14 @@ const uniSystems = [
       date: "24/03/2025",
       content: "Sistemas Distribuídos, de Tanenbaum",
       activity: [
-          `&rightarrow; Continuação dos estudos. Depois, irei resumir o que foi aprendido aqui.`,
+          `&rightarrow; Continuação dos estudos.`,
+      ],
+    },
+    {
+      date: "25/03/2025",
+      content: "Sistemas Distribuídos, de Tanenbaum",
+      activity: [
+          `&rightarrow; Começando o capítulo 2 do livro: <strong>Arquiteturas</strong>`,
       ],
     },
 ];
