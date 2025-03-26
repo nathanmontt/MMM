@@ -139,8 +139,15 @@ const careerFront = [
         content: "Javascript",
         activity: [
             `Iniciando "tudo" sobre Javascript com um curso da Udemy. O link do projeto e do processo do meu estudo pode ser visto ${udemy}.`,
-        ],
-    }
+        ]
+    },
+    {
+        date: "26/03/2025",
+        content: "JSZH",
+        activity: [
+            `Ainda no meio do projeto. Esse vai me ajudar a realmente crescer e não ficar estagnado apenas no básico.`,
+        ]
+    },
 ];
 
 const uniSystems = [
@@ -170,6 +177,7 @@ const uniSystems = [
       content: "Sistemas Distribuídos, de Tanenbaum",
       activity: [
           `&rightarrow; Começando o capítulo 2 do livro: <strong>Arquiteturas</strong>`,
+          `&rightarrow; Ainda no mesmo capítulo, mas passando para o tópico 2.2, onde comenta sobre <strong>Arquiteturas centralizadas e descentralizadas</strong>`,
       ],
     },
 ];
