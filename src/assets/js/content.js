@@ -148,6 +148,13 @@ const careerFront = [
             `Ainda no meio do projeto. Esse vai me ajudar a realmente crescer e não ficar estagnado apenas no básico.`,
         ]
     },
+    {
+        date: "27/03/2025",
+        content: "JSZH - Continuação",
+        activity: [
+            `Ainda no projeto. Entendi sobre a tag <strong>object</strong> e como ela pode me ajudar a colocar conteúdos de outros arquivos HTML sem precisar usar <strong>HTML Import</strong>.`,
+        ]
+    },
 ];
 
 const uniSystems = [
@@ -206,6 +213,13 @@ const hobbyGame = [
       activity: [
           `&rightarrow; Seguindo o vídeo do ${brackeys}, consegui meu primeiro resultado.`,
           `${videoTag}`,
+      ]
+  },
+  {
+      date: "27/03/2025",
+      content: "Pausa",
+      activity: [
+          `&rightarrow; Pausa nos estudos de games.`,
       ]
   },
 ];
