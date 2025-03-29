@@ -155,6 +155,13 @@ const careerFront = [
             `Ainda no projeto. Entendi sobre a tag <strong>object</strong> e como ela pode me ajudar a colocar conteúdos de outros arquivos HTML sem precisar usar <strong>HTML Import</strong>.`,
         ]
     },
+    {
+        date: "28/03/2025",
+        content: "JSZH - Continuação",
+        activity: [
+            `Ainda no projeto. Retirei a primeira <em>branch</em> criada. Não tinha necessidade de usá-la, e tive outras ideias sobre como encarar outros pontos importantes do projeto.`,
+        ]
+    },
 ];
 
 const uniSystems = [
