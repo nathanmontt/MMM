@@ -162,6 +162,13 @@ const careerFront = [
             `Ainda no projeto. Retirei a primeira <em>branch</em> criada. Não tinha necessidade de usá-la, e tive outras ideias sobre como encarar outros pontos importantes do projeto.`,
         ]
     },
+    {
+        date: "31/03/2025",
+        content: "M³ - Parada",
+        activity: [
+            `O projeto M³ vai ficar um pouco parado. Vou focar no outro projeto aqui em questão e, no futuro, penso em voltar com este mencionado aqui.`,
+        ]
+    },
 ];
 
 const uniSystems = [
